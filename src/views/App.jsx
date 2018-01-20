@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from 'images/logo.svg';
-import SongList from 'views/song-list';
+import Playlists from 'views/playlists';
+
 import './App.css';
 
 const App = () => (
@@ -9,7 +10,7 @@ const App = () => (
 			<img src={logo} className="App-logo" alt="logo" />
 			<h1 className="App-title">Welcome to React</h1>
 		</header>
-		<SongList />
+		<Playlists />
 	</div>
 );
 

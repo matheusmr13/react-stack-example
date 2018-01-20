@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class SongList extends Component {
+class Playlists extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -60,4 +60,4 @@ class SongList extends Component {
 	}
 }
 
-export default SongList;
+export default Playlists;
