@@ -20,7 +20,6 @@ class Filter extends Component {
 
 	render() {
 		const { loading, filters } = this.state;
-		console.info(filters);
 		if (loading) {
 			return 'Loading';
 		}
@@ -39,5 +38,5 @@ class Filter extends Component {
 		);
 	}
 }
- 
+
 export default Filter;
