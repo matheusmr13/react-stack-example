@@ -1,32 +1,25 @@
 import React, { Component } from 'react';
 
 class Filter extends Component {
-	state = {
-		filters: {},
-		loading: true
-	}
 	componentDidMount() {
-		fetch('http://www.mocky.io/v2/5a25fade2e0000213aa90776')
-			.then(resp => resp.json())
-			.then(({ filters }) => this.setState({
-				loading: false,
-				filters
-			}));
+		this.props.fetchFilters();
 	}
-
 	onChange(field, event) {
-		console.info(field, event.target.value);
+		const { target: { value } } = event;
+		this.props.setSelectedFilters({
+			[field]: value
+		});
 	}
 
 	render() {
-		const { loading, filters } = this.state;
-		if (loading) {
+		const { loadingFilters, selectedFilters, possibleFilters } = this.props;
+		if (loadingFilters) {
 			return 'Loading';
 		}
 		return (
 			<div>
 				{
-					filters
+					possibleFilters
 						.filter(f => f.values)
 						.map(filter => (
 							<select key={filter.id} onChange={e => this.onChange(filter.id, e)}>

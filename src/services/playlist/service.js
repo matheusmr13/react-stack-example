@@ -1,13 +1,13 @@
 import AppService from 'services/app/service';
 
 const PlaylistService = {
-	filterPlaylists() {
-		return fetch('https://api.spotify.com/v1/browse/featured-playlists', {
+	filterPlaylists(filters) {
+		const query = Object.keys(filters)
+			.map(k => `${encodeURIComponent(k)}=${encodeURIComponent(filters[k])}`)
+			.join('&');
+		return fetch(`https://api.spotify.com/v1/browse/featured-playlists?${query}`, {
 			headers: {
 				Authorization: `Bearer ${AppService.getLoggedUser().access_token}`
-			},
-			qs: {
-
 			}
 		})
 			.then(resp => resp.json())

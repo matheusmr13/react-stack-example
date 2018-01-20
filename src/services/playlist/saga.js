@@ -7,7 +7,6 @@ function* filterPlaylists({ payload: filter }) {
 	try {
 		console.info(filter);
 		const playlits = yield call(() => PlaylistService.filterPlaylists(filter));
-		console.info(playlits);
 		yield put(Actions.setPlaylistList(playlits));
 	} catch (e) {
 		yield () => console.info(e);

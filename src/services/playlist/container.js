@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
-import { createAction } from 'redux-actions';
 
-import PlaylistView from 'views/playlists';
+import PlaylistView from 'views/playlist';
+import { Actions } from 'services/playlist/module';
 
 const mapStateToProps = state => ({
 	playlists: state.playlist.playlists,
@@ -9,7 +9,7 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-	filterPlaylists: filter => dispatch(createAction('FILTER_PLAYLISTS')(filter))
+	fetchInitialPlaylists: () => dispatch(Actions.filterPlaylists({}))
 });
 
 const PlaylistContainer = connect(mapStateToProps, mapDispatchToProps)(PlaylistView);

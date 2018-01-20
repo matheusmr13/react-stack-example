@@ -3,12 +3,11 @@ import PlaylistCard from './PlaylistCard';
 
 class Playlists extends Component {
 	componentDidMount() {
-		this.props.filterPlaylists();
+		this.props.fetchInitialPlaylists();
 	}
 
 	render() {
 		const { loadingPlaylists, playlists } = this.props;
-		console.info(this.props);
 		if (loadingPlaylists) {
 			return 'Loading';
 		}

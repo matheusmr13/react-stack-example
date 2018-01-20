@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PlaylistsContainer from 'services/playlist/container';
-import Filter from 'views/filter';
+import FilterContainer from 'services/filter/container';
 import Login from 'views/login';
 
 import './App.css';
@@ -22,7 +22,7 @@ class App extends Component {
 				<header className="App-header">
 					<h1 className="App-title">Welcome to Spotifood</h1>
 				</header>
-				<Filter />
+				<FilterContainer />
 				<PlaylistsContainer />
 			</div>
 		);
