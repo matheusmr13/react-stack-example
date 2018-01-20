@@ -17,7 +17,7 @@ class DatetimeFilter extends Component {
 			[type]: m
 		}, () => {
 			const { date, time } = this.state;
-			const result = moment();
+			const result = moment().startOf('day');
 
 			result.set('year', date.year());
 			result.set('month', date.month());
@@ -40,5 +40,5 @@ class DatetimeFilter extends Component {
 		);
 	}
 }
- 
+
 export default DatetimeFilter;
