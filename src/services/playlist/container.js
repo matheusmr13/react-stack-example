@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 
-import PlaylistView from 'views/playlist';
 import { Actions } from 'services/playlist/module';
+import PlaylistView from 'views/playlist';
 
 const mapStateToProps = state => ({
 	playlists: state.playlist.playlists,

@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
-import { createAction } from 'redux-actions';
 
+import { Actions } from 'services/app/module';
 import AppView from 'views/app';
 
 const mapStateToProps = state => ({
@@ -8,7 +8,7 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-	fetchLoggedUser: () => dispatch(createAction('FETCH_LOGGED_USER')())
+	fetchLoggedUser: () => dispatch(Actions.fetchLoggedUser())
 });
 
 const AppContainer = connect(mapStateToProps, mapDispatchToProps)(AppView);
