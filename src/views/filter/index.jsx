@@ -1,14 +1,18 @@
 import React, { Component } from 'react';
 
 class Filter extends Component {
+	state = {
+		selectedFilters: {}
+	}
 	componentDidMount() {
 		this.props.fetchFilters();
 	}
 	onChange(field, event) {
 		const { target: { value } } = event;
-		this.props.setSelectedFilters({
-			[field]: value
-		});
+		const { selectedFilters } = { ...this.state };
+		selectedFilters[field] = value;
+		this.setState(selectedFilters);
+		this.props.onFilterChange(selectedFilters);
 	}
 
 	render() {

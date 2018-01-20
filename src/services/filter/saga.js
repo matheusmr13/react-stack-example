@@ -15,7 +15,7 @@ function* fetchFilters() {
 }
 
 
-function* setSelectedFilters({ payload: filters }) {
+function* onFilterChange({ payload: filters }) {
 	try {
 		yield put(PlaylistActions.filterPlaylists(filters));
 	} catch (e) {
@@ -27,13 +27,13 @@ function* watchFetchFilters() {
 	yield takeLatest(Actions.fetchFilters, fetchFilters);
 }
 
-function* watchSetSelectedFilters() {
-	yield takeLatest(Actions.setSelectedFilters, setSelectedFilters);
+function* watchOnFilterChange() {
+	yield takeLatest(Actions.onFilterChange, onFilterChange);
 }
 
 export default function* filterSagas() {
 	yield all([
 		watchFetchFilters(),
-		watchSetSelectedFilters()
+		watchOnFilterChange()
 	]);
 }

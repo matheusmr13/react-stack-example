@@ -10,7 +10,7 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-	setSelectedFilters: filters => dispatch(Actions.setSelectedFilters(filters)),
+	onFilterChange: filters => dispatch(Actions.onFilterChange(filters)),
 	fetchFilters: () => dispatch(Actions.fetchFilters())
 });
 

@@ -11,7 +11,7 @@ const PlaylistService = {
 			}
 		})
 			.then(resp => resp.json())
-			.then(json => json.playlists.items );
+			.then(json => json.playlists.items);
 	}
 };
 

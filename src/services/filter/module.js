@@ -8,7 +8,7 @@ const initialState = {
 
 export const Actions = createActions({
 	SET_POSSIBLE_FILTERS: filters => filters,
-	SET_SELECTED_FILTERS: filters => filters,
+	ON_FILTER_CHANGE: filters => filters,
 	FETCH_FILTERS: () => {}
 });
 
@@ -18,9 +18,9 @@ const reducer = handleActions({
 		possibleFilters,
 		loadingFilters: false
 	}),
-	[Actions.setSelectedFilters]: (state, { payload: selectedFilters }) => ({
+	[Actions.onFilterChange]: (state, { payload: filters }) => ({
 		...state,
-		selectedFilters
+		selectedFilters: filters
 	}),
 	[Actions.fetchFilters]: state => ({
 		...state,
