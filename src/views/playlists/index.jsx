@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
+import PlaylistCard from './PlaylistCard';
 
 class Playlists extends Component {
-	constructor(props) {
-		super(props);
-		this.state = {
-			loading: true,
-			playlists: []
-		};
-	}
+	state = {
+		loading: true,
+		playlists: []
+	};
 
 	componentDidMount() {
 		const paramsString = window.location.hash.substring(1);
@@ -49,11 +47,7 @@ class Playlists extends Component {
 		return (
 			<div>
 				{
-					playlists.map(playlist => (
-						<div key={playlist.id}>
-							{playlist.name}
-						</div>
-					))
+					playlists.map(playlist => <PlaylistCard key={playlist.id} playlist={playlist} />)
 				}
 			</div>
 		);
