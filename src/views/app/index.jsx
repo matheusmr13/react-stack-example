@@ -3,8 +3,6 @@ import PlaylistsContainer from 'services/playlist/container';
 import FilterContainer from 'services/filter/container';
 import Login from 'views/login';
 
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-
 import './App.css';
 
 
@@ -21,15 +19,13 @@ class App extends Component {
 		}
 
 		return (
-			<MuiThemeProvider>
-				<div className="App">
-					<header className="App-header">
-						<h1 className="App-title">Welcome to Spotifood</h1>
-					</header>
-					<FilterContainer />
-					<PlaylistsContainer />
-				</div>
-			</MuiThemeProvider>
+			<div className="App">
+				<header className="App-header">
+					<h1 className="App-title">Welcome to Spotifood</h1>
+				</header>
+				<FilterContainer />
+				<PlaylistsContainer />
+			</div>
 		);
 	}
 }

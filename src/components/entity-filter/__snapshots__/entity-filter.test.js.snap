@@ -1,0 +1,641 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EntityFilter component should render properly 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <EntityFilter
+    filters={
+        Array [
+            Object {
+              "id": "locale",
+              "name": "Locale",
+              "values": Array [
+                Object {
+                  "name": "en_AU",
+                  "value": "en_AU",
+                },
+                Object {
+                  "name": "de_DE ",
+                  "value": "de_DE",
+                },
+                Object {
+                  "name": "pt_BR",
+                  "value": "pt_BR",
+                },
+                Object {
+                  "name": "fr_FR",
+                  "value": "fr_FR",
+                },
+                Object {
+                  "name": "en_US",
+                  "value": "en_US",
+                },
+                Object {
+                  "name": "es_AR",
+                  "value": "es_AR",
+                },
+              ],
+            },
+            Object {
+              "id": "country",
+              "name": "País",
+              "values": Array [
+                Object {
+                  "name": "Australia",
+                  "value": "AU",
+                },
+                Object {
+                  "name": "Alemanhã",
+                  "value": "DE",
+                },
+                Object {
+                  "name": "Brasil",
+                  "value": "BR",
+                },
+                Object {
+                  "name": "Portugal",
+                  "value": "PT",
+                },
+                Object {
+                  "name": "EUA",
+                  "value": "en_US",
+                },
+                Object {
+                  "name": "Rússia",
+                  "value": "RU",
+                },
+              ],
+            },
+            Object {
+              "id": "timestamp",
+              "name": "Data e Horário",
+              "validation": Object {
+                "entityType": "DATE_TIME",
+                "pattern": "yyyy-MM-ddTHH:mm:ss",
+                "primitiveType": "STRING",
+              },
+            },
+            Object {
+              "id": "limit",
+              "name": "Quantidade",
+              "validation": Object {
+                "max": 50,
+                "min": 1,
+                "primitiveType": "INTEGER",
+              },
+            },
+            Object {
+              "id": "offset",
+              "name": "Página",
+              "validation": Object {
+                "primitiveType": "INTEGER",
+              },
+            },
+          ]
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <FieldFilter
+          onChange={[Function]}
+          spec={
+                    Object {
+                              "id": "locale",
+                              "name": "Locale",
+                              "values": Array [
+                                Object {
+                                  "name": "en_AU",
+                                  "value": "en_AU",
+                                },
+                                Object {
+                                  "name": "de_DE ",
+                                  "value": "de_DE",
+                                },
+                                Object {
+                                  "name": "pt_BR",
+                                  "value": "pt_BR",
+                                },
+                                Object {
+                                  "name": "fr_FR",
+                                  "value": "fr_FR",
+                                },
+                                Object {
+                                  "name": "en_US",
+                                  "value": "en_US",
+                                },
+                                Object {
+                                  "name": "es_AR",
+                                  "value": "es_AR",
+                                },
+                              ],
+                            }
+          }
+/>,
+        <FieldFilter
+          onChange={[Function]}
+          spec={
+                    Object {
+                              "id": "country",
+                              "name": "País",
+                              "values": Array [
+                                Object {
+                                  "name": "Australia",
+                                  "value": "AU",
+                                },
+                                Object {
+                                  "name": "Alemanhã",
+                                  "value": "DE",
+                                },
+                                Object {
+                                  "name": "Brasil",
+                                  "value": "BR",
+                                },
+                                Object {
+                                  "name": "Portugal",
+                                  "value": "PT",
+                                },
+                                Object {
+                                  "name": "EUA",
+                                  "value": "en_US",
+                                },
+                                Object {
+                                  "name": "Rússia",
+                                  "value": "RU",
+                                },
+                              ],
+                            }
+          }
+/>,
+        <FieldFilter
+          onChange={[Function]}
+          spec={
+                    Object {
+                              "id": "timestamp",
+                              "name": "Data e Horário",
+                              "validation": Object {
+                                "entityType": "DATE_TIME",
+                                "pattern": "yyyy-MM-ddTHH:mm:ss",
+                                "primitiveType": "STRING",
+                              },
+                            }
+          }
+/>,
+        <FieldFilter
+          onChange={[Function]}
+          spec={
+                    Object {
+                              "id": "limit",
+                              "name": "Quantidade",
+                              "validation": Object {
+                                "max": 50,
+                                "min": 1,
+                                "primitiveType": "INTEGER",
+                              },
+                            }
+          }
+/>,
+        <FieldFilter
+          onChange={[Function]}
+          spec={
+                    Object {
+                              "id": "offset",
+                              "name": "Página",
+                              "validation": Object {
+                                "primitiveType": "INTEGER",
+                              },
+                            }
+          }
+/>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": "locale",
+        "nodeType": "class",
+        "props": Object {
+          "onChange": [Function],
+          "spec": Object {
+            "id": "locale",
+            "name": "Locale",
+            "values": Array [
+              Object {
+                "name": "en_AU",
+                "value": "en_AU",
+              },
+              Object {
+                "name": "de_DE ",
+                "value": "de_DE",
+              },
+              Object {
+                "name": "pt_BR",
+                "value": "pt_BR",
+              },
+              Object {
+                "name": "fr_FR",
+                "value": "fr_FR",
+              },
+              Object {
+                "name": "en_US",
+                "value": "en_US",
+              },
+              Object {
+                "name": "es_AR",
+                "value": "es_AR",
+              },
+            ],
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "country",
+        "nodeType": "class",
+        "props": Object {
+          "onChange": [Function],
+          "spec": Object {
+            "id": "country",
+            "name": "País",
+            "values": Array [
+              Object {
+                "name": "Australia",
+                "value": "AU",
+              },
+              Object {
+                "name": "Alemanhã",
+                "value": "DE",
+              },
+              Object {
+                "name": "Brasil",
+                "value": "BR",
+              },
+              Object {
+                "name": "Portugal",
+                "value": "PT",
+              },
+              Object {
+                "name": "EUA",
+                "value": "en_US",
+              },
+              Object {
+                "name": "Rússia",
+                "value": "RU",
+              },
+            ],
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "timestamp",
+        "nodeType": "class",
+        "props": Object {
+          "onChange": [Function],
+          "spec": Object {
+            "id": "timestamp",
+            "name": "Data e Horário",
+            "validation": Object {
+              "entityType": "DATE_TIME",
+              "pattern": "yyyy-MM-ddTHH:mm:ss",
+              "primitiveType": "STRING",
+            },
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "limit",
+        "nodeType": "class",
+        "props": Object {
+          "onChange": [Function],
+          "spec": Object {
+            "id": "limit",
+            "name": "Quantidade",
+            "validation": Object {
+              "max": 50,
+              "min": 1,
+              "primitiveType": "INTEGER",
+            },
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "offset",
+        "nodeType": "class",
+        "props": Object {
+          "onChange": [Function],
+          "spec": Object {
+            "id": "offset",
+            "name": "Página",
+            "validation": Object {
+              "primitiveType": "INTEGER",
+            },
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <FieldFilter
+            onChange={[Function]}
+            spec={
+                        Object {
+                                    "id": "locale",
+                                    "name": "Locale",
+                                    "values": Array [
+                                      Object {
+                                        "name": "en_AU",
+                                        "value": "en_AU",
+                                      },
+                                      Object {
+                                        "name": "de_DE ",
+                                        "value": "de_DE",
+                                      },
+                                      Object {
+                                        "name": "pt_BR",
+                                        "value": "pt_BR",
+                                      },
+                                      Object {
+                                        "name": "fr_FR",
+                                        "value": "fr_FR",
+                                      },
+                                      Object {
+                                        "name": "en_US",
+                                        "value": "en_US",
+                                      },
+                                      Object {
+                                        "name": "es_AR",
+                                        "value": "es_AR",
+                                      },
+                                    ],
+                                  }
+            }
+/>,
+          <FieldFilter
+            onChange={[Function]}
+            spec={
+                        Object {
+                                    "id": "country",
+                                    "name": "País",
+                                    "values": Array [
+                                      Object {
+                                        "name": "Australia",
+                                        "value": "AU",
+                                      },
+                                      Object {
+                                        "name": "Alemanhã",
+                                        "value": "DE",
+                                      },
+                                      Object {
+                                        "name": "Brasil",
+                                        "value": "BR",
+                                      },
+                                      Object {
+                                        "name": "Portugal",
+                                        "value": "PT",
+                                      },
+                                      Object {
+                                        "name": "EUA",
+                                        "value": "en_US",
+                                      },
+                                      Object {
+                                        "name": "Rússia",
+                                        "value": "RU",
+                                      },
+                                    ],
+                                  }
+            }
+/>,
+          <FieldFilter
+            onChange={[Function]}
+            spec={
+                        Object {
+                                    "id": "timestamp",
+                                    "name": "Data e Horário",
+                                    "validation": Object {
+                                      "entityType": "DATE_TIME",
+                                      "pattern": "yyyy-MM-ddTHH:mm:ss",
+                                      "primitiveType": "STRING",
+                                    },
+                                  }
+            }
+/>,
+          <FieldFilter
+            onChange={[Function]}
+            spec={
+                        Object {
+                                    "id": "limit",
+                                    "name": "Quantidade",
+                                    "validation": Object {
+                                      "max": 50,
+                                      "min": 1,
+                                      "primitiveType": "INTEGER",
+                                    },
+                                  }
+            }
+/>,
+          <FieldFilter
+            onChange={[Function]}
+            spec={
+                        Object {
+                                    "id": "offset",
+                                    "name": "Página",
+                                    "validation": Object {
+                                      "primitiveType": "INTEGER",
+                                    },
+                                  }
+            }
+/>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": "locale",
+          "nodeType": "class",
+          "props": Object {
+            "onChange": [Function],
+            "spec": Object {
+              "id": "locale",
+              "name": "Locale",
+              "values": Array [
+                Object {
+                  "name": "en_AU",
+                  "value": "en_AU",
+                },
+                Object {
+                  "name": "de_DE ",
+                  "value": "de_DE",
+                },
+                Object {
+                  "name": "pt_BR",
+                  "value": "pt_BR",
+                },
+                Object {
+                  "name": "fr_FR",
+                  "value": "fr_FR",
+                },
+                Object {
+                  "name": "en_US",
+                  "value": "en_US",
+                },
+                Object {
+                  "name": "es_AR",
+                  "value": "es_AR",
+                },
+              ],
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "country",
+          "nodeType": "class",
+          "props": Object {
+            "onChange": [Function],
+            "spec": Object {
+              "id": "country",
+              "name": "País",
+              "values": Array [
+                Object {
+                  "name": "Australia",
+                  "value": "AU",
+                },
+                Object {
+                  "name": "Alemanhã",
+                  "value": "DE",
+                },
+                Object {
+                  "name": "Brasil",
+                  "value": "BR",
+                },
+                Object {
+                  "name": "Portugal",
+                  "value": "PT",
+                },
+                Object {
+                  "name": "EUA",
+                  "value": "en_US",
+                },
+                Object {
+                  "name": "Rússia",
+                  "value": "RU",
+                },
+              ],
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "timestamp",
+          "nodeType": "class",
+          "props": Object {
+            "onChange": [Function],
+            "spec": Object {
+              "id": "timestamp",
+              "name": "Data e Horário",
+              "validation": Object {
+                "entityType": "DATE_TIME",
+                "pattern": "yyyy-MM-ddTHH:mm:ss",
+                "primitiveType": "STRING",
+              },
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "limit",
+          "nodeType": "class",
+          "props": Object {
+            "onChange": [Function],
+            "spec": Object {
+              "id": "limit",
+              "name": "Quantidade",
+              "validation": Object {
+                "max": 50,
+                "min": 1,
+                "primitiveType": "INTEGER",
+              },
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "offset",
+          "nodeType": "class",
+          "props": Object {
+            "onChange": [Function],
+            "spec": Object {
+              "id": "offset",
+              "name": "Página",
+              "validation": Object {
+                "primitiveType": "INTEGER",
+              },
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

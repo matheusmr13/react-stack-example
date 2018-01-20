@@ -18,13 +18,19 @@ class EntityFilter extends Component {
 
 	render() {
 		const { filters } = this.props;
-		return filters.map(filter => (
-			<FieldFilter
-				key={filter.id}
-				spec={filter}
-				onChange={this.onChange}
-			/>
-		));
+		return (
+			<div>
+				{
+					filters.map(filter => (
+						<FieldFilter
+							key={filter.id}
+							spec={filter}
+							onChange={this.onChange}
+						/>
+					))
+				}
+			</div>
+		);
 	}
 }
  
