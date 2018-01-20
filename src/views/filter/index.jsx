@@ -1,18 +1,14 @@
 import React, { Component } from 'react';
 
+import EntityFilter from 'components/entity-filter';
+
 class Filter extends Component {
 	state = {
 		selectedFilters: {}
 	}
+
 	componentDidMount() {
 		this.props.fetchFilters();
-	}
-	onChange(field, event) {
-		const { target: { value } } = event;
-		const { selectedFilters } = { ...this.state };
-		selectedFilters[field] = value;
-		this.setState(selectedFilters);
-		this.props.onFilterChange(selectedFilters);
 	}
 
 	render() {
@@ -20,17 +16,14 @@ class Filter extends Component {
 		if (loadingFilters) {
 			return 'Loading';
 		}
+
 		return (
 			<div>
-				{
-					possibleFilters
-						.filter(f => f.values)
-						.map(filter => (
-							<select key={filter.id} onChange={e => this.onChange(filter.id, e)}>
-								{filter.values.map(v => <option key={v.value} value={v.value}>{v.name}</option>)}
-							</select>
-						))
-				}
+				<EntityFilter
+					filters={possibleFilters}
+					values={selectedFilters}
+					onChange={this.props.onFilterChange}
+				/>
 			</div>
 		);
 	}
