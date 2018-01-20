@@ -1,13 +1,14 @@
 import React from 'react';
-import UnlimitedIntegerFilter from 'components/field-filter/unlimited-integer-filter';
+import ListFilter from 'components/field-filter/list-filter';
 import { shallow } from 'enzyme';
 
-describe('UnlimitedIntegerFilter component', () => {
+describe('ListFilter component', () => {
 	it('should render properly', () => {
 		const spec = {
-			name: 'Unimited integer field'
+			name: 'List field',
+			values: []
 		};
-		const unlimitedIntegerFilter = shallow(<UnlimitedIntegerFilter spec={spec} />);
-		expect(unlimitedIntegerFilter).toMatchSnapshot();
+		const listFilter = shallow(<ListFilter spec={spec} />);
+		expect(listFilter).toMatchSnapshot();
 	});
 });

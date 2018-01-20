@@ -19,22 +19,6 @@ ShallowWrapper {
                   "name": "de_DE ",
                   "value": "de_DE",
                 },
-                Object {
-                  "name": "pt_BR",
-                  "value": "pt_BR",
-                },
-                Object {
-                  "name": "fr_FR",
-                  "value": "fr_FR",
-                },
-                Object {
-                  "name": "en_US",
-                  "value": "en_US",
-                },
-                Object {
-                  "name": "es_AR",
-                  "value": "es_AR",
-                },
               ],
             },
             Object {
@@ -48,22 +32,6 @@ ShallowWrapper {
                 Object {
                   "name": "Alemanhã",
                   "value": "DE",
-                },
-                Object {
-                  "name": "Brasil",
-                  "value": "BR",
-                },
-                Object {
-                  "name": "Portugal",
-                  "value": "PT",
-                },
-                Object {
-                  "name": "EUA",
-                  "value": "en_US",
-                },
-                Object {
-                  "name": "Rússia",
-                  "value": "RU",
                 },
               ],
             },
@@ -123,22 +91,6 @@ ShallowWrapper {
                                   "name": "de_DE ",
                                   "value": "de_DE",
                                 },
-                                Object {
-                                  "name": "pt_BR",
-                                  "value": "pt_BR",
-                                },
-                                Object {
-                                  "name": "fr_FR",
-                                  "value": "fr_FR",
-                                },
-                                Object {
-                                  "name": "en_US",
-                                  "value": "en_US",
-                                },
-                                Object {
-                                  "name": "es_AR",
-                                  "value": "es_AR",
-                                },
                               ],
                             }
           }
@@ -157,22 +109,6 @@ ShallowWrapper {
                                 Object {
                                   "name": "Alemanhã",
                                   "value": "DE",
-                                },
-                                Object {
-                                  "name": "Brasil",
-                                  "value": "BR",
-                                },
-                                Object {
-                                  "name": "Portugal",
-                                  "value": "PT",
-                                },
-                                Object {
-                                  "name": "EUA",
-                                  "value": "en_US",
-                                },
-                                Object {
-                                  "name": "Rússia",
-                                  "value": "RU",
                                 },
                               ],
                             }
@@ -240,22 +176,6 @@ ShallowWrapper {
                 "name": "de_DE ",
                 "value": "de_DE",
               },
-              Object {
-                "name": "pt_BR",
-                "value": "pt_BR",
-              },
-              Object {
-                "name": "fr_FR",
-                "value": "fr_FR",
-              },
-              Object {
-                "name": "en_US",
-                "value": "en_US",
-              },
-              Object {
-                "name": "es_AR",
-                "value": "es_AR",
-              },
             ],
           },
         },
@@ -280,22 +200,6 @@ ShallowWrapper {
               Object {
                 "name": "Alemanhã",
                 "value": "DE",
-              },
-              Object {
-                "name": "Brasil",
-                "value": "BR",
-              },
-              Object {
-                "name": "Portugal",
-                "value": "PT",
-              },
-              Object {
-                "name": "EUA",
-                "value": "en_US",
-              },
-              Object {
-                "name": "Rússia",
-                "value": "RU",
               },
             ],
           },
@@ -387,22 +291,6 @@ ShallowWrapper {
                                         "name": "de_DE ",
                                         "value": "de_DE",
                                       },
-                                      Object {
-                                        "name": "pt_BR",
-                                        "value": "pt_BR",
-                                      },
-                                      Object {
-                                        "name": "fr_FR",
-                                        "value": "fr_FR",
-                                      },
-                                      Object {
-                                        "name": "en_US",
-                                        "value": "en_US",
-                                      },
-                                      Object {
-                                        "name": "es_AR",
-                                        "value": "es_AR",
-                                      },
                                     ],
                                   }
             }
@@ -421,22 +309,6 @@ ShallowWrapper {
                                       Object {
                                         "name": "Alemanhã",
                                         "value": "DE",
-                                      },
-                                      Object {
-                                        "name": "Brasil",
-                                        "value": "BR",
-                                      },
-                                      Object {
-                                        "name": "Portugal",
-                                        "value": "PT",
-                                      },
-                                      Object {
-                                        "name": "EUA",
-                                        "value": "en_US",
-                                      },
-                                      Object {
-                                        "name": "Rússia",
-                                        "value": "RU",
                                       },
                                     ],
                                   }
@@ -504,22 +376,6 @@ ShallowWrapper {
                   "name": "de_DE ",
                   "value": "de_DE",
                 },
-                Object {
-                  "name": "pt_BR",
-                  "value": "pt_BR",
-                },
-                Object {
-                  "name": "fr_FR",
-                  "value": "fr_FR",
-                },
-                Object {
-                  "name": "en_US",
-                  "value": "en_US",
-                },
-                Object {
-                  "name": "es_AR",
-                  "value": "es_AR",
-                },
               ],
             },
           },
@@ -544,22 +400,6 @@ ShallowWrapper {
                 Object {
                   "name": "Alemanhã",
                   "value": "DE",
-                },
-                Object {
-                  "name": "Brasil",
-                  "value": "BR",
-                },
-                Object {
-                  "name": "Portugal",
-                  "value": "PT",
-                },
-                Object {
-                  "name": "EUA",
-                  "value": "en_US",
-                },
-                Object {
-                  "name": "Rússia",
-                  "value": "RU",
                 },
               ],
             },

@@ -12,12 +12,11 @@ class FieldFilter extends Component {
 
 	onChange = (value) => {
 		const { spec } = this.props;
-		console.info(spec.id, value);
 		this.props.onChange(spec.id, value);
 		// const FilterService.validate)
 	}
 
-	render() {
+	getComponentToRender() {
 		const { spec } = this.props;
 		const {
 			values,
@@ -25,7 +24,7 @@ class FieldFilter extends Component {
 		} = spec;
 
 		if (values) {
-			return <ListFilter spec={spec} onChange={this.onChange} />;
+			return ListFilter;
 		}
 
 		if (validation) {
@@ -37,20 +36,30 @@ class FieldFilter extends Component {
 			} = validation;
 
 			if (entityType === 'DATE_TIME') {
-				return <DatetimeFilter spec={spec} onChange={this.onChange} />;
+				return DatetimeFilter;
 			}
 
 			if (primitiveType === 'INTEGER' && typeof max !== 'undefined' && typeof min !== 'undefined') {
-				return <LimitedIntegerFilter spec={spec} onChange={this.onChange} />;
+				return LimitedIntegerFilter;
 			}
 
 			if (primitiveType === 'INTEGER') {
-				return <UnlimitedIntegerFilter spec={spec} onChange={this.onChange} />;
+				return UnlimitedIntegerFilter;
 			}
 		}
 
 		return null;
 	}
+
+	render() {
+		const { spec } = this.props;
+		const ComponentToRender = this.getComponentToRender();
+		if (!ComponentToRender) {
+			return null;
+		}
+
+		return <ComponentToRender spec={spec} onChange={this.onChange} />;
+	}
 }
- 
+
 export default FieldFilter;

@@ -9,112 +9,62 @@ import {
 } from 'enzyme';
 import moment from 'moment';
 
-const filters = {
-	filters: [{
-		id: 'locale',
-		name: 'Locale',
-		values: [{
-			value: 'en_AU',
-			name: 'en_AU'
-		}, {
-			value: 'de_DE',
-			name: 'de_DE '
-		}, {
-			value: 'pt_BR',
-			name: 'pt_BR'
-		}, {
-			value: 'fr_FR',
-			name: 'fr_FR'
-		}, {
-			value: 'en_US',
-			name: 'en_US'
-		}, {
-			value: 'es_AR',
-			name: 'es_AR'
-		}]
-	}, {
-		id: 'country',
-		name: 'País',
-		values: [{
-			value: 'AU',
-			name: 'Australia'
-		}, {
-			value: 'DE',
-			name: 'Alemanhã'
-		}, {
-			value: 'BR',
-			name: 'Brasil'
-		}, {
-			value: 'PT',
-			name: 'Portugal'
-		}, {
-			value: 'en_US',
-			name: 'EUA'
-		}, {
-			value: 'RU',
-			name: 'Rússia'
-		}]
-	}, {
-		id: 'timestamp',
-		name: 'Data e Horário',
-		validation: {
-			primitiveType: 'STRING',
-			entityType: 'DATE_TIME',
-			pattern: 'yyyy-MM-ddTHH:mm:ss'
-		}
-	}, {
-		id: 'limit',
-		name: 'Quantidade',
-		validation: {
-			primitiveType: 'INTEGER',
-			min: 1,
-			max: 50
-		}
-	}, {
-		id: 'offset',
-		name: 'Página',
-		validation: {
-			primitiveType: 'INTEGER'
-		}
+const listFilter = {
+	id: 'locale',
+	name: 'Locale',
+	values: [{
+		value: 'en_AU',
+		name: 'en_AU'
 	}]
 };
 
-describe('DatetimeFilter component', () => {
-			it('should render properly', () => {
-				const datetimeFilter = shallow( < DatetimeFilter spec = {
-						{
-							name: 'Date field'
-						}
-					}
-					/>);
-					expect(datetimeFilter).toMatchSnapshot();
-				}); it('should merge date and time', () => {
-					let lastChangedDate;
+const datetimeFilter = {
+	id: 'timestamp',
+	name: 'Data e Horário',
+	validation: {
+		primitiveType: 'STRING',
+		entityType: 'DATE_TIME',
+		pattern: 'yyyy-MM-ddTHH:mm:ss'
+	}
+};
 
-					const onChange = (value) => {
-						lastChangedDate = value;
-					};
-					const datetimeFilter = shallow( < DatetimeFilter spec = {
-							{
-								name: 'Date field'
-							}
-						}
-						onChange = {
-							onChange
-						}
-						/>);
-						expect(lastChangedDate).toBeUndefined();
+const limitedIntegerFilter = {
+	id: 'limit',
+	name: 'Quantidade',
+	validation: {
+		primitiveType: 'INTEGER',
+		min: 1,
+		max: 50
+	}
+};
 
-						const dateMoment = moment({
-							years: 2018,
-							month: 10,
-							date: 15
-						});
-						const hourMoment = moment({
-							minutes: 40,
-							hours: 10
-						}); datetimeFilter.instance().onChange('date', dateMoment.toDate()); datetimeFilter.instance().onChange('time', hourMoment.toDate());
+const unlimitedIntegerFilter = {
+	id: 'offset',
+	name: 'Página',
+	validation: {
+		primitiveType: 'INTEGER'
+	}
+};
 
-						expect(lastChangedDate).not.toBeUndefined(); expect(lastChangedDate).toBe('2018-11-15T10:40:00-02:00');
-					});
-			});
+describe('FieldFilter component', () => {
+	it('should choose DatetimeFilter', () => {
+		const fieldFilter = shallow(<FieldFilter spec={datetimeFilter} />);
+		expect(fieldFilter.instance().getComponentToRender()).toBe(DatetimeFilter);
+	});
+	it('should choose ListFilter', () => {
+		const fieldFilter = shallow(<FieldFilter spec={listFilter} />);
+		expect(fieldFilter.instance().getComponentToRender()).toBe(ListFilter);
+	});
+	it('should choose UnlimitedIntegerFilter', () => {
+		const fieldFilter = shallow(<FieldFilter spec={unlimitedIntegerFilter} />);
+		expect(fieldFilter.instance().getComponentToRender()).toBe(UnlimitedIntegerFilter);
+	});
+	it('should choose LimitedIntegerFilter', () => {
+		const fieldFilter = shallow(<FieldFilter spec={limitedIntegerFilter} />);
+		expect(fieldFilter.instance().getComponentToRender()).toBe(LimitedIntegerFilter);
+	});
+	it('should choose null', () => {
+		const fieldFilter = shallow(<FieldFilter spec={{}} />);
+		expect(fieldFilter.instance().getComponentToRender()).toBeNull();
+	});
+});
