@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PlaylistsContainer from 'services/playlist/container';
 import Filter from 'views/filter';
+import Login from 'views/login';
 
 import './App.css';
 
@@ -10,11 +11,10 @@ class App extends Component {
 	}
 
 	render() {
-		console.info(this.props);
 		const { loggedUser } = this.props;
 
 		if (!loggedUser) {
-			return 'Loading';
+			return <Login />;
 		}
 
 		return (
