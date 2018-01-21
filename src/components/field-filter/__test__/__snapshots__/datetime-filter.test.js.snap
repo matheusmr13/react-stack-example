@@ -24,77 +24,158 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <DatePicker
-          autoOk={false}
-          container="dialog"
-          disableYearSelection={false}
-          disabled={false}
-          firstDayOfWeek={1}
-          hideCalendarDate={false}
-          hintText="Date field"
-          onChange={[Function]}
-          openToYearSelection={false}
-          style={Object {}}
-/>,
-        <TimePicker
-          autoOk={false}
-          cancelLabel="Cancel"
-          defaultTime={null}
-          disabled={false}
-          format="ampm"
-          hintText="Date field"
-          minutesStep={1}
-          okLabel="OK"
-          onChange={[Function]}
-          pedantic={false}
-          style={Object {}}
-          value={null}
-/>,
+        <div
+          style={
+                    Object {
+                              "display": "inline-block",
+                              "marginRight": "8px",
+                              "width": "calc(60% - 8px)",
+                            }
+          }
+>
+          <DatePicker
+                    autoOk={false}
+                    container="dialog"
+                    disableYearSelection={false}
+                    disabled={false}
+                    firstDayOfWeek={1}
+                    fullWidth={true}
+                    hideCalendarDate={false}
+                    hintText="Date field"
+                    onChange={[Function]}
+                    openToYearSelection={false}
+                    style={Object {}}
+          />
+</div>,
+        <div
+          style={
+                    Object {
+                              "display": "inline-block",
+                              "width": "40%",
+                            }
+          }
+>
+          <TimePicker
+                    autoOk={false}
+                    cancelLabel="Cancel"
+                    defaultTime={null}
+                    disabled={false}
+                    format="ampm"
+                    fullWidth={true}
+                    hintText="00:00"
+                    minutesStep={1}
+                    okLabel="OK"
+                    onChange={[Function]}
+                    pedantic={false}
+                    style={Object {}}
+                    value={null}
+          />
+</div>,
       ],
+      "style": Object {
+        "width": "100%",
+      },
     },
     "ref": null,
     "rendered": Array [
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "class",
+        "nodeType": "host",
         "props": Object {
-          "autoOk": false,
-          "container": "dialog",
-          "disableYearSelection": false,
-          "disabled": false,
-          "firstDayOfWeek": 1,
-          "hideCalendarDate": false,
-          "hintText": "Date field",
-          "onChange": [Function],
-          "openToYearSelection": false,
-          "style": Object {},
+          "children": <DatePicker
+            autoOk={false}
+            container="dialog"
+            disableYearSelection={false}
+            disabled={false}
+            firstDayOfWeek={1}
+            fullWidth={true}
+            hideCalendarDate={false}
+            hintText="Date field"
+            onChange={[Function]}
+            openToYearSelection={false}
+            style={Object {}}
+/>,
+          "style": Object {
+            "display": "inline-block",
+            "marginRight": "8px",
+            "width": "calc(60% - 8px)",
+          },
         },
         "ref": null,
-        "rendered": null,
-        "type": [Function],
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "autoOk": false,
+            "container": "dialog",
+            "disableYearSelection": false,
+            "disabled": false,
+            "firstDayOfWeek": 1,
+            "fullWidth": true,
+            "hideCalendarDate": false,
+            "hintText": "Date field",
+            "onChange": [Function],
+            "openToYearSelection": false,
+            "style": Object {},
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": "div",
       },
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "class",
+        "nodeType": "host",
         "props": Object {
-          "autoOk": false,
-          "cancelLabel": "Cancel",
-          "defaultTime": null,
-          "disabled": false,
-          "format": "ampm",
-          "hintText": "Date field",
-          "minutesStep": 1,
-          "okLabel": "OK",
-          "onChange": [Function],
-          "pedantic": false,
-          "style": Object {},
-          "value": null,
+          "children": <TimePicker
+            autoOk={false}
+            cancelLabel="Cancel"
+            defaultTime={null}
+            disabled={false}
+            format="ampm"
+            fullWidth={true}
+            hintText="00:00"
+            minutesStep={1}
+            okLabel="OK"
+            onChange={[Function]}
+            pedantic={false}
+            style={Object {}}
+            value={null}
+/>,
+          "style": Object {
+            "display": "inline-block",
+            "width": "40%",
+          },
         },
         "ref": null,
-        "rendered": null,
-        "type": [Function],
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "autoOk": false,
+            "cancelLabel": "Cancel",
+            "defaultTime": null,
+            "disabled": false,
+            "format": "ampm",
+            "fullWidth": true,
+            "hintText": "00:00",
+            "minutesStep": 1,
+            "okLabel": "OK",
+            "onChange": [Function],
+            "pedantic": false,
+            "style": Object {},
+            "value": null,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": "div",
       },
     ],
     "type": "div",
@@ -106,77 +187,158 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <DatePicker
-            autoOk={false}
-            container="dialog"
-            disableYearSelection={false}
-            disabled={false}
-            firstDayOfWeek={1}
-            hideCalendarDate={false}
-            hintText="Date field"
-            onChange={[Function]}
-            openToYearSelection={false}
-            style={Object {}}
-/>,
-          <TimePicker
-            autoOk={false}
-            cancelLabel="Cancel"
-            defaultTime={null}
-            disabled={false}
-            format="ampm"
-            hintText="Date field"
-            minutesStep={1}
-            okLabel="OK"
-            onChange={[Function]}
-            pedantic={false}
-            style={Object {}}
-            value={null}
-/>,
+          <div
+            style={
+                        Object {
+                                    "display": "inline-block",
+                                    "marginRight": "8px",
+                                    "width": "calc(60% - 8px)",
+                                  }
+            }
+>
+            <DatePicker
+                        autoOk={false}
+                        container="dialog"
+                        disableYearSelection={false}
+                        disabled={false}
+                        firstDayOfWeek={1}
+                        fullWidth={true}
+                        hideCalendarDate={false}
+                        hintText="Date field"
+                        onChange={[Function]}
+                        openToYearSelection={false}
+                        style={Object {}}
+            />
+</div>,
+          <div
+            style={
+                        Object {
+                                    "display": "inline-block",
+                                    "width": "40%",
+                                  }
+            }
+>
+            <TimePicker
+                        autoOk={false}
+                        cancelLabel="Cancel"
+                        defaultTime={null}
+                        disabled={false}
+                        format="ampm"
+                        fullWidth={true}
+                        hintText="00:00"
+                        minutesStep={1}
+                        okLabel="OK"
+                        onChange={[Function]}
+                        pedantic={false}
+                        style={Object {}}
+                        value={null}
+            />
+</div>,
         ],
+        "style": Object {
+          "width": "100%",
+        },
       },
       "ref": null,
       "rendered": Array [
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "class",
+          "nodeType": "host",
           "props": Object {
-            "autoOk": false,
-            "container": "dialog",
-            "disableYearSelection": false,
-            "disabled": false,
-            "firstDayOfWeek": 1,
-            "hideCalendarDate": false,
-            "hintText": "Date field",
-            "onChange": [Function],
-            "openToYearSelection": false,
-            "style": Object {},
+            "children": <DatePicker
+              autoOk={false}
+              container="dialog"
+              disableYearSelection={false}
+              disabled={false}
+              firstDayOfWeek={1}
+              fullWidth={true}
+              hideCalendarDate={false}
+              hintText="Date field"
+              onChange={[Function]}
+              openToYearSelection={false}
+              style={Object {}}
+/>,
+            "style": Object {
+              "display": "inline-block",
+              "marginRight": "8px",
+              "width": "calc(60% - 8px)",
+            },
           },
           "ref": null,
-          "rendered": null,
-          "type": [Function],
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "autoOk": false,
+              "container": "dialog",
+              "disableYearSelection": false,
+              "disabled": false,
+              "firstDayOfWeek": 1,
+              "fullWidth": true,
+              "hideCalendarDate": false,
+              "hintText": "Date field",
+              "onChange": [Function],
+              "openToYearSelection": false,
+              "style": Object {},
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": "div",
         },
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "class",
+          "nodeType": "host",
           "props": Object {
-            "autoOk": false,
-            "cancelLabel": "Cancel",
-            "defaultTime": null,
-            "disabled": false,
-            "format": "ampm",
-            "hintText": "Date field",
-            "minutesStep": 1,
-            "okLabel": "OK",
-            "onChange": [Function],
-            "pedantic": false,
-            "style": Object {},
-            "value": null,
+            "children": <TimePicker
+              autoOk={false}
+              cancelLabel="Cancel"
+              defaultTime={null}
+              disabled={false}
+              format="ampm"
+              fullWidth={true}
+              hintText="00:00"
+              minutesStep={1}
+              okLabel="OK"
+              onChange={[Function]}
+              pedantic={false}
+              style={Object {}}
+              value={null}
+/>,
+            "style": Object {
+              "display": "inline-block",
+              "width": "40%",
+            },
           },
           "ref": null,
-          "rendered": null,
-          "type": [Function],
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "autoOk": false,
+              "cancelLabel": "Cancel",
+              "defaultTime": null,
+              "disabled": false,
+              "format": "ampm",
+              "fullWidth": true,
+              "hintText": "00:00",
+              "minutesStep": 1,
+              "okLabel": "OK",
+              "onChange": [Function],
+              "pedantic": false,
+              "style": Object {},
+              "value": null,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": "div",
         },
       ],
       "type": "div",
