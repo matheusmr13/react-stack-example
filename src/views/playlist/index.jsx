@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import PlaylistPropType from 'services/playlist/proptype';
+
 import TextField from 'material-ui/TextField';
 
-import PlaylistCard from './PlaylistCard';
-
+import PlaylistCard from './card';
 
 class Playlists extends Component {
 	state = {
@@ -31,7 +33,10 @@ class Playlists extends Component {
 	filterPlaylists(playlists) {
 		const { nameFilter } = this.state;
 		this.setState({
-			filteredPlaylists: playlists.filter(playlist => playlist.name.toLowerCase().indexOf(nameFilter.toLowerCase()) > -1)
+			filteredPlaylists: playlists
+				.filter(playlist => playlist.name
+					.toLowerCase()
+					.indexOf(nameFilter.toLowerCase()) > -1)
 		});
 	}
 
@@ -66,5 +71,11 @@ class Playlists extends Component {
 		);
 	}
 }
+
+Playlists.propTypes = {
+	fetchInitialPlaylists: PropTypes.func.isRequired,
+	loadingPlaylists: PropTypes.bool.isRequired,
+	playlists: PropTypes.arrayOf(PropTypes.shape(PlaylistPropType)).isRequired
+};
 
 export default Playlists;

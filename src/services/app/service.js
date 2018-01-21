@@ -1,7 +1,7 @@
 import moment from 'moment';
 
 class AppService {
-	static DATETIME_FORMAT = 'YYYYMMDD hhmmss';
+	static DATETIME_FORMAT = 'YYYYMMDD HHmmss';
 	static checkLoggedUser() {
 		if (this.hasUserJustLoggedIn()) {
 			const loggedInUser = this.getLoggedUserFromHash();
