@@ -10,9 +10,10 @@ import LimitedIntegerFilter from './limited-integer-filter';
 class FieldFilter extends Component {
 	state = {}
 
+
 	onChange = (value) => {
-		const { spec } = this.props;
-		this.props.onChange(spec.id, value);
+		const { spec, onChange } = this.props;
+		onChange(spec.id, value);
 	}
 
 	getComponentToRender() {
@@ -61,8 +62,12 @@ class FieldFilter extends Component {
 	}
 }
 
+FieldFilter.defaultProps = {
+	onChange: () => {}
+};
+
 FieldFilter.propTypes = {
-	onChange: PropTypes.func.isRequired,
+	onChange: PropTypes.func,
 	spec: PropTypes.shape(FilterPropType).isRequired
 };
 

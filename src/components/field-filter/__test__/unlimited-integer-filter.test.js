@@ -3,6 +3,7 @@ import UnlimitedIntegerFilter from 'components/field-filter/unlimited-integer-fi
 import { shallow } from 'enzyme';
 
 const spec = {
+	id: 'myId',
 	name: 'Unimited integer field'
 };
 describe('UnlimitedIntegerFilter component', () => {

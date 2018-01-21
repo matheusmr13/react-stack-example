@@ -55,8 +55,12 @@ class DatetimeFilter extends Component {
 	}
 }
 
+DatetimeFilter.defaultProps = {
+	onChange: () => {}
+};
+
 DatetimeFilter.propTypes = {
-	onChange: PropTypes.func.isRequired,
+	onChange: PropTypes.func,
 	spec: PropTypes.shape(FilterPropType).isRequired
 };
 

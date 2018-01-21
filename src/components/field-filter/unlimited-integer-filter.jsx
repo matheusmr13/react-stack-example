@@ -17,9 +17,10 @@ class UnlimitedIntegerFilter extends Component {
 
 	onChangeValue = (diff) => {
 		const { count } = this.state;
+		const { onChange } = this.props;
 		const newCount = Math.max(0, count + diff);
 		this.setState({ count: newCount });
-		this.props.onChange(newCount);
+		onChange(newCount);
 	}
 
 	render() {
@@ -43,8 +44,12 @@ class UnlimitedIntegerFilter extends Component {
 	}
 }
 
+UnlimitedIntegerFilter.defaultProps = {
+	onChange: () => {}
+};
+
 UnlimitedIntegerFilter.propTypes = {
-	onChange: PropTypes.func.isRequired,
+	onChange: PropTypes.func,
 	spec: PropTypes.shape(FilterPropType).isRequired
 };
 

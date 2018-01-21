@@ -5,8 +5,10 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <ListFilter
+    onChange={[Function]}
     spec={
         Object {
+            "id": "myId",
             "name": "List field",
             "values": Array [],
           }
@@ -21,7 +23,7 @@ ShallowWrapper {
   },
   Symbol(enzyme.__node__): Object {
     "instance": null,
-    "key": undefined,
+    "key": "myId",
     "nodeType": "class",
     "props": Object {
       "anchorOrigin": Object {
@@ -54,7 +56,7 @@ ShallowWrapper {
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
-      "key": undefined,
+      "key": "myId",
       "nodeType": "class",
       "props": Object {
         "anchorOrigin": Object {

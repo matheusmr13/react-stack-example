@@ -17,8 +17,12 @@ const ListFilter = ({ spec, onChange }) => (
 	/>
 );
 
+ListFilter.defaultProps = {
+	onChange: () => {}
+};
+
 ListFilter.propTypes = {
-	onChange: PropTypes.func.isRequired,
+	onChange: PropTypes.func,
 	spec: PropTypes.shape(FilterPropType).isRequired
 };
 

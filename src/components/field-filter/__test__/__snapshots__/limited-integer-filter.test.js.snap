@@ -5,8 +5,10 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <LimitedIntegerFilter
+    onChange={[Function]}
     spec={
         Object {
+            "id": "myId",
             "name": "Limited integer field",
             "validation": Object {
               "max": 10,

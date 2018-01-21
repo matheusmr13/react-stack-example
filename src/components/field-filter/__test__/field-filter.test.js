@@ -63,7 +63,7 @@ describe('FieldFilter component', () => {
 		expect(fieldFilter.instance().getComponentToRender()).toBe(LimitedIntegerFilter);
 	});
 	it('should choose null', () => {
-		const fieldFilter = shallow(<FieldFilter spec={{}} />);
+		const fieldFilter = shallow(<FieldFilter spec={{ id: 'non existent', name: 'non existent' }} />);
 		expect(fieldFilter.instance().getComponentToRender()).toBeNull();
 	});
 });

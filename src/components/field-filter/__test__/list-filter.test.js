@@ -5,6 +5,7 @@ import { shallow } from 'enzyme';
 describe('ListFilter component', () => {
 	it('should render properly', () => {
 		const spec = {
+			id: 'myId',
 			name: 'List field',
 			values: []
 		};

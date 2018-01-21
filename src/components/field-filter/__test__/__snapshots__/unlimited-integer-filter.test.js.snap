@@ -8,6 +8,7 @@ ShallowWrapper {
     onChange={[Function]}
     spec={
         Object {
+            "id": "myId",
             "name": "Unimited integer field",
           }
     }
@@ -25,40 +26,75 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        null,
-        <span />,
-        <button
-          onClick={[Function]}
->
-          +
-</button>,
+        <div>
+          Unimited integer field
+</div>,
+        <div>
+          <span />
+          <button
+                    onClick={[Function]}
+          >
+                    +
+          </button>
+</div>,
       ],
     },
     "ref": null,
     "rendered": Array [
-      null,
       Object {
         "instance": null,
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": 0,
+          "children": "Unimited integer field",
         },
         "ref": null,
-        "rendered": 0,
-        "type": "span",
+        "rendered": "Unimited integer field",
+        "type": "div",
       },
       Object {
         "instance": null,
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "+",
-          "onClick": [Function],
+          "children": Array [
+            null,
+            <span />,
+            <button
+              onClick={[Function]}
+>
+              +
+</button>,
+          ],
         },
         "ref": null,
-        "rendered": "+",
-        "type": "button",
+        "rendered": Array [
+          null,
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": 0,
+            },
+            "ref": null,
+            "rendered": 0,
+            "type": "span",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "+",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "+",
+            "type": "button",
+          },
+        ],
+        "type": "div",
       },
     ],
     "type": "div",
@@ -70,40 +106,75 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          null,
-          <span />,
-          <button
-            onClick={[Function]}
->
-            +
-</button>,
+          <div>
+            Unimited integer field
+</div>,
+          <div>
+            <span />
+            <button
+                        onClick={[Function]}
+            >
+                        +
+            </button>
+</div>,
         ],
       },
       "ref": null,
       "rendered": Array [
-        null,
         Object {
           "instance": null,
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": 0,
+            "children": "Unimited integer field",
           },
           "ref": null,
-          "rendered": 0,
-          "type": "span",
+          "rendered": "Unimited integer field",
+          "type": "div",
         },
         Object {
           "instance": null,
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "+",
-            "onClick": [Function],
+            "children": Array [
+              null,
+              <span />,
+              <button
+                onClick={[Function]}
+>
+                +
+</button>,
+            ],
           },
           "ref": null,
-          "rendered": "+",
-          "type": "button",
+          "rendered": Array [
+            null,
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": 0,
+              },
+              "ref": null,
+              "rendered": 0,
+              "type": "span",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "+",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "+",
+              "type": "button",
+            },
+          ],
+          "type": "div",
         },
       ],
       "type": "div",
@@ -127,6 +198,7 @@ ShallowWrapper {
     onChange={[Function]}
     spec={
         Object {
+            "id": "myId",
             "name": "Unimited integer field",
           }
     }
@@ -144,40 +216,75 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        null,
-        <span />,
-        <button
-          onClick={[Function]}
->
-          +
-</button>,
+        <div>
+          Unimited integer field
+</div>,
+        <div>
+          <span />
+          <button
+                    onClick={[Function]}
+          >
+                    +
+          </button>
+</div>,
       ],
     },
     "ref": null,
     "rendered": Array [
-      null,
       Object {
         "instance": null,
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": 0,
+          "children": "Unimited integer field",
         },
         "ref": null,
-        "rendered": 0,
-        "type": "span",
+        "rendered": "Unimited integer field",
+        "type": "div",
       },
       Object {
         "instance": null,
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "+",
-          "onClick": [Function],
+          "children": Array [
+            null,
+            <span />,
+            <button
+              onClick={[Function]}
+>
+              +
+</button>,
+          ],
         },
         "ref": null,
-        "rendered": "+",
-        "type": "button",
+        "rendered": Array [
+          null,
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": 0,
+            },
+            "ref": null,
+            "rendered": 0,
+            "type": "span",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "+",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "+",
+            "type": "button",
+          },
+        ],
+        "type": "div",
       },
     ],
     "type": "div",
@@ -189,40 +296,75 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          null,
-          <span />,
-          <button
-            onClick={[Function]}
->
-            +
-</button>,
+          <div>
+            Unimited integer field
+</div>,
+          <div>
+            <span />
+            <button
+                        onClick={[Function]}
+            >
+                        +
+            </button>
+</div>,
         ],
       },
       "ref": null,
       "rendered": Array [
-        null,
         Object {
           "instance": null,
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": 0,
+            "children": "Unimited integer field",
           },
           "ref": null,
-          "rendered": 0,
-          "type": "span",
+          "rendered": "Unimited integer field",
+          "type": "div",
         },
         Object {
           "instance": null,
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "+",
-            "onClick": [Function],
+            "children": Array [
+              null,
+              <span />,
+              <button
+                onClick={[Function]}
+>
+                +
+</button>,
+            ],
           },
           "ref": null,
-          "rendered": "+",
-          "type": "button",
+          "rendered": Array [
+            null,
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": 0,
+              },
+              "ref": null,
+              "rendered": 0,
+              "type": "span",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "+",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "+",
+              "type": "button",
+            },
+          ],
+          "type": "div",
         },
       ],
       "type": "div",
@@ -246,6 +388,7 @@ ShallowWrapper {
     onChange={[Function]}
     spec={
         Object {
+            "id": "myId",
             "name": "Unimited integer field",
           }
     }
@@ -263,19 +406,24 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <button
-          onClick={[Function]}
->
-          -
-</button>,
-        <span>
-          1
-</span>,
-        <button
-          onClick={[Function]}
->
-          +
-</button>,
+        <div>
+          Unimited integer field
+</div>,
+        <div>
+          <button
+                    onClick={[Function]}
+          >
+                    -
+          </button>
+          <span>
+                    1
+          </span>
+          <button
+                    onClick={[Function]}
+          >
+                    +
+          </button>
+</div>,
       ],
     },
     "ref": null,
@@ -285,35 +433,72 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "-",
-          "onClick": [Function],
+          "children": "Unimited integer field",
         },
         "ref": null,
-        "rendered": "-",
-        "type": "button",
+        "rendered": "Unimited integer field",
+        "type": "div",
       },
       Object {
         "instance": null,
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": 1,
+          "children": Array [
+            <button
+              onClick={[Function]}
+>
+              -
+</button>,
+            <span>
+              1
+</span>,
+            <button
+              onClick={[Function]}
+>
+              +
+</button>,
+          ],
         },
         "ref": null,
-        "rendered": 1,
-        "type": "span",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "+",
-          "onClick": [Function],
-        },
-        "ref": null,
-        "rendered": "+",
-        "type": "button",
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "-",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "-",
+            "type": "button",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": 1,
+            },
+            "ref": null,
+            "rendered": 1,
+            "type": "span",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "+",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "+",
+            "type": "button",
+          },
+        ],
+        "type": "div",
       },
     ],
     "type": "div",
@@ -325,19 +510,24 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <button
-            onClick={[Function]}
->
-            -
-</button>,
-          <span>
-            1
-</span>,
-          <button
-            onClick={[Function]}
->
-            +
-</button>,
+          <div>
+            Unimited integer field
+</div>,
+          <div>
+            <button
+                        onClick={[Function]}
+            >
+                        -
+            </button>
+            <span>
+                        1
+            </span>
+            <button
+                        onClick={[Function]}
+            >
+                        +
+            </button>
+</div>,
         ],
       },
       "ref": null,
@@ -347,35 +537,72 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "-",
-            "onClick": [Function],
+            "children": "Unimited integer field",
           },
           "ref": null,
-          "rendered": "-",
-          "type": "button",
+          "rendered": "Unimited integer field",
+          "type": "div",
         },
         Object {
           "instance": null,
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": 1,
+            "children": Array [
+              <button
+                onClick={[Function]}
+>
+                -
+</button>,
+              <span>
+                1
+</span>,
+              <button
+                onClick={[Function]}
+>
+                +
+</button>,
+            ],
           },
           "ref": null,
-          "rendered": 1,
-          "type": "span",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "+",
-            "onClick": [Function],
-          },
-          "ref": null,
-          "rendered": "+",
-          "type": "button",
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "-",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "-",
+              "type": "button",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": 1,
+              },
+              "ref": null,
+              "rendered": 1,
+              "type": "span",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "+",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "+",
+              "type": "button",
+            },
+          ],
+          "type": "div",
         },
       ],
       "type": "div",

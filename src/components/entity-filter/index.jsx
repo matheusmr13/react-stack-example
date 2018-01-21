@@ -11,11 +11,13 @@ class EntityFilter extends Component {
 
 	onChange = (field, value) => {
 		const { filters } = this.state;
+		const { onChange } = this.props;
+
 		filters[field] = value;
 		this.setState({
 			filters
 		});
-		this.props.onChange(filters);
+		onChange(filters);
 	}
 
 	render() {
@@ -36,8 +38,12 @@ class EntityFilter extends Component {
 	}
 }
 
+EntityFilter.defaultProps = {
+	onChange: () => {}
+};
+
 EntityFilter.propTypes = {
-	onChange: PropTypes.func.isRequired,
+	onChange: PropTypes.func,
 	filters: PropTypes.arrayOf(PropTypes.shape(FilterPropType)).isRequired
 };
 

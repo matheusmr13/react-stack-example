@@ -5,7 +5,7 @@ import moment from 'moment';
 
 describe('DatetimeFilter component', () => {
 	it('should render properly', () => {
-		const datetimeFilter = shallow(<DatetimeFilter spec={{ name: 'Date field' }} />);
+		const datetimeFilter = shallow(<DatetimeFilter spec={{ id: 'date', name: 'Date field' }} />);
 		expect(datetimeFilter).toMatchSnapshot();
 	});
 	it('should merge date and time', () => {
@@ -14,7 +14,7 @@ describe('DatetimeFilter component', () => {
 		const onChange = (value) => {
 			lastChangedDate = value;
 		};
-		const datetimeFilter = shallow(<DatetimeFilter spec={{ name: 'Date field' }} onChange={onChange} />);
+		const datetimeFilter = shallow(<DatetimeFilter spec={{ id: 'date', name: 'Date field' }} onChange={onChange} />);
 		expect(lastChangedDate).toBeUndefined();
 
 		const dateMoment = moment({

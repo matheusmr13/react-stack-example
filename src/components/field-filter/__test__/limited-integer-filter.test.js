@@ -5,6 +5,7 @@ import { shallow } from 'enzyme';
 describe('LimitedIntegerFilter component', () => {
 	it('should render properly', () => {
 		const spec = {
+			id: 'myId',
 			name: 'Limited integer field',
 			validation: {
 				min: 0,

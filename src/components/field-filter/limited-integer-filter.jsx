@@ -14,8 +14,12 @@ const LimitedIntegerFilter = ({ spec: { validation }, onChange }) => (
 	/>
 );
 
+LimitedIntegerFilter.defaultProps = {
+	onChange: () => {}
+};
+
 LimitedIntegerFilter.propTypes = {
-	onChange: PropTypes.func.isRequired,
+	onChange: PropTypes.func,
 	spec: PropTypes.shape(FilterPropType).isRequired
 };
 
