@@ -1,6 +1,5 @@
 import AppService from 'services/app/service';
 
-
 describe('App service test', () => {
 	const userJson = {
 		access_token: 'token',
@@ -45,13 +44,24 @@ describe('App service test', () => {
 	it('should save and retrieve logged user from storage', () => {
 		expect(AppService.getLoggedUserFromStorage()).toBeNull();
 		AppService.saveUser(userJson);
-		expect(AppService.getLoggedUserFromStorage()).toEqual(userJson);
+		const user = AppService.getLoggedUserFromStorage();
+		expect(user).toHaveProperty('expireDate');
+		delete user.expireDate;
+		expect(user).toEqual(userJson);
 	});
 	it('should check if there is any logged user', () => {
 		expect(AppService.checkLoggedUser()).toBeNull();
 		window.location.hash = userHash;
-		expect(AppService.checkLoggedUser()).toEqual(userJson);
-		expect(AppService.checkLoggedUser()).toEqual(userJson);
+
+		let user = AppService.checkLoggedUser();
+		expect(user).toHaveProperty('expireDate');
+		delete user.expireDate;
+		expect(user).toEqual(userJson);
+
+		user = AppService.checkLoggedUser();
+		expect(user).toHaveProperty('expireDate');
+		delete user.expireDate;
+		expect(user).toEqual(userJson);
+
 	});
-	// checkLoggedUser
 });

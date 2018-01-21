@@ -1,13 +1,28 @@
+import moment from 'moment';
+
 class AppService {
+	static DATETIME_FORMAT = 'YYYYMMDD hhmmss';
 	static checkLoggedUser() {
-		let loggedUser;
 		if (this.hasUserJustLoggedIn()) {
-			loggedUser = this.getLoggedUserFromHash();
+			const loggedInUser = this.getLoggedUserFromHash();
 			this.clearHash();
-			this.saveUser(loggedUser);
-		} else {
-			loggedUser = this.getLoggedUserFromStorage();
+			this.saveUser(loggedInUser);
 		}
+
+		const loggedUser = this.getLoggedUserFromStorage();
+		if (!loggedUser) {
+			return null;
+		}
+
+		loggedUser.expireDate = moment(loggedUser.expireDate, this.DATETIME_FORMAT);
+
+		const expireDate = moment(loggedUser.expireDate);
+		const now = moment();
+
+		if (expireDate.isBefore(now)) {
+			return null;
+		}
+
 		return loggedUser;
 	}
 
@@ -25,13 +40,21 @@ class AppService {
 		return JSON.parse(loggedUserString);
 	}
 
-	static saveUser = (user) => {
-		window.localStorage.setItem('loggedUser', JSON.stringify(user));
+	static saveUser(user) {
+		window.localStorage.setItem('loggedUser', JSON.stringify({
+			...user,
+			expireDate: moment()
+				.add(parseInt(user.expires_in, 10), 'seconds')
+				.format(this.DATETIME_FORMAT)
+		}));
 	}
 
 	static getLoggedUserFromStorage() {
 		const loggedUserString = window.localStorage.getItem('loggedUser');
-		return loggedUserString && JSON.parse(loggedUserString);
+		if (!loggedUserString) {
+			return null;
+		}
+		return JSON.parse(loggedUserString);
 	}
 }
 

@@ -1,16 +1,9 @@
-import Store from 'services/config/redux';
+import SpotifyService from 'services/spotify/service';
 
 const PlaylistService = {
 	filterPlaylists(filters) {
-		const query = Object.keys(filters)
-			.map(k => `${encodeURIComponent(k)}=${encodeURIComponent(filters[k])}`)
-			.join('&');
-		return fetch(`https://api.spotify.com/v1/browse/featured-playlists?${query}`, {
-			headers: {
-				Authorization: `Bearer ${Store.getState().app.loggedUser.access_token}`
-			}
-		})
-			.then(resp => resp.json())
+		return SpotifyService
+			.fetchFeaturedPlaylists(filters)
 			.then(json => json.playlists.items);
 	}
 };

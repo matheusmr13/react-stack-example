@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+
 import PlaylistsContainer from 'services/playlist/container';
 import FilterContainer from 'services/playlist-filter/container';
 import { AppBar, Drawer } from 'material-ui';
@@ -62,5 +64,16 @@ class App extends Component {
 		);
 	}
 }
+
+App.defaultProps = {
+	loggedUser: null
+};
+
+App.propTypes = {
+	fetchLoggedUser: PropTypes.func.isRequired,
+	loggedUser: PropTypes.shape({
+		access_token: PropTypes.string.isRequired
+	})
+};
 
 export default App;
