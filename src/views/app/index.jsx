@@ -31,7 +31,6 @@ class App extends Component {
 
 	render() {
 		const { loggedUser } = this.props;
-		console.info(loggedUser);
 		const { isFilterOpen } = this.state;
 
 		return (
