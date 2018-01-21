@@ -7,7 +7,7 @@ import app from 'services/app/module';
 
 import rootSaga from './saga';
 
-const reducer = combineReducers({
+export const reducers = combineReducers({
 	playlist,
 	filter,
 	app
@@ -17,7 +17,7 @@ const sagaMiddleware = createSagaMiddleware();
 
 
 export default createStore(
-	(state, action) => reducer(state, action),
+	(state, action) => reducers(state, action),
 	applyMiddleware(sagaMiddleware)
 );
 

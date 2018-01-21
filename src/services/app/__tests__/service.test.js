@@ -52,13 +52,17 @@ describe('App service test', () => {
 	it('should check if there is any logged user', () => {
 		expect(AppService.checkLoggedUser()).toBeNull();
 		window.location.hash = userHash;
+		AppService.isTokenExpired = jest.fn(() => false);
 
 		let user = AppService.checkLoggedUser();
+
+		expect(AppService.isTokenExpired).toHaveBeenCalledTimes(1);
 		expect(user).toHaveProperty('expireDate');
 		delete user.expireDate;
 		expect(user).toEqual(userJson);
 
 		user = AppService.checkLoggedUser();
+		expect(AppService.isTokenExpired).toHaveBeenCalledTimes(2);
 		expect(user).toHaveProperty('expireDate');
 		delete user.expireDate;
 		expect(user).toEqual(userJson);

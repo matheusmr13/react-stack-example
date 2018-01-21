@@ -15,15 +15,18 @@ class AppService {
 		}
 
 		loggedUser.expireDate = moment(loggedUser.expireDate, this.DATETIME_FORMAT);
-
-		const expireDate = moment(loggedUser.expireDate);
-		const now = moment();
-
-		if (expireDate.isBefore(now)) {
+		if (this.isTokenExpired(loggedUser)) {
 			return null;
 		}
 
 		return loggedUser;
+	}
+
+	static isTokenExpired(user) {
+		const { expireDate } = user;
+		const now = moment();
+
+		return expireDate.isBefore(now);
 	}
 
 	static hasUserJustLoggedIn() {
