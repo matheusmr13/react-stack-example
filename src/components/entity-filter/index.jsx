@@ -33,5 +33,5 @@ class EntityFilter extends Component {
 		);
 	}
 }
- 
+
 export default EntityFilter;
