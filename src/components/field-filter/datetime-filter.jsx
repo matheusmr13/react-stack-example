@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import { FilterPropType } from 'services/playlist-filter/proptype';
 
 import DatePicker from 'material-ui/DatePicker';
 import TimePicker from 'material-ui/TimePicker';
@@ -52,5 +54,10 @@ class DatetimeFilter extends Component {
 		);
 	}
 }
+
+DatetimeFilter.propTypes = {
+	onChange: PropTypes.func.isRequired,
+	spec: PropTypes.shape(FilterPropType).isRequired
+};
 
 export default DatetimeFilter;

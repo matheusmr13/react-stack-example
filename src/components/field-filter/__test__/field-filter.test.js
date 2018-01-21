@@ -7,7 +7,6 @@ import FieldFilter from 'components/field-filter';
 import {
 	shallow
 } from 'enzyme';
-import moment from 'moment';
 
 const listFilter = {
 	id: 'locale',

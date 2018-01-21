@@ -1,4 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import { FilterPropType } from 'services/playlist-filter/proptype';
+
 import AutoComplete from 'material-ui/AutoComplete';
 
 const ListFilter = ({ spec, onChange }) => (
@@ -13,5 +16,10 @@ const ListFilter = ({ spec, onChange }) => (
 		fullWidth
 	/>
 );
+
+ListFilter.propTypes = {
+	onChange: PropTypes.func.isRequired,
+	spec: PropTypes.shape(FilterPropType).isRequired
+};
 
 export default ListFilter;

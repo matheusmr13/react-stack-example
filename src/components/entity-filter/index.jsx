@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 
 import FieldFilter from 'components/field-filter';
+import PropTypes from 'prop-types';
+import { FilterPropType } from 'services/playlist-filter/proptype';
 
 class EntityFilter extends Component {
 	state = {
@@ -33,5 +35,10 @@ class EntityFilter extends Component {
 		);
 	}
 }
+
+EntityFilter.propTypes = {
+	onChange: PropTypes.func.isRequired,
+	filters: PropTypes.arrayOf(PropTypes.shape(FilterPropType)).isRequired
+};
 
 export default EntityFilter;

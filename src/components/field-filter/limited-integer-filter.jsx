@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import { FilterPropType } from 'services/playlist-filter/proptype';
 
 import Slider from 'material-ui/Slider';
 
@@ -11,5 +13,10 @@ const LimitedIntegerFilter = ({ spec: { validation }, onChange }) => (
 		onChange={(a, value) => onChange(value)}
 	/>
 );
+
+LimitedIntegerFilter.propTypes = {
+	onChange: PropTypes.func.isRequired,
+	spec: PropTypes.shape(FilterPropType).isRequired
+};
 
 export default LimitedIntegerFilter;

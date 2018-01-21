@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import { FilterPropType } from 'services/playlist-filter/proptype';
 
 import ListFilter from './list-filter';
 import DatetimeFilter from './datetime-filter';
 import UnlimitedIntegerFilter from './unlimited-integer-filter';
 import LimitedIntegerFilter from './limited-integer-filter';
-
-import FilterService from 'services/playlist-filter/service';
 
 class FieldFilter extends Component {
 	state = {}
@@ -13,7 +13,6 @@ class FieldFilter extends Component {
 	onChange = (value) => {
 		const { spec } = this.props;
 		this.props.onChange(spec.id, value);
-		// const FilterService.validate)
 	}
 
 	getComponentToRender() {
@@ -61,5 +60,10 @@ class FieldFilter extends Component {
 		return <ComponentToRender spec={spec} onChange={this.onChange} />;
 	}
 }
+
+FieldFilter.propTypes = {
+	onChange: PropTypes.func.isRequired,
+	spec: PropTypes.shape(FilterPropType).isRequired
+};
 
 export default FieldFilter;
