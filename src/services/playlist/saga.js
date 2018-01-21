@@ -5,7 +5,6 @@ import { Actions } from './module';
 
 function* filterPlaylists({ payload: filter }) {
 	try {
-		console.info(filter);
 		const playlits = yield call(() => PlaylistService.filterPlaylists(filter));
 		yield put(Actions.setPlaylistList(playlits));
 	} catch (e) {

@@ -5,7 +5,8 @@ import { Actions } from './module';
 
 function* fetchLoggedUser() {
 	try {
-		const loggedUser = yield call(() => AppService.getLoggedUser());
+		const loggedUser = yield call(() => AppService.checkLoggedUser());
+
 		yield put(Actions.setLoggedUser(loggedUser));
 	} catch (e) {
 		yield () => console.info(e);

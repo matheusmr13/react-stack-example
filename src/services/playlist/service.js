@@ -1,4 +1,4 @@
-import AppService from 'services/app/service';
+import Store from 'services/config/redux';
 
 const PlaylistService = {
 	filterPlaylists(filters) {
@@ -7,7 +7,7 @@ const PlaylistService = {
 			.join('&');
 		return fetch(`https://api.spotify.com/v1/browse/featured-playlists?${query}`, {
 			headers: {
-				Authorization: `Bearer ${AppService.getLoggedUser().access_token}`
+				Authorization: `Bearer ${Store.getState().app.loggedUser.access_token}`
 			}
 		})
 			.then(resp => resp.json())
