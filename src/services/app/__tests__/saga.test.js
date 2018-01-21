@@ -16,7 +16,7 @@ jest.mock('services/spotify/service', () => ({
 
 AppService.checkLoggedUser = jest.fn(() => Promise.resolve(user));
 
-describe('ourSaga test', () => {
+describe('AppSaga', () => {
 	let sagaTester = null;
 
 	beforeEach(() => {
@@ -27,7 +27,7 @@ describe('ourSaga test', () => {
 		sagaTester.start(AppSaga);
 	});
 
-	it('should retrieve data from the server and send a SUCCESS action', async () => {
+	it('should fetch user and set logged user on state', async () => {
 		sagaTester.dispatch(Actions.fetchLoggedUser());
 		await sagaTester.waitFor(Actions.setLoggedUser.toString());
 		let lastAction = sagaTester.getLatestCalledAction();
