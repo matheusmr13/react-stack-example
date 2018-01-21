@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 
-import { Actions } from 'services/filter/module';
-import FilterView from 'views/filter';
+import { Actions } from 'services/playlist-filter/module';
+import FilterView from 'views/playlist-filter';
 
 const mapStateToProps = state => ({
 	possibleFilters: state.filter.possibleFilters,

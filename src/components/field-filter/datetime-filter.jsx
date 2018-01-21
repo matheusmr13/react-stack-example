@@ -33,9 +33,21 @@ class DatetimeFilter extends Component {
 	render() {
 		const { spec } = this.props;
 		return (
-			<div>
-				<DatePicker hintText={spec.name} onChange={(e, value) => this.onChange('date', value)} />
-				<TimePicker hintText={spec.name} onChange={(e, value) => this.onChange('time', value)} />
+			<div style={{ width: '100%' }}>
+				<div style={{ width: 'calc(60% - 8px)', marginRight: '8px', display: 'inline-block' }}>
+					<DatePicker
+						hintText={spec.name}
+						onChange={(e, value) => this.onChange('date', value)}
+						fullWidth
+					/>
+				</div>
+				<div style={{ width: '40%', display: 'inline-block' }}>
+					<TimePicker
+						hintText="00:00"
+						onChange={(e, value) => this.onChange('time', value)}
+						fullWidth
+					/>
+				</div>
 			</div>
 		);
 	}

@@ -10,6 +10,7 @@ const ListFilter = ({ spec, onChange }) => (
 		dataSource={spec.values}
 		dataSourceConfig={{ text: 'name' }}
 		openOnFocus
+		fullWidth
 	/>
 );
 

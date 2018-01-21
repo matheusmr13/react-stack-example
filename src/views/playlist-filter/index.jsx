@@ -18,7 +18,7 @@ class Filter extends Component {
 		}
 
 		return (
-			<div>
+			<div style={{ padding: '16px' }}>
 				<EntityFilter
 					filters={possibleFilters}
 					values={selectedFilters}

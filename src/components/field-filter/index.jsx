@@ -5,7 +5,7 @@ import DatetimeFilter from './datetime-filter';
 import UnlimitedIntegerFilter from './unlimited-integer-filter';
 import LimitedIntegerFilter from './limited-integer-filter';
 
-import FilterService from 'services/filter/service';
+import FilterService from 'services/playlist-filter/service';
 
 class FieldFilter extends Component {
 	state = {}

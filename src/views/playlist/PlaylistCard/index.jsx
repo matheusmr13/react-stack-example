@@ -10,5 +10,5 @@ const PlaylistCard = ({ playlist }) => {
 		</div>
 	);
 };
- 
+
 export default PlaylistCard;
