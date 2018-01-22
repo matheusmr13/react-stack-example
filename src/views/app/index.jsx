@@ -40,8 +40,8 @@ class App extends Component {
 				<AppBar
 					titleStyle={{ textAlign: 'center' }}
 					title="Spotifood"
-					showMenuIconButton={loggedUser && !isFilterOpen}
-					iconElementLeft={<IconButton><FilterListIcon /></IconButton>}
+					showMenuIconButton={loggedUser}
+					iconElementLeft={<IconButton style={{ position: 'absolute' }}><FilterListIcon /></IconButton>}
 					onLeftIconButtonClick={this.onOpenAppBar}
 				/>
 				{

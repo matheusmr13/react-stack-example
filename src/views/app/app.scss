@@ -1,5 +1,8 @@
 .app {
 	&--menu-open {
 		padding-left: 256px;
+		@media screen and (max-width: 568px) {
+			padding-left: 0;
+		}
 	}
 }

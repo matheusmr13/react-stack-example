@@ -1,10 +1,16 @@
 .playlists {
 	background-color: #000;
+	@media screen and (max-width: 568px) {
+		text-align: center;
+	}
 
 	&__header {
 		padding: 12px;
 		display: flex;
 		justify-content: space-between;
+		@media screen and (max-width: 568px) {
+			flex-direction: column-reverse;
+		}
 	}
 
 	&__content {
@@ -17,6 +23,9 @@
 		font-size: 30px;
 		color: #fff;
 		font-weight: bold;
+		@media screen and (max-width: 568px) {
+			margin-top: 32px;
+		}
 	}
 
 	&__logged-user {
@@ -25,11 +34,13 @@
 		font-weight: bold;
 	}
 
-	&__title {
-	}
-
 	&__filter {
 		padding-left: 12px;
+		width: 300px;
+
+		@media screen and (max-width: 568px) {
+			margin: auto;
+		}
 
 		input {
 			color: #fff !important;

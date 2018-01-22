@@ -63,6 +63,7 @@ class Playlists extends Component {
 							hintText="Filter"
 							onChange={this.onFilterByName}
 							value={nameFilter}
+							fullWidth
 						/>
 					</div>
 					<div className="playlists__list-container">

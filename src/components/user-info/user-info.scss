@@ -6,9 +6,19 @@
 	outline: none;
 	text-decoration: none;
 
+	@media screen and (max-width: 568px) {
+		text-align: center;
+		flex-direction: column-reverse;
+	}
+
 	&__data {
 		text-align: right;
 		margin-right: 8px;
+		@media screen and (max-width: 568px) {
+			text-align: center;
+			margin: 0;
+			margin-top: 8px;
+		}
 	}
 
 	&__name {
