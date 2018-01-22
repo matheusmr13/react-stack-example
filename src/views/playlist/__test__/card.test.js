@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from 'enzyme';
-import PlaylistCard from './index';
+import PlaylistCard from 'views/playlist/card';
 
 const playlist = {
 	external_urls: {

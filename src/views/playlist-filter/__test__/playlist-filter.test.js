@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import EntityFilter from 'components/entity-filter';
-import PlaylistFilter from './index';
+import PlaylistFilter from 'views/playlist-filter';
 
 const filters = [{
 	id: 'locale',

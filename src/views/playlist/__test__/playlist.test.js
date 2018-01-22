@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import PlaylistList from './index';
-import PlaylistCard from './card';
+import PlaylistList from 'views/playlist';
+import PlaylistCard from 'views/playlist/card';
 
 const playlist = {
 	external_urls: {
