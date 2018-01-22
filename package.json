@@ -1,6 +1,7 @@
 {
   "name": "spotifood",
   "version": "0.1.0",
+  "homepage": "https://matheusmr13.github.io/ifood-frontend-test/",
   "dependencies": {
     "material-ui": "^0.20.0",
     "moment": "^2.20.1",
@@ -19,12 +20,15 @@
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
     "eslint-config-airbnb": "^16.1.0",
+    "gh-pages": "^1.1.0",
     "node-sass-chokidar": "^0.0.3",
     "npm-run-all": "^4.1.2",
     "redux-saga-tester": "^1.0.378",
     "sass-lint": "^1.12.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start-js": "cross-env NODE_PATH=./src react-scripts start",
     "eject": "react-scripts eject",
     "start": "npm-run-all -p watch-css start-js",

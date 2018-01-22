@@ -9,9 +9,6 @@ import CloseIcon from 'material-ui/svg-icons/navigation/close';
 import FilterListIcon from 'material-ui/svg-icons/content/filter-list';
 import Login from 'views/login';
 
-import './App.css';
-
-
 class App extends Component {
 	state = {
 		isFilterOpen: false
