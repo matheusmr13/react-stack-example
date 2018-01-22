@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import './user-info.css';
 
 const UserInfo = ({ user, onLogout }) => {
-	if (!user) return '';
+	if (!user || !user.info) return '';
 
 	const {
 		info: {
@@ -58,7 +58,7 @@ UserInfo.propTypes = {
 			followers: PropTypes.shape({
 				total: PropTypes.number.isRequired
 			}).isRequired
-		}).isRequired
+		})
 	}),
 	onLogout: PropTypes.func.isRequired
 };
