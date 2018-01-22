@@ -1,0 +1,120 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App component should render properly 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <App
+    fetchLoggedUser={[Function]}
+    loggedUser={null}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <AppBar
+          iconClassNameRight="muidocs-icon-navigation-expand-more"
+          onLeftIconButtonClick={[Function]}
+          showMenuIconButton={false}
+          title="Spotifood"
+          zDepth={1}
+/>,
+        <Login />,
+      ],
+      "className": "filter-open",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "iconClassNameRight": "muidocs-icon-navigation-expand-more",
+          "onLeftIconButtonClick": [Function],
+          "showMenuIconButton": false,
+          "title": "Spotifood",
+          "zDepth": 1,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <AppBar
+            iconClassNameRight="muidocs-icon-navigation-expand-more"
+            onLeftIconButtonClick={[Function]}
+            showMenuIconButton={false}
+            title="Spotifood"
+            zDepth={1}
+/>,
+          <Login />,
+        ],
+        "className": "filter-open",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "iconClassNameRight": "muidocs-icon-navigation-expand-more",
+            "onLeftIconButtonClick": [Function],
+            "showMenuIconButton": false,
+            "title": "Spotifood",
+            "zDepth": 1,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
