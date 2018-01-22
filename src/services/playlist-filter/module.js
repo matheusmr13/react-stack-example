@@ -2,8 +2,8 @@ import { createActions, handleActions } from 'redux-actions';
 
 const initialState = {
 	loadingFilters: true,
-	possibleFilters: null,
-	selectedFilters: null
+	possibleFilters: [],
+	selectedFilters: {}
 };
 
 export const Actions = createActions({

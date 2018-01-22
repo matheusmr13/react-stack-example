@@ -36,15 +36,18 @@ class DatetimeFilter extends Component {
 		const { spec } = this.props;
 		return (
 			<div style={{ width: '100%' }}>
+				<div>{spec.name}</div>
 				<div style={{ width: 'calc(60% - 8px)', marginRight: '8px', display: 'inline-block' }}>
 					<DatePicker
-						hintText={spec.name}
+						formatDate={date => moment(date).format('DD/MM/YYYY')}
+						hintText="DD/MM/YYYY"
 						onChange={(e, value) => this.onChange('date', value)}
 						fullWidth
 					/>
 				</div>
 				<div style={{ width: '40%', display: 'inline-block' }}>
 					<TimePicker
+						format="24hr"
 						hintText="00:00"
 						onChange={(e, value) => this.onChange('time', value)}
 						fullWidth

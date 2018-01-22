@@ -5,7 +5,8 @@ import PlaylistsContainer from 'services/playlist/container';
 import FilterContainer from 'services/playlist-filter/container';
 import { AppBar, Drawer } from 'material-ui';
 import IconButton from 'material-ui/IconButton';
-import StarBorder from 'material-ui/svg-icons/navigation/close';
+import CloseIcon from 'material-ui/svg-icons/navigation/close';
+import FilterListIcon from 'material-ui/svg-icons/content/filter-list';
 import Login from 'views/login';
 
 import './App.css';
@@ -13,7 +14,7 @@ import './App.css';
 
 class App extends Component {
 	state = {
-		isFilterOpen: true
+		isFilterOpen: false
 	}
 	componentDidMount() {
 		this.props.fetchLoggedUser();
@@ -39,8 +40,8 @@ class App extends Component {
 			<div className={isFilterOpen ? 'filter-open' : null}>
 				<AppBar
 					title="Spotifood"
-					showMenuIconButton={!isFilterOpen}
-					iconClassNameRight="muidocs-icon-navigation-expand-more"
+					showMenuIconButton={loggedUser && !isFilterOpen}
+					iconElementLeft={<IconButton><FilterListIcon /></IconButton>}
 					onLeftIconButtonClick={this.onOpenAppBar}
 				/>
 				{
@@ -50,7 +51,7 @@ class App extends Component {
 								open={isFilterOpen}
 							>
 								<IconButton onClick={this.onCloseAppBar} >
-									<StarBorder />
+									<CloseIcon />
 								</IconButton>
 								<FilterContainer
 									onCloseAppBar={this.onCloseAppBar}

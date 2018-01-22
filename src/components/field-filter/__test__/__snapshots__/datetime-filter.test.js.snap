@@ -26,6 +26,9 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
+        <div>
+          Date field
+</div>,
         <div
           style={
                     Object {
@@ -41,9 +44,10 @@ ShallowWrapper {
                     disableYearSelection={false}
                     disabled={false}
                     firstDayOfWeek={1}
+                    formatDate={[Function]}
                     fullWidth={true}
                     hideCalendarDate={false}
-                    hintText="Date field"
+                    hintText="DD/MM/YYYY"
                     onChange={[Function]}
                     openToYearSelection={false}
                     style={Object {}}
@@ -62,7 +66,7 @@ ShallowWrapper {
                     cancelLabel="Cancel"
                     defaultTime={null}
                     disabled={false}
-                    format="ampm"
+                    format="24hr"
                     fullWidth={true}
                     hintText="00:00"
                     minutesStep={1}
@@ -85,15 +89,27 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
+          "children": "Date field",
+        },
+        "ref": null,
+        "rendered": "Date field",
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
           "children": <DatePicker
             autoOk={false}
             container="dialog"
             disableYearSelection={false}
             disabled={false}
             firstDayOfWeek={1}
+            formatDate={[Function]}
             fullWidth={true}
             hideCalendarDate={false}
-            hintText="Date field"
+            hintText="DD/MM/YYYY"
             onChange={[Function]}
             openToYearSelection={false}
             style={Object {}}
@@ -115,9 +131,10 @@ ShallowWrapper {
             "disableYearSelection": false,
             "disabled": false,
             "firstDayOfWeek": 1,
+            "formatDate": [Function],
             "fullWidth": true,
             "hideCalendarDate": false,
-            "hintText": "Date field",
+            "hintText": "DD/MM/YYYY",
             "onChange": [Function],
             "openToYearSelection": false,
             "style": Object {},
@@ -138,7 +155,7 @@ ShallowWrapper {
             cancelLabel="Cancel"
             defaultTime={null}
             disabled={false}
-            format="ampm"
+            format="24hr"
             fullWidth={true}
             hintText="00:00"
             minutesStep={1}
@@ -163,7 +180,7 @@ ShallowWrapper {
             "cancelLabel": "Cancel",
             "defaultTime": null,
             "disabled": false,
-            "format": "ampm",
+            "format": "24hr",
             "fullWidth": true,
             "hintText": "00:00",
             "minutesStep": 1,
@@ -189,6 +206,9 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
+          <div>
+            Date field
+</div>,
           <div
             style={
                         Object {
@@ -204,9 +224,10 @@ ShallowWrapper {
                         disableYearSelection={false}
                         disabled={false}
                         firstDayOfWeek={1}
+                        formatDate={[Function]}
                         fullWidth={true}
                         hideCalendarDate={false}
-                        hintText="Date field"
+                        hintText="DD/MM/YYYY"
                         onChange={[Function]}
                         openToYearSelection={false}
                         style={Object {}}
@@ -225,7 +246,7 @@ ShallowWrapper {
                         cancelLabel="Cancel"
                         defaultTime={null}
                         disabled={false}
-                        format="ampm"
+                        format="24hr"
                         fullWidth={true}
                         hintText="00:00"
                         minutesStep={1}
@@ -248,15 +269,27 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
+            "children": "Date field",
+          },
+          "ref": null,
+          "rendered": "Date field",
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
             "children": <DatePicker
               autoOk={false}
               container="dialog"
               disableYearSelection={false}
               disabled={false}
               firstDayOfWeek={1}
+              formatDate={[Function]}
               fullWidth={true}
               hideCalendarDate={false}
-              hintText="Date field"
+              hintText="DD/MM/YYYY"
               onChange={[Function]}
               openToYearSelection={false}
               style={Object {}}
@@ -278,9 +311,10 @@ ShallowWrapper {
               "disableYearSelection": false,
               "disabled": false,
               "firstDayOfWeek": 1,
+              "formatDate": [Function],
               "fullWidth": true,
               "hideCalendarDate": false,
-              "hintText": "Date field",
+              "hintText": "DD/MM/YYYY",
               "onChange": [Function],
               "openToYearSelection": false,
               "style": Object {},
@@ -301,7 +335,7 @@ ShallowWrapper {
               cancelLabel="Cancel"
               defaultTime={null}
               disabled={false}
-              format="ampm"
+              format="24hr"
               fullWidth={true}
               hintText="00:00"
               minutesStep={1}
@@ -326,7 +360,7 @@ ShallowWrapper {
               "cancelLabel": "Cancel",
               "defaultTime": null,
               "disabled": false,
-              "format": "ampm",
+              "format": "24hr",
               "fullWidth": true,
               "hintText": "00:00",
               "minutesStep": 1,

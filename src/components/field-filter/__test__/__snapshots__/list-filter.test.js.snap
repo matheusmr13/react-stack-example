@@ -23,67 +23,137 @@ ShallowWrapper {
   },
   Symbol(enzyme.__node__): Object {
     "instance": null,
-    "key": "myId",
+    "key": undefined,
     "nodeType": "class",
     "props": Object {
-      "anchorOrigin": Object {
-        "horizontal": "left",
-        "vertical": "bottom",
-      },
-      "animated": true,
-      "dataSource": Array [],
-      "dataSourceConfig": Object {
-        "text": "name",
-      },
-      "disableFocusRipple": true,
-      "filter": [Function],
+      "autoWidth": false,
+      "children": Array [
+        <MenuItem
+          anchorOrigin={
+                    Object {
+                              "horizontal": "right",
+                              "vertical": "top",
+                            }
+          }
+          checked={false}
+          desktop={false}
+          disabled={false}
+          focusState="none"
+          insetChildren={false}
+          primaryText=""
+          targetOrigin={
+                    Object {
+                              "horizontal": "left",
+                              "vertical": "top",
+                            }
+          }
+          value={null}
+/>,
+        Array [],
+      ],
+      "disabled": false,
       "floatingLabelText": "List field",
       "fullWidth": true,
-      "menuCloseDelay": 300,
-      "onNewRequest": [Function],
-      "onUpdateInput": [Function],
-      "open": false,
-      "openOnFocus": true,
-      "targetOrigin": Object {
-        "horizontal": "left",
-        "vertical": "top",
-      },
+      "multiple": false,
+      "onChange": [Function],
+      "value": null,
     },
     "ref": null,
-    "rendered": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "anchorOrigin": Object {
+            "horizontal": "right",
+            "vertical": "top",
+          },
+          "checked": false,
+          "desktop": false,
+          "disabled": false,
+          "focusState": "none",
+          "insetChildren": false,
+          "primaryText": "",
+          "targetOrigin": Object {
+            "horizontal": "left",
+            "vertical": "top",
+          },
+          "value": null,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
     "type": [Function],
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
-      "key": "myId",
+      "key": undefined,
       "nodeType": "class",
       "props": Object {
-        "anchorOrigin": Object {
-          "horizontal": "left",
-          "vertical": "bottom",
-        },
-        "animated": true,
-        "dataSource": Array [],
-        "dataSourceConfig": Object {
-          "text": "name",
-        },
-        "disableFocusRipple": true,
-        "filter": [Function],
+        "autoWidth": false,
+        "children": Array [
+          <MenuItem
+            anchorOrigin={
+                        Object {
+                                    "horizontal": "right",
+                                    "vertical": "top",
+                                  }
+            }
+            checked={false}
+            desktop={false}
+            disabled={false}
+            focusState="none"
+            insetChildren={false}
+            primaryText=""
+            targetOrigin={
+                        Object {
+                                    "horizontal": "left",
+                                    "vertical": "top",
+                                  }
+            }
+            value={null}
+/>,
+          Array [],
+        ],
+        "disabled": false,
         "floatingLabelText": "List field",
         "fullWidth": true,
-        "menuCloseDelay": 300,
-        "onNewRequest": [Function],
-        "onUpdateInput": [Function],
-        "open": false,
-        "openOnFocus": true,
-        "targetOrigin": Object {
-          "horizontal": "left",
-          "vertical": "top",
-        },
+        "multiple": false,
+        "onChange": [Function],
+        "value": null,
       },
       "ref": null,
-      "rendered": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "anchorOrigin": Object {
+              "horizontal": "right",
+              "vertical": "top",
+            },
+            "checked": false,
+            "desktop": false,
+            "disabled": false,
+            "focusState": "none",
+            "insetChildren": false,
+            "primaryText": "",
+            "targetOrigin": Object {
+              "horizontal": "left",
+              "vertical": "top",
+            },
+            "value": null,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
       "type": [Function],
     },
   ],

@@ -22,15 +22,25 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <AppBar
-          iconClassNameRight="muidocs-icon-navigation-expand-more"
+          iconElementLeft={
+                    <IconButton
+                              disableTouchRipple={false}
+                              disabled={false}
+                              iconStyle={Object {}}
+                              tooltipPosition="bottom-center"
+                              touch={false}
+                    >
+                              <ContentFilterList />
+                    </IconButton>
+          }
           onLeftIconButtonClick={[Function]}
-          showMenuIconButton={false}
+          showMenuIconButton={null}
           title="Spotifood"
           zDepth={1}
 />,
         <Login />,
       ],
-      "className": "filter-open",
+      "className": null,
     },
     "ref": null,
     "rendered": Array [
@@ -39,9 +49,17 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "iconClassNameRight": "muidocs-icon-navigation-expand-more",
+          "iconElementLeft": <IconButton
+            disableTouchRipple={false}
+            disabled={false}
+            iconStyle={Object {}}
+            tooltipPosition="bottom-center"
+            touch={false}
+>
+            <ContentFilterList />
+</IconButton>,
           "onLeftIconButtonClick": [Function],
-          "showMenuIconButton": false,
+          "showMenuIconButton": null,
           "title": "Spotifood",
           "zDepth": 1,
         },
@@ -69,15 +87,25 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <AppBar
-            iconClassNameRight="muidocs-icon-navigation-expand-more"
+            iconElementLeft={
+                        <IconButton
+                                    disableTouchRipple={false}
+                                    disabled={false}
+                                    iconStyle={Object {}}
+                                    tooltipPosition="bottom-center"
+                                    touch={false}
+                        >
+                                    <ContentFilterList />
+                        </IconButton>
+            }
             onLeftIconButtonClick={[Function]}
-            showMenuIconButton={false}
+            showMenuIconButton={null}
             title="Spotifood"
             zDepth={1}
 />,
           <Login />,
         ],
-        "className": "filter-open",
+        "className": null,
       },
       "ref": null,
       "rendered": Array [
@@ -86,9 +114,17 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "iconClassNameRight": "muidocs-icon-navigation-expand-more",
+            "iconElementLeft": <IconButton
+              disableTouchRipple={false}
+              disabled={false}
+              iconStyle={Object {}}
+              tooltipPosition="bottom-center"
+              touch={false}
+>
+              <ContentFilterList />
+</IconButton>,
             "onLeftIconButtonClick": [Function],
-            "showMenuIconButton": false,
+            "showMenuIconButton": null,
             "title": "Spotifood",
             "zDepth": 1,
           },

@@ -27,43 +27,121 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "class",
+    "nodeType": "host",
     "props": Object {
-      "axis": "x",
-      "defaultValue": 5,
-      "disableFocusRipple": false,
-      "disabled": false,
-      "max": 10,
-      "min": 0,
-      "onChange": [Function],
-      "required": true,
-      "step": 1,
-      "style": Object {},
+      "children": Array [
+        <div>
+          Limited integer field
+</div>,
+        <Slider
+          axis="x"
+          defaultValue={5}
+          disableFocusRipple={false}
+          disabled={false}
+          max={10}
+          min={0}
+          onChange={[Function]}
+          required={true}
+          step={1}
+          style={Object {}}
+/>,
+      ],
     },
     "ref": null,
-    "rendered": null,
-    "type": [Function],
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Limited integer field",
+        },
+        "ref": null,
+        "rendered": "Limited integer field",
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "axis": "x",
+          "defaultValue": 5,
+          "disableFocusRipple": false,
+          "disabled": false,
+          "max": 10,
+          "min": 0,
+          "onChange": [Function],
+          "required": true,
+          "step": 1,
+          "style": Object {},
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "class",
+      "nodeType": "host",
       "props": Object {
-        "axis": "x",
-        "defaultValue": 5,
-        "disableFocusRipple": false,
-        "disabled": false,
-        "max": 10,
-        "min": 0,
-        "onChange": [Function],
-        "required": true,
-        "step": 1,
-        "style": Object {},
+        "children": Array [
+          <div>
+            Limited integer field
+</div>,
+          <Slider
+            axis="x"
+            defaultValue={5}
+            disableFocusRipple={false}
+            disabled={false}
+            max={10}
+            min={0}
+            onChange={[Function]}
+            required={true}
+            step={1}
+            style={Object {}}
+/>,
+        ],
       },
       "ref": null,
-      "rendered": null,
-      "type": [Function],
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Limited integer field",
+          },
+          "ref": null,
+          "rendered": "Limited integer field",
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "axis": "x",
+            "defaultValue": 5,
+            "disableFocusRipple": false,
+            "disabled": false,
+            "max": 10,
+            "min": 0,
+            "onChange": [Function],
+            "required": true,
+            "step": 1,
+            "style": Object {},
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
     },
   ],
   Symbol(enzyme.__options__): Object {
