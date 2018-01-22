@@ -10,10 +10,14 @@ class EntityFilter extends Component {
 	}
 
 	onChange = (field, value) => {
-		const { filters } = this.state;
+		const { filters } = { ...this.state };
 		const { onChange } = this.props;
 
-		filters[field] = value;
+		if (value) {
+			filters[field] = value;
+		} else {
+			delete filters[field];
+		}
 		this.setState({
 			filters
 		});
