@@ -50,14 +50,16 @@ class App extends Component {
 							<Drawer
 								open={isFilterOpen}
 							>
-								<IconButton onClick={this.onCloseAppBar} >
-									<CloseIcon />
+								<IconButton onClick={this.onCloseAppBar}>
+									<CloseIcon color="#fff" />
 								</IconButton>
 								<FilterContainer
 									onCloseAppBar={this.onCloseAppBar}
 								/>
 							</Drawer>
-							<PlaylistsContainer />
+							<PlaylistsContainer
+								loggedUser={loggedUser}
+							/>
 						</React.Fragment>
 					) : <Login />
 				}

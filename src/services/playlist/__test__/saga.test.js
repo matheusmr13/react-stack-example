@@ -4,7 +4,7 @@ import PlaylistSaga from 'services/playlist/saga';
 import { reducers } from 'services/config/redux';
 
 jest.mock('services/spotify/service', () => ({
-	fetchFeaturedPlaylists: () => Promise.resolve({ playlists: { items: Array(5).fill({}) } })
+	fetchFeaturedPlaylists: () => Promise.resolve({ message: 'my featured', playlists: { items: Array(5).fill({}) } })
 }));
 
 describe('PlaylistSaga', () => {
@@ -23,6 +23,6 @@ describe('PlaylistSaga', () => {
 		await sagaTester.waitFor(Actions.setPlaylistList.toString());
 
 		const lastAction = sagaTester.getLatestCalledAction();
-		expect(lastAction.payload).toHaveLength(5);
+		expect(lastAction.payload).toEqual({ message: 'my featured', playlists: { items: Array(5).fill({}) } });
 	});
 });

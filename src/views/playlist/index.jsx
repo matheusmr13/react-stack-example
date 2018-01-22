@@ -35,7 +35,7 @@ class Playlists extends Component {
 	filterPlaylists(playlists) {
 		const { nameFilter } = this.state;
 		this.setState({
-			filteredPlaylists: playlists
+			filteredPlaylists: playlists.playlists.items
 				.filter(playlist => playlist.name
 					.toLowerCase()
 					.indexOf(nameFilter.toLowerCase()) > -1)
@@ -43,7 +43,7 @@ class Playlists extends Component {
 	}
 
 	render() {
-		const { loadingPlaylists } = this.props;
+		const { loadingPlaylists, playlists, loggedUser } = this.props;
 		const { nameFilter, filteredPlaylists } = this.state;
 
 		if (loadingPlaylists) {
@@ -52,7 +52,8 @@ class Playlists extends Component {
 		return (
 			<div className="playlists">
 				<div className="playlists__title">
-					ASD
+					<div>{loggedUser && loggedUser.info && `Hello ${loggedUser.info.display_name}!`}</div>
+					<div>{playlists.message}</div>
 				</div>
 				<div className="playlists__filter">
 					<TextField
@@ -79,10 +80,25 @@ class Playlists extends Component {
 	}
 }
 
+Playlists.defaultProps = {
+	playlists: {},
+	loggedUser: null
+};
+
 Playlists.propTypes = {
+	loggedUser: PropTypes.shape({
+		info: PropTypes.shape({
+			display_name: PropTypes.string
+		})
+	}),
 	fetchInitialPlaylists: PropTypes.func.isRequired,
 	loadingPlaylists: PropTypes.bool.isRequired,
-	playlists: PropTypes.arrayOf(PropTypes.shape(PlaylistPropType)).isRequired
+	playlists: PropTypes.shape({
+		message: PropTypes.string.isRequired,
+		playlists: PropTypes.shape({
+			items: PropTypes.arrayOf(PropTypes.shape(PlaylistPropType)).isRequired
+		}).isRequired
+	})
 };
 
 export default Playlists;

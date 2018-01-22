@@ -2,7 +2,7 @@ import { createActions, handleActions } from 'redux-actions';
 
 const initialState = {
 	loadingPlaylists: true,
-	playlists: []
+	playlists: null
 };
 
 export const Actions = createActions({

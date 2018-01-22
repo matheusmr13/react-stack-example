@@ -2,12 +2,13 @@ import PlaylistService from 'services/playlist/service';
 import SpotifyService from 'services/spotify/service';
 
 describe('PlaylistService', () => {
-	SpotifyService.fetchFeaturedPlaylists = jest.fn(() => Promise.resolve({
+	const featuredPlaylists = {
 		message: 'myMessage',
 		playlists: {
 			items: Array(5).fill({ name: 'my playlist' })
 		}
-	}));
+	};
+	SpotifyService.fetchFeaturedPlaylists = jest.fn(() => Promise.resolve(featuredPlaylists));
 	it('should get playlists from spotify service', (done) => {
 		const filter = {
 			limit: 5,
@@ -15,7 +16,7 @@ describe('PlaylistService', () => {
 		};
 		expect.assertions(1);
 		PlaylistService.filterPlaylists(filter).then((playlists) => {
-			expect(playlists).toHaveLength(5);
+			expect(playlists).toEqual(featuredPlaylists);
 			done();
 		});
 	});

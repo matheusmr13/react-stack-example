@@ -24,10 +24,17 @@ const playlists = [{ ...playlist }, {
 	name: 'dif name'
 }];
 
+const featured = {
+	message: 'myMessage',
+	playlists: {
+		items: playlists
+	}
+};
+
 describe('Playlist component', () => {
 	const fetchInitialPlaylists = jest.fn();
 	const playlistList = shallow(<PlaylistList
-		playlists={[]}
+		playlists={null}
 		fetchInitialPlaylists={fetchInitialPlaylists}
 		loadingPlaylists
 	/>);
@@ -36,12 +43,12 @@ describe('Playlist component', () => {
 	});
 	it('should render list properly', () => {
 		playlistList.setProps({
-			playlists,
+			playlists: featured,
 			fetchInitialPlaylists,
 			loadingPlaylists: false
 		});
 		playlistList.setProps({
-			playlists,
+			playlists: featured,
 			fetchInitialPlaylists,
 			loadingPlaylists: false
 		});

@@ -7,45 +7,51 @@ ShallowWrapper {
   Symbol(enzyme.__unrendered__): <Playlists
     fetchInitialPlaylists={[Function]}
     loadingPlaylists={false}
+    loggedUser={null}
     playlists={
-        Array [
-            Object {
-              "external_urls": Object {
-                "spotify": "mylink",
-              },
-              "id": "6ftJBzU2LLQcaKefMi7ee7",
-              "images": Array [
+        Object {
+            "message": "myMessage",
+            "playlists": Object {
+              "items": Array [
                 Object {
-                  "url": "myotherlink",
+                  "external_urls": Object {
+                    "spotify": "mylink",
+                  },
+                  "id": "6ftJBzU2LLQcaKefMi7ee7",
+                  "images": Array [
+                    Object {
+                      "url": "myotherlink",
+                    },
+                  ],
+                  "name": "my playlist",
+                  "owner": Object {
+                    "external_urls": Object {
+                      "spotify": "owner link",
+                    },
+                    "id": "ownerid",
+                  },
+                },
+                Object {
+                  "external_urls": Object {
+                    "spotify": "mylink",
+                  },
+                  "id": "6ftJBzU2LLQcaKefMi7ee7",
+                  "images": Array [
+                    Object {
+                      "url": "myotherlink",
+                    },
+                  ],
+                  "name": "dif name",
+                  "owner": Object {
+                    "external_urls": Object {
+                      "spotify": "owner link",
+                    },
+                    "id": "ownerid",
+                  },
                 },
               ],
-              "name": "my playlist",
-              "owner": Object {
-                "external_urls": Object {
-                  "spotify": "owner link",
-                },
-                "id": "ownerid",
-              },
             },
-            Object {
-              "external_urls": Object {
-                "spotify": "mylink",
-              },
-              "id": "6ftJBzU2LLQcaKefMi7ee7",
-              "images": Array [
-                Object {
-                  "url": "myotherlink",
-                },
-              ],
-              "name": "dif name",
-              "owner": Object {
-                "external_urls": Object {
-                  "spotify": "owner link",
-                },
-                "id": "ownerid",
-              },
-            },
-          ]
+          }
     }
 />,
   Symbol(enzyme.__renderer__): Object {
@@ -64,7 +70,10 @@ ShallowWrapper {
         <div
           className="playlists__title"
 >
-          ASD
+          <div />
+          <div>
+                    myMessage
+          </div>
 </div>,
         <div
           className="playlists__filter"
@@ -144,11 +153,39 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "ASD",
+          "children": Array [
+            <div />,
+            <div>
+              myMessage
+</div>,
+          ],
           "className": "playlists__title",
         },
         "ref": null,
-        "rendered": "ASD",
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": null,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "myMessage",
+            },
+            "ref": null,
+            "rendered": "myMessage",
+            "type": "div",
+          },
+        ],
         "type": "div",
       },
       Object {
@@ -378,7 +415,10 @@ ShallowWrapper {
           <div
             className="playlists__title"
 >
-            ASD
+            <div />
+            <div>
+                        myMessage
+            </div>
 </div>,
           <div
             className="playlists__filter"
@@ -458,11 +498,39 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "ASD",
+            "children": Array [
+              <div />,
+              <div>
+                myMessage
+</div>,
+            ],
             "className": "playlists__title",
           },
           "ref": null,
-          "rendered": "ASD",
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": null,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "myMessage",
+              },
+              "ref": null,
+              "rendered": "myMessage",
+              "type": "div",
+            },
+          ],
           "type": "div",
         },
         Object {
@@ -700,7 +768,8 @@ ShallowWrapper {
   Symbol(enzyme.__unrendered__): <Playlists
     fetchInitialPlaylists={[Function]}
     loadingPlaylists={true}
-    playlists={Array []}
+    loggedUser={null}
+    playlists={null}
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
