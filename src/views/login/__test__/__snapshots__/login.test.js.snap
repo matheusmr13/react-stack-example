@@ -9,7 +9,7 @@ initialize {
         "data": "Welcome to Spotifood",
         "next": Object {
           "attribs": Object {
-            "href": "https://accounts.spotify.com/authorize?client_id=a94d7c3f7ae64cd4a78bd9b7b02c08d9&response_type=token&redirect_uri=http://localhost/&state=123",
+            "href": "https://accounts.spotify.com/authorize?client_id=a94d7c3f7ae64cd4a78bd9b7b02c08d9&response_type=token&redirect_uri=http://localhost/",
           },
           "children": Array [
             Object {
@@ -39,7 +39,7 @@ initialize {
       },
       Object {
         "attribs": Object {
-          "href": "https://accounts.spotify.com/authorize?client_id=a94d7c3f7ae64cd4a78bd9b7b02c08d9&response_type=token&redirect_uri=http://localhost/&state=123",
+          "href": "https://accounts.spotify.com/authorize?client_id=a94d7c3f7ae64cd4a78bd9b7b02c08d9&response_type=token&redirect_uri=http://localhost/",
         },
         "children": Array [
           Object {

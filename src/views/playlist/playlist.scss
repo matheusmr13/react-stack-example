@@ -1,16 +1,44 @@
 .playlists {
 	background-color: #000;
-	padding: 24px;
-	text-align: center;
+
+	&__header {
+		padding: 12px;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__content {
+		margin: auto;
+		padding: 24px;
+		max-width: calc((300px + 24px) * 4);
+	}
+
+	&__message {
+		font-size: 30px;
+		color: #fff;
+		font-weight: bold;
+	}
+
+	&__logged-user {
+		font-size: 30px;
+		color: #fff;
+		font-weight: bold;
+	}
 
 	&__title {
-		font-size: 24px;
-		color: #fff;
+	}
+
+	&__filter {
+		padding-left: 12px;
+
+		input {
+			color: #fff !important;
+		}
 	}
 
 	&__list-container {
+		text-align: center;
 		display: inline-block;
-		max-width: calc((300px + 24px) * 4);
 	}
 
 	&__list {

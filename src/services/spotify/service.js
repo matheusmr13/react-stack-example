@@ -6,7 +6,7 @@ const paramsToUrl = filters => Object.keys(filters)
 
 class SpotifyService {
 	static fetch(url, options) {
-		return fetch(url, Object.assign({}, options, {
+		return fetch(`${process.env.REACT_APP_SPOTIFY_URL}${url}`, Object.assign({}, options, {
 			headers: {
 				Authorization: `Bearer ${Store.getState().app.loggedUser.access_token}`
 			}
@@ -14,11 +14,11 @@ class SpotifyService {
 	}
 
 	static fetchFeaturedPlaylists(filters) {
-		return this.fetch(`https://api.spotify.com/v1/browse/featured-playlists?${paramsToUrl(filters)}`)
+		return this.fetch(`/browse/featured-playlists?${paramsToUrl(filters)}`)
 	}
 
 	static fetchLoggedUserInfos() {
-		return this.fetch('https://api.spotify.com/v1/me');
+		return this.fetch('/me');
 	}
 };
 

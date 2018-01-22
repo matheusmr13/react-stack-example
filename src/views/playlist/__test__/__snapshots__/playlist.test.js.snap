@@ -8,6 +8,7 @@ ShallowWrapper {
     fetchInitialPlaylists={[Function]}
     loadingPlaylists={false}
     loggedUser={null}
+    onLogout={[Function]}
     playlists={
         Object {
             "message": "myMessage",
@@ -66,359 +67,112 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": Array [
-        <div
-          className="playlists__title"
+      "children": <div
+        className="playlists__content"
 >
-          <div />
-          <div>
-                    myMessage
-          </div>
-</div>,
         <div
-          className="playlists__filter"
->
-          <TextField
-                    disabled={false}
-                    floatingLabelFixed={false}
-                    fullWidth={false}
-                    hintText="Filter..."
-                    multiLine={false}
-                    onChange={[Function]}
-                    rows={1}
-                    type="text"
-                    underlineShow={true}
-                    value=""
-          />
-</div>,
+                className="playlists__header"
+        >
+                <div
+                        className="playlists__message"
+                >
+                        myMessage
+                </div>
+                <UserInfo
+                        onLogout={[Function]}
+                        user={null}
+                />
+        </div>
         <div
-          className="playlists__list-container"
->
-          <div
-                    className="playlists__list"
-          >
-                    <PlaylistCard
-                              playlist={
+                className="playlists__filter"
+        >
+                <TextField
+                        disabled={false}
+                        floatingLabelFixed={false}
+                        fullWidth={false}
+                        hintText="Filter"
+                        multiLine={false}
+                        onChange={[Function]}
+                        rows={1}
+                        type="text"
+                        underlineShow={true}
+                        value=""
+                />
+        </div>
+        <div
+                className="playlists__list-container"
+        >
+                <div
+                        className="playlists__list"
+                >
+                        <PlaylistCard
+                                playlist={
                                         Object {
+                                                "external_urls": Object {
+                                                  "spotify": "mylink",
+                                                },
+                                                "id": "6ftJBzU2LLQcaKefMi7ee7",
+                                                "images": Array [
+                                                  Object {
+                                                    "url": "myotherlink",
+                                                  },
+                                                ],
+                                                "name": "my playlist",
+                                                "owner": Object {
                                                   "external_urls": Object {
-                                                    "spotify": "mylink",
+                                                    "spotify": "owner link",
                                                   },
-                                                  "id": "6ftJBzU2LLQcaKefMi7ee7",
-                                                  "images": Array [
-                                                    Object {
-                                                      "url": "myotherlink",
-                                                    },
-                                                  ],
-                                                  "name": "my playlist",
-                                                  "owner": Object {
-                                                    "external_urls": Object {
-                                                      "spotify": "owner link",
-                                                    },
-                                                    "id": "ownerid",
-                                                  },
-                                                }
-                              }
-                    />
-                    <PlaylistCard
-                              playlist={
+                                                  "id": "ownerid",
+                                                },
+                                              }
+                                }
+                        />
+                        <PlaylistCard
+                                playlist={
                                         Object {
+                                                "external_urls": Object {
+                                                  "spotify": "mylink",
+                                                },
+                                                "id": "6ftJBzU2LLQcaKefMi7ee7",
+                                                "images": Array [
+                                                  Object {
+                                                    "url": "myotherlink",
+                                                  },
+                                                ],
+                                                "name": "dif name",
+                                                "owner": Object {
                                                   "external_urls": Object {
-                                                    "spotify": "mylink",
+                                                    "spotify": "owner link",
                                                   },
-                                                  "id": "6ftJBzU2LLQcaKefMi7ee7",
-                                                  "images": Array [
-                                                    Object {
-                                                      "url": "myotherlink",
-                                                    },
-                                                  ],
-                                                  "name": "dif name",
-                                                  "owner": Object {
-                                                    "external_urls": Object {
-                                                      "spotify": "owner link",
-                                                    },
-                                                    "id": "ownerid",
-                                                  },
-                                                }
-                              }
-                    />
-          </div>
+                                                  "id": "ownerid",
+                                                },
+                                              }
+                                }
+                        />
+                </div>
+        </div>
 </div>,
-      ],
       "className": "playlists",
     },
     "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            <div />,
-            <div>
-              myMessage
-</div>,
-          ],
-          "className": "playlists__title",
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": null,
-            },
-            "ref": null,
-            "rendered": null,
-            "type": "div",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "myMessage",
-            },
-            "ref": null,
-            "rendered": "myMessage",
-            "type": "div",
-          },
-        ],
-        "type": "div",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": <TextField
-            disabled={false}
-            floatingLabelFixed={false}
-            fullWidth={false}
-            hintText="Filter..."
-            multiLine={false}
-            onChange={[Function]}
-            rows={1}
-            type="text"
-            underlineShow={true}
-            value=""
-/>,
-          "className": "playlists__filter",
-        },
-        "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "disabled": false,
-            "floatingLabelFixed": false,
-            "fullWidth": false,
-            "hintText": "Filter...",
-            "multiLine": false,
-            "onChange": [Function],
-            "rows": 1,
-            "type": "text",
-            "underlineShow": true,
-            "value": "",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        "type": "div",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": <div
-            className="playlists__list"
->
-            <PlaylistCard
-                        playlist={
-                                    Object {
-                                                "external_urls": Object {
-                                                  "spotify": "mylink",
-                                                },
-                                                "id": "6ftJBzU2LLQcaKefMi7ee7",
-                                                "images": Array [
-                                                  Object {
-                                                    "url": "myotherlink",
-                                                  },
-                                                ],
-                                                "name": "my playlist",
-                                                "owner": Object {
-                                                  "external_urls": Object {
-                                                    "spotify": "owner link",
-                                                  },
-                                                  "id": "ownerid",
-                                                },
-                                              }
-                        }
-            />
-            <PlaylistCard
-                        playlist={
-                                    Object {
-                                                "external_urls": Object {
-                                                  "spotify": "mylink",
-                                                },
-                                                "id": "6ftJBzU2LLQcaKefMi7ee7",
-                                                "images": Array [
-                                                  Object {
-                                                    "url": "myotherlink",
-                                                  },
-                                                ],
-                                                "name": "dif name",
-                                                "owner": Object {
-                                                  "external_urls": Object {
-                                                    "spotify": "owner link",
-                                                  },
-                                                  "id": "ownerid",
-                                                },
-                                              }
-                        }
-            />
-</div>,
-          "className": "playlists__list-container",
-        },
-        "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              <PlaylistCard
-                playlist={
-                                Object {
-                                                "external_urls": Object {
-                                                  "spotify": "mylink",
-                                                },
-                                                "id": "6ftJBzU2LLQcaKefMi7ee7",
-                                                "images": Array [
-                                                  Object {
-                                                    "url": "myotherlink",
-                                                  },
-                                                ],
-                                                "name": "my playlist",
-                                                "owner": Object {
-                                                  "external_urls": Object {
-                                                    "spotify": "owner link",
-                                                  },
-                                                  "id": "ownerid",
-                                                },
-                                              }
-                }
-/>,
-              <PlaylistCard
-                playlist={
-                                Object {
-                                                "external_urls": Object {
-                                                  "spotify": "mylink",
-                                                },
-                                                "id": "6ftJBzU2LLQcaKefMi7ee7",
-                                                "images": Array [
-                                                  Object {
-                                                    "url": "myotherlink",
-                                                  },
-                                                ],
-                                                "name": "dif name",
-                                                "owner": Object {
-                                                  "external_urls": Object {
-                                                    "spotify": "owner link",
-                                                  },
-                                                  "id": "ownerid",
-                                                },
-                                              }
-                }
-/>,
-            ],
-            "className": "playlists__list",
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": "6ftJBzU2LLQcaKefMi7ee7",
-              "nodeType": "function",
-              "props": Object {
-                "playlist": Object {
-                  "external_urls": Object {
-                    "spotify": "mylink",
-                  },
-                  "id": "6ftJBzU2LLQcaKefMi7ee7",
-                  "images": Array [
-                    Object {
-                      "url": "myotherlink",
-                    },
-                  ],
-                  "name": "my playlist",
-                  "owner": Object {
-                    "external_urls": Object {
-                      "spotify": "owner link",
-                    },
-                    "id": "ownerid",
-                  },
-                },
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": "6ftJBzU2LLQcaKefMi7ee7",
-              "nodeType": "function",
-              "props": Object {
-                "playlist": Object {
-                  "external_urls": Object {
-                    "spotify": "mylink",
-                  },
-                  "id": "6ftJBzU2LLQcaKefMi7ee7",
-                  "images": Array [
-                    Object {
-                      "url": "myotherlink",
-                    },
-                  ],
-                  "name": "dif name",
-                  "owner": Object {
-                    "external_urls": Object {
-                      "spotify": "owner link",
-                    },
-                    "id": "ownerid",
-                  },
-                },
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-          ],
-          "type": "div",
-        },
-        "type": "div",
-      },
-    ],
-    "type": "div",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
+    "rendered": Object {
       "instance": null,
       "key": undefined,
       "nodeType": "host",
       "props": Object {
         "children": Array [
           <div
-            className="playlists__title"
+            className="playlists__header"
 >
-            <div />
-            <div>
+            <div
+                        className="playlists__message"
+            >
                         myMessage
             </div>
+            <UserInfo
+                        onLogout={[Function]}
+                        user={null}
+            />
 </div>,
           <div
             className="playlists__filter"
@@ -427,7 +181,7 @@ ShallowWrapper {
                         disabled={false}
                         floatingLabelFixed={false}
                         fullWidth={false}
-                        hintText="Filter..."
+                        hintText="Filter"
                         multiLine={false}
                         onChange={[Function]}
                         rows={1}
@@ -489,7 +243,7 @@ ShallowWrapper {
             </div>
 </div>,
         ],
-        "className": "playlists",
+        "className": "playlists__content",
       },
       "ref": null,
       "rendered": Array [
@@ -499,12 +253,17 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              <div />,
-              <div>
+              <div
+                className="playlists__message"
+>
                 myMessage
 </div>,
+              <UserInfo
+                onLogout={[Function]}
+                user={null}
+/>,
             ],
-            "className": "playlists__title",
+            "className": "playlists__header",
           },
           "ref": null,
           "rendered": Array [
@@ -513,22 +272,24 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": null,
+                "children": "myMessage",
+                "className": "playlists__message",
               },
               "ref": null,
-              "rendered": null,
+              "rendered": "myMessage",
               "type": "div",
             },
             Object {
               "instance": null,
               "key": undefined,
-              "nodeType": "host",
+              "nodeType": "function",
               "props": Object {
-                "children": "myMessage",
+                "onLogout": [Function],
+                "user": null,
               },
               "ref": null,
-              "rendered": "myMessage",
-              "type": "div",
+              "rendered": null,
+              "type": [Function],
             },
           ],
           "type": "div",
@@ -542,7 +303,7 @@ ShallowWrapper {
               disabled={false}
               floatingLabelFixed={false}
               fullWidth={false}
-              hintText="Filter..."
+              hintText="Filter"
               multiLine={false}
               onChange={[Function]}
               rows={1}
@@ -561,7 +322,7 @@ ShallowWrapper {
               "disabled": false,
               "floatingLabelFixed": false,
               "fullWidth": false,
-              "hintText": "Filter...",
+              "hintText": "Filter",
               "multiLine": false,
               "onChange": [Function],
               "rows": 1,
@@ -750,6 +511,460 @@ ShallowWrapper {
       ],
       "type": "div",
     },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          className="playlists__content"
+>
+          <div
+                    className="playlists__header"
+          >
+                    <div
+                              className="playlists__message"
+                    >
+                              myMessage
+                    </div>
+                    <UserInfo
+                              onLogout={[Function]}
+                              user={null}
+                    />
+          </div>
+          <div
+                    className="playlists__filter"
+          >
+                    <TextField
+                              disabled={false}
+                              floatingLabelFixed={false}
+                              fullWidth={false}
+                              hintText="Filter"
+                              multiLine={false}
+                              onChange={[Function]}
+                              rows={1}
+                              type="text"
+                              underlineShow={true}
+                              value=""
+                    />
+          </div>
+          <div
+                    className="playlists__list-container"
+          >
+                    <div
+                              className="playlists__list"
+                    >
+                              <PlaylistCard
+                                        playlist={
+                                                  Object {
+                                                            "external_urls": Object {
+                                                              "spotify": "mylink",
+                                                            },
+                                                            "id": "6ftJBzU2LLQcaKefMi7ee7",
+                                                            "images": Array [
+                                                              Object {
+                                                                "url": "myotherlink",
+                                                              },
+                                                            ],
+                                                            "name": "my playlist",
+                                                            "owner": Object {
+                                                              "external_urls": Object {
+                                                                "spotify": "owner link",
+                                                              },
+                                                              "id": "ownerid",
+                                                            },
+                                                          }
+                                        }
+                              />
+                              <PlaylistCard
+                                        playlist={
+                                                  Object {
+                                                            "external_urls": Object {
+                                                              "spotify": "mylink",
+                                                            },
+                                                            "id": "6ftJBzU2LLQcaKefMi7ee7",
+                                                            "images": Array [
+                                                              Object {
+                                                                "url": "myotherlink",
+                                                              },
+                                                            ],
+                                                            "name": "dif name",
+                                                            "owner": Object {
+                                                              "external_urls": Object {
+                                                                "spotify": "owner link",
+                                                              },
+                                                              "id": "ownerid",
+                                                            },
+                                                          }
+                                        }
+                              />
+                    </div>
+          </div>
+</div>,
+        "className": "playlists",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="playlists__header"
+>
+              <div
+                            className="playlists__message"
+              >
+                            myMessage
+              </div>
+              <UserInfo
+                            onLogout={[Function]}
+                            user={null}
+              />
+</div>,
+            <div
+              className="playlists__filter"
+>
+              <TextField
+                            disabled={false}
+                            floatingLabelFixed={false}
+                            fullWidth={false}
+                            hintText="Filter"
+                            multiLine={false}
+                            onChange={[Function]}
+                            rows={1}
+                            type="text"
+                            underlineShow={true}
+                            value=""
+              />
+</div>,
+            <div
+              className="playlists__list-container"
+>
+              <div
+                            className="playlists__list"
+              >
+                            <PlaylistCard
+                                          playlist={
+                                                        Object {
+                                                                      "external_urls": Object {
+                                                                        "spotify": "mylink",
+                                                                      },
+                                                                      "id": "6ftJBzU2LLQcaKefMi7ee7",
+                                                                      "images": Array [
+                                                                        Object {
+                                                                          "url": "myotherlink",
+                                                                        },
+                                                                      ],
+                                                                      "name": "my playlist",
+                                                                      "owner": Object {
+                                                                        "external_urls": Object {
+                                                                          "spotify": "owner link",
+                                                                        },
+                                                                        "id": "ownerid",
+                                                                      },
+                                                                    }
+                                          }
+                            />
+                            <PlaylistCard
+                                          playlist={
+                                                        Object {
+                                                                      "external_urls": Object {
+                                                                        "spotify": "mylink",
+                                                                      },
+                                                                      "id": "6ftJBzU2LLQcaKefMi7ee7",
+                                                                      "images": Array [
+                                                                        Object {
+                                                                          "url": "myotherlink",
+                                                                        },
+                                                                      ],
+                                                                      "name": "dif name",
+                                                                      "owner": Object {
+                                                                        "external_urls": Object {
+                                                                          "spotify": "owner link",
+                                                                        },
+                                                                        "id": "ownerid",
+                                                                      },
+                                                                    }
+                                          }
+                            />
+              </div>
+</div>,
+          ],
+          "className": "playlists__content",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <div
+                  className="playlists__message"
+>
+                  myMessage
+</div>,
+                <UserInfo
+                  onLogout={[Function]}
+                  user={null}
+/>,
+              ],
+              "className": "playlists__header",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "myMessage",
+                  "className": "playlists__message",
+                },
+                "ref": null,
+                "rendered": "myMessage",
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "onLogout": [Function],
+                  "user": null,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <TextField
+                disabled={false}
+                floatingLabelFixed={false}
+                fullWidth={false}
+                hintText="Filter"
+                multiLine={false}
+                onChange={[Function]}
+                rows={1}
+                type="text"
+                underlineShow={true}
+                value=""
+/>,
+              "className": "playlists__filter",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "disabled": false,
+                "floatingLabelFixed": false,
+                "fullWidth": false,
+                "hintText": "Filter",
+                "multiLine": false,
+                "onChange": [Function],
+                "rows": 1,
+                "type": "text",
+                "underlineShow": true,
+                "value": "",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <div
+                className="playlists__list"
+>
+                <PlaylistCard
+                                playlist={
+                                                Object {
+                                                                "external_urls": Object {
+                                                                  "spotify": "mylink",
+                                                                },
+                                                                "id": "6ftJBzU2LLQcaKefMi7ee7",
+                                                                "images": Array [
+                                                                  Object {
+                                                                    "url": "myotherlink",
+                                                                  },
+                                                                ],
+                                                                "name": "my playlist",
+                                                                "owner": Object {
+                                                                  "external_urls": Object {
+                                                                    "spotify": "owner link",
+                                                                  },
+                                                                  "id": "ownerid",
+                                                                },
+                                                              }
+                                }
+                />
+                <PlaylistCard
+                                playlist={
+                                                Object {
+                                                                "external_urls": Object {
+                                                                  "spotify": "mylink",
+                                                                },
+                                                                "id": "6ftJBzU2LLQcaKefMi7ee7",
+                                                                "images": Array [
+                                                                  Object {
+                                                                    "url": "myotherlink",
+                                                                  },
+                                                                ],
+                                                                "name": "dif name",
+                                                                "owner": Object {
+                                                                  "external_urls": Object {
+                                                                    "spotify": "owner link",
+                                                                  },
+                                                                  "id": "ownerid",
+                                                                },
+                                                              }
+                                }
+                />
+</div>,
+              "className": "playlists__list-container",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <PlaylistCard
+                    playlist={
+                                        Object {
+                                                            "external_urls": Object {
+                                                              "spotify": "mylink",
+                                                            },
+                                                            "id": "6ftJBzU2LLQcaKefMi7ee7",
+                                                            "images": Array [
+                                                              Object {
+                                                                "url": "myotherlink",
+                                                              },
+                                                            ],
+                                                            "name": "my playlist",
+                                                            "owner": Object {
+                                                              "external_urls": Object {
+                                                                "spotify": "owner link",
+                                                              },
+                                                              "id": "ownerid",
+                                                            },
+                                                          }
+                    }
+/>,
+                  <PlaylistCard
+                    playlist={
+                                        Object {
+                                                            "external_urls": Object {
+                                                              "spotify": "mylink",
+                                                            },
+                                                            "id": "6ftJBzU2LLQcaKefMi7ee7",
+                                                            "images": Array [
+                                                              Object {
+                                                                "url": "myotherlink",
+                                                              },
+                                                            ],
+                                                            "name": "dif name",
+                                                            "owner": Object {
+                                                              "external_urls": Object {
+                                                                "spotify": "owner link",
+                                                              },
+                                                              "id": "ownerid",
+                                                            },
+                                                          }
+                    }
+/>,
+                ],
+                "className": "playlists__list",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": "6ftJBzU2LLQcaKefMi7ee7",
+                  "nodeType": "function",
+                  "props": Object {
+                    "playlist": Object {
+                      "external_urls": Object {
+                        "spotify": "mylink",
+                      },
+                      "id": "6ftJBzU2LLQcaKefMi7ee7",
+                      "images": Array [
+                        Object {
+                          "url": "myotherlink",
+                        },
+                      ],
+                      "name": "my playlist",
+                      "owner": Object {
+                        "external_urls": Object {
+                          "spotify": "owner link",
+                        },
+                        "id": "ownerid",
+                      },
+                    },
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "6ftJBzU2LLQcaKefMi7ee7",
+                  "nodeType": "function",
+                  "props": Object {
+                    "playlist": Object {
+                      "external_urls": Object {
+                        "spotify": "mylink",
+                      },
+                      "id": "6ftJBzU2LLQcaKefMi7ee7",
+                      "images": Array [
+                        Object {
+                          "url": "myotherlink",
+                        },
+                      ],
+                      "name": "dif name",
+                      "owner": Object {
+                        "external_urls": Object {
+                          "spotify": "owner link",
+                        },
+                        "id": "ownerid",
+                      },
+                    },
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+              ],
+              "type": "div",
+            },
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      "type": "div",
+    },
   ],
   Symbol(enzyme.__options__): Object {
     "adapter": ReactSixteenAdapter {
@@ -769,6 +984,7 @@ ShallowWrapper {
     fetchInitialPlaylists={[Function]}
     loadingPlaylists={true}
     loggedUser={null}
+    onLogout={[Function]}
     playlists={null}
 />,
   Symbol(enzyme.__renderer__): Object {

@@ -1,6 +1,7 @@
 import { connect } from 'react-redux';
 
 import { Actions } from 'services/playlist/module';
+import { Actions as AppModule } from 'services/app/module';
 import PlaylistView from 'views/playlist';
 
 const mapStateToProps = state => ({
@@ -9,7 +10,8 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-	fetchInitialPlaylists: () => dispatch(Actions.filterPlaylists({}))
+	fetchInitialPlaylists: () => dispatch(Actions.filterPlaylists({})),
+	onLogout: () => dispatch(AppModule.onLogout())
 });
 
 const PlaylistContainer = connect(mapStateToProps, mapDispatchToProps)(PlaylistView);

@@ -36,6 +36,7 @@ describe('Playlist component', () => {
 	const playlistList = shallow(<PlaylistList
 		playlists={null}
 		fetchInitialPlaylists={fetchInitialPlaylists}
+		onLogout={() => {}}
 		loadingPlaylists
 	/>);
 	it('should render loading properly', () => {

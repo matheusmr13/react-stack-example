@@ -19,12 +19,22 @@ function* fetchLoggedUser() {
 	}
 }
 
+function* onLogout() {
+	AppService.logout();
+	yield put(Actions.setLoggedUser(null));
+}
+
 function* watchFetchLoggedUser() {
 	yield takeLatest(Actions.fetchLoggedUser, fetchLoggedUser);
 }
 
+function* watchOnLogout() {
+	yield takeLatest(Actions.onLogout, onLogout);
+}
+
 export default function* appSagas() {
 	yield all([
-		watchFetchLoggedUser()
+		watchFetchLoggedUser(),
+		watchOnLogout()
 	]);
 }

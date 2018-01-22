@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 
+const SPOTIFY_LOGIN_URL = `${process.env.REACT_APP_SPOTIFY_AUTH_URL}?client_id=${process.env.REACT_APP_SPOTIFY_CLIENT_ID}&response_type=token&redirect_uri=${window.location.href}`;
 class Login extends Component {
 	state = {}
 	render() {
 		return (
 			<div>
 				Welcome to Spotifood
-				<a href={`https://accounts.spotify.com/authorize?client_id=a94d7c3f7ae64cd4a78bd9b7b02c08d9&response_type=token&redirect_uri=${window.location.href}&state=123`}>
+				<a href={SPOTIFY_LOGIN_URL}>
 					Enter with spotify
 				</a>
 			</div>

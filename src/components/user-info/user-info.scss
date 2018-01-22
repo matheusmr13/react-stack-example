@@ -1,0 +1,46 @@
+.user-info {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	color: white;
+	outline: none;
+	text-decoration: none;
+
+	&__data {
+		text-align: right;
+		margin-right: 8px;
+	}
+
+	&__name {
+		font-weight: bold;
+	}
+
+	&__followers {
+		margin-top: 2px;
+		margin-bottom: 5px;
+		color: gray;
+	}
+
+	&__logout {
+		border: 0;
+		border-radius: 20px;
+		height: 20px;
+		color: #fff;
+		background-color: #1db954;
+		font-size: 12px;
+		padding: 2px 10px;
+		cursor: pointer;
+		font-weight: bold;
+	}
+
+	&__image {
+		display: flex;
+		align-items: center;
+		img {
+			width: 60px;
+			height: 60px;
+			border-radius: 100%;
+		}
+	}
+
+}

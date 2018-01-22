@@ -9,6 +9,8 @@ import CloseIcon from 'material-ui/svg-icons/navigation/close';
 import FilterListIcon from 'material-ui/svg-icons/content/filter-list';
 import Login from 'views/login';
 
+import './app.css';
+
 class App extends Component {
 	state = {
 		isFilterOpen: false
@@ -34,8 +36,9 @@ class App extends Component {
 		const { isFilterOpen } = this.state;
 
 		return (
-			<div className={isFilterOpen ? 'filter-open' : null}>
+			<div className={`app${isFilterOpen ? ' app--menu-open' : ''}`}>
 				<AppBar
+					titleStyle={{ textAlign: 'center' }}
 					title="Spotifood"
 					showMenuIconButton={loggedUser && !isFilterOpen}
 					iconElementLeft={<IconButton><FilterListIcon /></IconButton>}
@@ -48,7 +51,7 @@ class App extends Component {
 								open={isFilterOpen}
 							>
 								<IconButton onClick={this.onCloseAppBar}>
-									<CloseIcon color="#fff" />
+									<CloseIcon />
 								</IconButton>
 								<FilterContainer
 									onCloseAppBar={this.onCloseAppBar}

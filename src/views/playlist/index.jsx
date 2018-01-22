@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import PlaylistPropType from 'services/playlist/proptype';
 
+import UserInfo from 'components/user-info';
+
 import TextField from 'material-ui/TextField';
 
 import PlaylistCard from './card';
@@ -51,28 +53,30 @@ class Playlists extends Component {
 		}
 		return (
 			<div className="playlists">
-				<div className="playlists__title">
-					<div>{loggedUser && loggedUser.info && `Hello ${loggedUser.info.display_name}!`}</div>
-					<div>{playlists.message}</div>
-				</div>
-				<div className="playlists__filter">
-					<TextField
-						hintText="Filter..."
-						onChange={this.onFilterByName}
-						value={nameFilter}
-					/>
-				</div>
-				<div className="playlists__list-container">
-					<div className="playlists__list">
-						{
-							filteredPlaylists
-								.map(playlist => (
-									<PlaylistCard
-										key={playlist.id}
-										playlist={playlist}
-									/>
-								))
-						}
+				<div className="playlists__content">
+					<div className="playlists__header">
+						<div className="playlists__message">{playlists.message}</div>
+						<UserInfo user={loggedUser} onLogout={this.props.onLogout} />
+					</div>
+					<div className="playlists__filter">
+						<TextField
+							hintText="Filter"
+							onChange={this.onFilterByName}
+							value={nameFilter}
+						/>
+					</div>
+					<div className="playlists__list-container">
+						<div className="playlists__list">
+							{
+								filteredPlaylists
+									.map(playlist => (
+										<PlaylistCard
+											key={playlist.id}
+											playlist={playlist}
+										/>
+									))
+							}
+						</div>
 					</div>
 				</div>
 			</div>
@@ -92,6 +96,7 @@ Playlists.propTypes = {
 		})
 	}),
 	fetchInitialPlaylists: PropTypes.func.isRequired,
+	onLogout: PropTypes.func.isRequired,
 	loadingPlaylists: PropTypes.bool.isRequired,
 	playlists: PropTypes.shape({
 		message: PropTypes.string.isRequired,

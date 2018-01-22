@@ -2,6 +2,11 @@ import moment from 'moment';
 
 class AppService {
 	static DATETIME_FORMAT = 'YYYYMMDD HHmmss';
+
+	static logout() {
+		window.localStorage.clear('loggedUser');
+	}
+
 	static checkLoggedUser() {
 		if (this.hasUserJustLoggedIn()) {
 			const loggedInUser = this.getLoggedUserFromHash();

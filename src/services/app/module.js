@@ -6,7 +6,8 @@ const initialState = {
 
 export const Actions = createActions({
 	SET_LOGGED_USER: loggedUser => loggedUser,
-	FETCH_LOGGED_USER: () => {}
+	FETCH_LOGGED_USER: () => {},
+	ON_LOGOUT: () => {}
 });
 
 const reducer = handleActions({

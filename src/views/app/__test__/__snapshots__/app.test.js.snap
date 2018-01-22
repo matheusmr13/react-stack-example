@@ -36,11 +36,16 @@ ShallowWrapper {
           onLeftIconButtonClick={[Function]}
           showMenuIconButton={null}
           title="Spotifood"
+          titleStyle={
+                    Object {
+                              "textAlign": "center",
+                            }
+          }
           zDepth={1}
 />,
         <Login />,
       ],
-      "className": null,
+      "className": "app",
     },
     "ref": null,
     "rendered": Array [
@@ -61,6 +66,9 @@ ShallowWrapper {
           "onLeftIconButtonClick": [Function],
           "showMenuIconButton": null,
           "title": "Spotifood",
+          "titleStyle": Object {
+            "textAlign": "center",
+          },
           "zDepth": 1,
         },
         "ref": null,
@@ -101,11 +109,16 @@ ShallowWrapper {
             onLeftIconButtonClick={[Function]}
             showMenuIconButton={null}
             title="Spotifood"
+            titleStyle={
+                        Object {
+                                    "textAlign": "center",
+                                  }
+            }
             zDepth={1}
 />,
           <Login />,
         ],
-        "className": null,
+        "className": "app",
       },
       "ref": null,
       "rendered": Array [
@@ -126,6 +139,9 @@ ShallowWrapper {
             "onLeftIconButtonClick": [Function],
             "showMenuIconButton": null,
             "title": "Spotifood",
+            "titleStyle": Object {
+              "textAlign": "center",
+            },
             "zDepth": 1,
           },
           "ref": null,
