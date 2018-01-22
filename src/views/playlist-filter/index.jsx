@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import FilterPropType from 'services/playlist-filter/proptype';
 
 import EntityFilter from 'components/entity-filter';
 
 class Filter extends Component {
-	state = {
-		selectedFilters: {}
-	}
-
 	componentDidMount() {
 		this.props.fetchFilters();
 	}
@@ -28,5 +26,13 @@ class Filter extends Component {
 		);
 	}
 }
+
+Filter.propTypes = {
+	onFilterChange: PropTypes.func.isRequired,
+	fetchFilters: PropTypes.func.isRequired,
+	loadingFilters: PropTypes.bool.isRequired,
+	selectedFilters: PropTypes.shape({}).isRequired,
+	possibleFilters: PropTypes.arrayOf(PropTypes.shape(FilterPropType)).isRequired
+};
 
 export default Filter;

@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { FilterPropType } from 'services/playlist-filter/proptype';
+import FilterPropType from 'services/playlist-filter/proptype';
 
 import Slider from 'material-ui/Slider';
 

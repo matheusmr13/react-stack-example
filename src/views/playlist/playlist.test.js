@@ -24,7 +24,7 @@ const playlists = [{ ...playlist }, {
 	name: 'dif name'
 }];
 
-describe('PlaylistCard component', () => {
+describe('Playlist component', () => {
 	const fetchInitialPlaylists = jest.fn();
 	const playlistList = shallow(<PlaylistList
 		playlists={[]}
@@ -35,6 +35,11 @@ describe('PlaylistCard component', () => {
 		expect(playlistList).toMatchSnapshot();
 	});
 	it('should render list properly', () => {
+		playlistList.setProps({
+			playlists,
+			fetchInitialPlaylists,
+			loadingPlaylists: false
+		});
 		playlistList.setProps({
 			playlists,
 			fetchInitialPlaylists,
