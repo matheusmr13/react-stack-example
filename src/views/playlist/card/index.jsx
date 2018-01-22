@@ -2,10 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import PlaylistPropType from 'services/playlist/proptype';
 
+import './playlist-card.css';
+
 const PlaylistCard = ({ playlist }) => (
-	<div>
+	<div className="playlist-card">
 		<img src={playlist.images[0].url} alt={playlist.name} />
-		<div>{playlist.name}</div>
+		<div className="playlist-card__name">{playlist.name}</div>
 	</div>
 );
 

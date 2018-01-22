@@ -6,6 +6,8 @@ import TextField from 'material-ui/TextField';
 
 import PlaylistCard from './card';
 
+import './playlist.css';
+
 class Playlists extends Component {
 	state = {
 		nameFilter: '',
@@ -48,24 +50,29 @@ class Playlists extends Component {
 			return 'Loading';
 		}
 		return (
-			<div>
-				<div>
+			<div className="playlists">
+				<div className="playlists__title">
+					ASD
+				</div>
+				<div className="playlists__filter">
 					<TextField
 						hintText="Filter..."
 						onChange={this.onFilterByName}
 						value={nameFilter}
 					/>
 				</div>
-				<div>
-					{
-						filteredPlaylists
-							.map(playlist => (
-								<PlaylistCard
-									key={playlist.id}
-									playlist={playlist}
-								/>
-							))
-					}
+				<div className="playlists__list-container">
+					<div className="playlists__list">
+						{
+							filteredPlaylists
+								.map(playlist => (
+									<PlaylistCard
+										key={playlist.id}
+										playlist={playlist}
+									/>
+								))
+						}
+					</div>
 				</div>
 			</div>
 		);

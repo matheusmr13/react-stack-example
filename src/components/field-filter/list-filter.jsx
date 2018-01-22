@@ -41,7 +41,7 @@ class ListFilter extends Component {
 			</SelectField>
 		);
 	}
-};
+}
 
 ListFilter.defaultProps = {
 	onChange: () => {}

@@ -1,0 +1,19 @@
+.playlists {
+	background-color: #000;
+	padding: 24px;
+	text-align: center;
+
+	&__title {
+		font-size: 24px;
+		color: #fff;
+	}
+
+	&__list-container {
+		display: inline-block;
+		max-width: calc((300px + 24px) * 4);
+	}
+
+	&__list {
+	}
+
+}
