@@ -12,28 +12,31 @@ describe('UnlimitedIntegerFilter component', () => {
 			spec={spec}
 			onChange={() => {}}
 		/>);
-		expect(unlimitedIntegerFilter.find('button')).toHaveLength(1);
+		expect(unlimitedIntegerFilter.find('button[disabled]')).toHaveLength(1);
 		expect(unlimitedIntegerFilter).toMatchSnapshot();
 	});
 	it('should render properly after up click', () => {
+		const onChange = jest.fn();
 		const unlimitedIntegerFilter = shallow(<UnlimitedIntegerFilter
 			spec={spec}
-			onChange={() => {}}
+			onChange={onChange}
 		/>);
 
-		unlimitedIntegerFilter.find('button').simulate('click');
-		expect(unlimitedIntegerFilter.find('button')).toHaveLength(2);
-		expect(unlimitedIntegerFilter).toMatchSnapshot();
+		unlimitedIntegerFilter.find('button').last().simulate('click');
+		expect(onChange).toHaveBeenCalled();
+		expect(unlimitedIntegerFilter.find('button[disabled=false]')).toHaveLength(1);
+		expect(unlimitedIntegerFilter.find('button[disabled]')).toHaveLength(1);
 	});
 	it('should render properly after up and down click', () => {
+		const onChange = jest.fn();
 		const unlimitedIntegerFilter = shallow(<UnlimitedIntegerFilter
 			spec={spec}
-			onChange={() => {}}
+			onChange={onChange}
 		/>);
 
-		unlimitedIntegerFilter.find('button').simulate('click');
+		unlimitedIntegerFilter.find('button').last().simulate('click');
 		unlimitedIntegerFilter.find('button').first().simulate('click');
-		expect(unlimitedIntegerFilter.find('button')).toHaveLength(1);
-		expect(unlimitedIntegerFilter).toMatchSnapshot();
+		expect(onChange).toHaveBeenCalledTimes(2);
+		expect(unlimitedIntegerFilter.find('button[disabled]')).toHaveLength(1);
 	});
 });

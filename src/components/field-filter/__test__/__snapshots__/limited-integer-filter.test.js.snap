@@ -46,6 +46,7 @@ ShallowWrapper {
           style={Object {}}
 />,
       ],
+      "className": "li-filter",
     },
     "ref": null,
     "rendered": Array [
@@ -106,6 +107,7 @@ ShallowWrapper {
             style={Object {}}
 />,
         ],
+        "className": "li-filter",
       },
       "ref": null,
       "rendered": Array [

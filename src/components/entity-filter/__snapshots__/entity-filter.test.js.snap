@@ -156,6 +156,7 @@ ShallowWrapper {
           }
 />,
       ],
+      "className": "entity-filter",
     },
     "ref": null,
     "rendered": Array [
@@ -356,6 +357,7 @@ ShallowWrapper {
             }
 />,
         ],
+        "className": "entity-filter",
       },
       "ref": null,
       "rendered": Array [

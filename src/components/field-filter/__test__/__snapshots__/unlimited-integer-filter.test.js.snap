@@ -26,405 +26,33 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <div>
+        <div
+          className="ui-filter__name"
+>
           Unimited integer field
 </div>,
-        <div>
-          <span />
+        <div
+          className="ui-filter__input"
+>
           <button
-                    onClick={[Function]}
-          >
-                    +
-          </button>
-</div>,
-      ],
-    },
-    "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "Unimited integer field",
-        },
-        "ref": null,
-        "rendered": "Unimited integer field",
-        "type": "div",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            null,
-            <span />,
-            <button
-              onClick={[Function]}
->
-              +
-</button>,
-          ],
-        },
-        "ref": null,
-        "rendered": Array [
-          null,
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": 0,
-            },
-            "ref": null,
-            "rendered": 0,
-            "type": "span",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "+",
-              "onClick": [Function],
-            },
-            "ref": null,
-            "rendered": "+",
-            "type": "button",
-          },
-        ],
-        "type": "div",
-      },
-    ],
-    "type": "div",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": Array [
-          <div>
-            Unimited integer field
-</div>,
-          <div>
-            <span />
-            <button
-                        onClick={[Function]}
-            >
-                        +
-            </button>
-</div>,
-        ],
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "Unimited integer field",
-          },
-          "ref": null,
-          "rendered": "Unimited integer field",
-          "type": "div",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              null,
-              <span />,
-              <button
-                onClick={[Function]}
->
-                +
-</button>,
-            ],
-          },
-          "ref": null,
-          "rendered": Array [
-            null,
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": 0,
-              },
-              "ref": null,
-              "rendered": 0,
-              "type": "span",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "+",
-                "onClick": [Function],
-              },
-              "ref": null,
-              "rendered": "+",
-              "type": "button",
-            },
-          ],
-          "type": "div",
-        },
-      ],
-      "type": "div",
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-      },
-    },
-  },
-}
-`;
-
-exports[`UnlimitedIntegerFilter component should render properly after up and down click 1`] = `
-ShallowWrapper {
-  "length": 1,
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <UnlimitedIntegerFilter
-    onChange={[Function]}
-    spec={
-        Object {
-            "id": "myId",
-            "name": "Unimited integer field",
-          }
-    }
-/>,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "host",
-    "props": Object {
-      "children": Array [
-        <div>
-          Unimited integer field
-</div>,
-        <div>
-          <span />
-          <button
-                    onClick={[Function]}
-          >
-                    +
-          </button>
-</div>,
-      ],
-    },
-    "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "Unimited integer field",
-        },
-        "ref": null,
-        "rendered": "Unimited integer field",
-        "type": "div",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            null,
-            <span />,
-            <button
-              onClick={[Function]}
->
-              +
-</button>,
-          ],
-        },
-        "ref": null,
-        "rendered": Array [
-          null,
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": 0,
-            },
-            "ref": null,
-            "rendered": 0,
-            "type": "span",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "+",
-              "onClick": [Function],
-            },
-            "ref": null,
-            "rendered": "+",
-            "type": "button",
-          },
-        ],
-        "type": "div",
-      },
-    ],
-    "type": "div",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": Array [
-          <div>
-            Unimited integer field
-</div>,
-          <div>
-            <span />
-            <button
-                        onClick={[Function]}
-            >
-                        +
-            </button>
-</div>,
-        ],
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "Unimited integer field",
-          },
-          "ref": null,
-          "rendered": "Unimited integer field",
-          "type": "div",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              null,
-              <span />,
-              <button
-                onClick={[Function]}
->
-                +
-</button>,
-            ],
-          },
-          "ref": null,
-          "rendered": Array [
-            null,
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": 0,
-              },
-              "ref": null,
-              "rendered": 0,
-              "type": "span",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "+",
-                "onClick": [Function],
-              },
-              "ref": null,
-              "rendered": "+",
-              "type": "button",
-            },
-          ],
-          "type": "div",
-        },
-      ],
-      "type": "div",
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-      },
-    },
-  },
-}
-`;
-
-exports[`UnlimitedIntegerFilter component should render properly after up click 1`] = `
-ShallowWrapper {
-  "length": 1,
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <UnlimitedIntegerFilter
-    onChange={[Function]}
-    spec={
-        Object {
-            "id": "myId",
-            "name": "Unimited integer field",
-          }
-    }
-/>,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "host",
-    "props": Object {
-      "children": Array [
-        <div>
-          Unimited integer field
-</div>,
-        <div>
-          <button
+                    className="ui-filter__button"
+                    disabled={true}
                     onClick={[Function]}
           >
                     -
           </button>
-          <span>
-                    1
-          </span>
+          <span
+                    className="ui-filter__counter"
+          />
           <button
+                    className="ui-filter__button"
                     onClick={[Function]}
           >
                     +
           </button>
 </div>,
       ],
+      "className": "ui-filter",
     },
     "ref": null,
     "rendered": Array [
@@ -434,6 +62,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": "Unimited integer field",
+          "className": "ui-filter__name",
         },
         "ref": null,
         "rendered": "Unimited integer field",
@@ -446,19 +75,23 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <button
+              className="ui-filter__button"
+              disabled={true}
               onClick={[Function]}
 >
               -
 </button>,
-            <span>
-              1
-</span>,
+            <span
+              className="ui-filter__counter"
+/>,
             <button
+              className="ui-filter__button"
               onClick={[Function]}
 >
               +
 </button>,
           ],
+          "className": "ui-filter__input",
         },
         "ref": null,
         "rendered": Array [
@@ -468,6 +101,8 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "-",
+              "className": "ui-filter__button",
+              "disabled": true,
               "onClick": [Function],
             },
             "ref": null,
@@ -479,10 +114,11 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": 1,
+              "children": 0,
+              "className": "ui-filter__counter",
             },
             "ref": null,
-            "rendered": 1,
+            "rendered": 0,
             "type": "span",
           },
           Object {
@@ -491,6 +127,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "+",
+              "className": "ui-filter__button",
               "onClick": [Function],
             },
             "ref": null,
@@ -510,25 +147,33 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <div>
+          <div
+            className="ui-filter__name"
+>
             Unimited integer field
 </div>,
-          <div>
+          <div
+            className="ui-filter__input"
+>
             <button
+                        className="ui-filter__button"
+                        disabled={true}
                         onClick={[Function]}
             >
                         -
             </button>
-            <span>
-                        1
-            </span>
+            <span
+                        className="ui-filter__counter"
+            />
             <button
+                        className="ui-filter__button"
                         onClick={[Function]}
             >
                         +
             </button>
 </div>,
         ],
+        "className": "ui-filter",
       },
       "ref": null,
       "rendered": Array [
@@ -538,6 +183,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": "Unimited integer field",
+            "className": "ui-filter__name",
           },
           "ref": null,
           "rendered": "Unimited integer field",
@@ -550,19 +196,23 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <button
+                className="ui-filter__button"
+                disabled={true}
                 onClick={[Function]}
 >
                 -
 </button>,
-              <span>
-                1
-</span>,
+              <span
+                className="ui-filter__counter"
+/>,
               <button
+                className="ui-filter__button"
                 onClick={[Function]}
 >
                 +
 </button>,
             ],
+            "className": "ui-filter__input",
           },
           "ref": null,
           "rendered": Array [
@@ -572,6 +222,8 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "-",
+                "className": "ui-filter__button",
+                "disabled": true,
                 "onClick": [Function],
               },
               "ref": null,
@@ -583,10 +235,11 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": 1,
+                "children": 0,
+                "className": "ui-filter__counter",
               },
               "ref": null,
-              "rendered": 1,
+              "rendered": 0,
               "type": "span",
             },
             Object {
@@ -595,6 +248,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "+",
+                "className": "ui-filter__button",
                 "onClick": [Function],
               },
               "ref": null,
