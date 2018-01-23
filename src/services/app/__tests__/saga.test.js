@@ -29,14 +29,12 @@ describe('AppSaga', () => {
 
 	it('should fetch user and set logged user on state', async () => {
 		sagaTester.dispatch(Actions.fetchLoggedUser());
-		await sagaTester.waitFor(Actions.setLoggedUser.toString());
-		let lastAction = sagaTester.getLatestCalledAction();
-		expect(lastAction.payload).toEqual(user);
+		let setLoggedUser = await sagaTester.waitFor(Actions.setLoggedUser.toString());
+		expect(setLoggedUser.payload).toEqual(user);
 
-		await sagaTester.waitFor(Actions.setLoggedUser.toString());
+		setLoggedUser = await sagaTester.waitFor(Actions.setLoggedUser.toString());
 
-		lastAction = sagaTester.getLatestCalledAction();
-		expect(lastAction.payload).toEqual({
+		expect(setLoggedUser.payload).toEqual({
 			...user,
 			info: userInfos
 		});

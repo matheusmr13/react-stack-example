@@ -89,7 +89,7 @@ ShallowWrapper {
                 <TextField
                         disabled={false}
                         floatingLabelFixed={false}
-                        fullWidth={false}
+                        fullWidth={true}
                         hintText="Filter"
                         multiLine={false}
                         onChange={[Function]}
@@ -180,7 +180,7 @@ ShallowWrapper {
             <TextField
                         disabled={false}
                         floatingLabelFixed={false}
-                        fullWidth={false}
+                        fullWidth={true}
                         hintText="Filter"
                         multiLine={false}
                         onChange={[Function]}
@@ -302,7 +302,7 @@ ShallowWrapper {
             "children": <TextField
               disabled={false}
               floatingLabelFixed={false}
-              fullWidth={false}
+              fullWidth={true}
               hintText="Filter"
               multiLine={false}
               onChange={[Function]}
@@ -321,7 +321,7 @@ ShallowWrapper {
             "props": Object {
               "disabled": false,
               "floatingLabelFixed": false,
-              "fullWidth": false,
+              "fullWidth": true,
               "hintText": "Filter",
               "multiLine": false,
               "onChange": [Function],
@@ -541,7 +541,7 @@ ShallowWrapper {
                     <TextField
                               disabled={false}
                               floatingLabelFixed={false}
-                              fullWidth={false}
+                              fullWidth={true}
                               hintText="Filter"
                               multiLine={false}
                               onChange={[Function]}
@@ -632,7 +632,7 @@ ShallowWrapper {
               <TextField
                             disabled={false}
                             floatingLabelFixed={false}
-                            fullWidth={false}
+                            fullWidth={true}
                             hintText="Filter"
                             multiLine={false}
                             onChange={[Function]}
@@ -754,7 +754,7 @@ ShallowWrapper {
               "children": <TextField
                 disabled={false}
                 floatingLabelFixed={false}
-                fullWidth={false}
+                fullWidth={true}
                 hintText="Filter"
                 multiLine={false}
                 onChange={[Function]}
@@ -773,7 +773,7 @@ ShallowWrapper {
               "props": Object {
                 "disabled": false,
                 "floatingLabelFixed": false,
-                "fullWidth": false,
+                "fullWidth": true,
                 "hintText": "Filter",
                 "multiLine": false,
                 "onChange": [Function],

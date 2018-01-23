@@ -20,9 +20,7 @@ describe('PlaylistSaga', () => {
 
 	it('should filter playlists', async () => {
 		sagaTester.dispatch(Actions.filterPlaylists());
-		await sagaTester.waitFor(Actions.setPlaylistList.toString());
-
-		const lastAction = sagaTester.getLatestCalledAction();
-		expect(lastAction.payload).toEqual({ message: 'my featured', playlists: { items: Array(5).fill({}) } });
+		const setPlaylistAction = await sagaTester.waitFor(Actions.setPlaylistList.toString());
+		expect(setPlaylistAction.payload).toEqual({ message: 'my featured', playlists: { items: Array(5).fill({}) } });
 	});
 });
