@@ -7,6 +7,7 @@ const initialState = {
 
 export const Actions = createActions({
 	SET_PLAYLIST_LIST: playlists => playlists,
+	ON_SCHEDULE_REFRESH: () => {},
 	FILTER_PLAYLISTS: () => {}
 });
 

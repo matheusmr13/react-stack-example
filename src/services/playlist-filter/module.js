@@ -1,9 +1,11 @@
 import { createActions, handleActions } from 'redux-actions';
+import moment from 'moment';
 
 const initialState = {
 	loadingFilters: true,
 	possibleFilters: [],
-	selectedFilters: {}
+	selectedFilters: {},
+	lastUpdated: null
 };
 
 export const Actions = createActions({
@@ -20,7 +22,8 @@ const reducer = handleActions({
 	}),
 	[Actions.onFilterChange]: (state, { payload: filters }) => ({
 		...state,
-		selectedFilters: filters
+		selectedFilters: filters,
+		lastUpdated: moment()
 	}),
 	[Actions.fetchFilters]: state => ({
 		...state,
