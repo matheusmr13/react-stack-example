@@ -39,4 +39,14 @@ describe('AppSaga', () => {
 			info: userInfos
 		});
 	});
+
+	it('should logout user and set logged user to null', async () => {
+		AppService.logout = jest.fn();
+
+		sagaTester.dispatch(Actions.onLogout());
+		const setLoggedUser = await sagaTester.waitFor(Actions.setLoggedUser.toString());
+
+		expect(AppService.logout).toHaveBeenCalled();
+		expect(setLoggedUser.payload).toEqual(null);
+	});
 });
