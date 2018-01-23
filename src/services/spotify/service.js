@@ -5,7 +5,7 @@ class SpotifyService extends BaseService {
 	static fetch(url, options) {
 		return BaseService.get(`${process.env.REACT_APP_SPOTIFY_URL}${url}`, Object.assign({}, options, {
 			headers: {
-				Authorization: `Bearer ${Store.getState().app.loggedUser.access_token}a`
+				Authorization: `Bearer ${Store.getState().app.loggedUser.access_token}`
 			}
 		}));
 	}
