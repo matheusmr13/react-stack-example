@@ -1,10 +1,10 @@
 import React from 'react';
-import { render } from 'enzyme';
+import { shallow } from 'enzyme';
 import Landing from 'views/landing';
 
 describe('Landing component', () => {
 	it('should render properly', () => {
-		const landing = render(<Landing />);
+		const landing = shallow(<Landing />);
 		expect(landing).toMatchSnapshot();
 	});
 });

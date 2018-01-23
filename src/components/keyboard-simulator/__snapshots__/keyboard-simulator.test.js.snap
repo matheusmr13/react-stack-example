@@ -1,0 +1,163 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`KeyboardSimulator component should render properly 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <KeyboardSimulator />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <span
+          className="keyboard-simulator__text"
+>
+           
+          <span
+                    className="keyboard-simulator__inputing"
+          />
+</span>,
+        <span
+          className="keyboard-simulator__cursor keyboard-simulator__cursor--idle"
+/>,
+      ],
+      "className": "keyboard-simulator",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            undefined,
+            " ",
+            <span
+              className="keyboard-simulator__inputing"
+/>,
+          ],
+          "className": "keyboard-simulator__text",
+        },
+        "ref": null,
+        "rendered": Array [
+          undefined,
+          " ",
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "",
+              "className": "keyboard-simulator__inputing",
+            },
+            "ref": null,
+            "rendered": "",
+            "type": "span",
+          },
+        ],
+        "type": "span",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "className": "keyboard-simulator__cursor keyboard-simulator__cursor--idle",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "span",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <span
+            className="keyboard-simulator__text"
+>
+             
+            <span
+                        className="keyboard-simulator__inputing"
+            />
+</span>,
+          <span
+            className="keyboard-simulator__cursor keyboard-simulator__cursor--idle"
+/>,
+        ],
+        "className": "keyboard-simulator",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              undefined,
+              " ",
+              <span
+                className="keyboard-simulator__inputing"
+/>,
+            ],
+            "className": "keyboard-simulator__text",
+          },
+          "ref": null,
+          "rendered": Array [
+            undefined,
+            " ",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "",
+                "className": "keyboard-simulator__inputing",
+              },
+              "ref": null,
+              "rendered": "",
+              "type": "span",
+            },
+          ],
+          "type": "span",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "keyboard-simulator__cursor keyboard-simulator__cursor--idle",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "span",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
