@@ -15,7 +15,7 @@ function* fetchLoggedUser() {
 
 		yield put(Actions.setLoggedUser(loggedUser));
 	} catch (e) {
-		yield () => console.info(e);
+		console.info(e.data);
 	}
 }
 

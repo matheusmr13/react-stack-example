@@ -1,20 +1,19 @@
 import Store from 'services/config/redux';
+import BaseService from 'services/config/base-service';
 
-const paramsToUrl = filters => Object.keys(filters)
-	.map(k => `${encodeURIComponent(k)}=${encodeURIComponent(filters[k])}`)
-	.join('&');
-
-class SpotifyService {
+class SpotifyService extends BaseService {
 	static fetch(url, options) {
-		return fetch(`${process.env.REACT_APP_SPOTIFY_URL}${url}`, Object.assign({}, options, {
+		return BaseService.get(`${process.env.REACT_APP_SPOTIFY_URL}${url}`, Object.assign({}, options, {
 			headers: {
 				Authorization: `Bearer ${Store.getState().app.loggedUser.access_token}`
 			}
-		})).then(response => response.json());
+		}));
 	}
 
 	static fetchFeaturedPlaylists(filters) {
-		return this.fetch(`/browse/featured-playlists?${paramsToUrl(filters)}`)
+		return this.fetch('/browse/featured-playlists', {
+			qp: filters
+		});
 	}
 
 	static fetchLoggedUserInfos() {

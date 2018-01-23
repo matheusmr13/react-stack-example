@@ -4,7 +4,8 @@ import { Actions } from 'services/app/module';
 import AppView from 'views/app';
 
 const mapStateToProps = state => ({
-	loggedUser: state.app.loggedUser
+	loggedUser: state.app.loggedUser,
+	message: state.app.message
 });
 
 const mapDispatchToProps = dispatch => ({

@@ -3,8 +3,7 @@ import PropTypes from 'prop-types';
 
 import PlaylistsContainer from 'services/playlist/container';
 import FilterContainer from 'services/playlist-filter/container';
-import { AppBar, Drawer } from 'material-ui';
-import IconButton from 'material-ui/IconButton';
+import { AppBar, Drawer, Snackbar, IconButton } from 'material-ui';
 import CloseIcon from 'material-ui/svg-icons/navigation/close';
 import FilterListIcon from 'material-ui/svg-icons/content/filter-list';
 import Login from 'views/login';
@@ -13,10 +12,19 @@ import './app.css';
 
 class App extends Component {
 	state = {
-		isFilterOpen: false
+		isFilterOpen: false,
+		isShowingMessage: false
 	}
 	componentDidMount() {
 		this.props.fetchLoggedUser();
+	}
+	componentWillReceiveProps(props) {
+		if (!this.props.message ||
+			(props.message && this.props.message.generatedAt !== props.message.generatedAt)) {
+			this.setState({
+				isShowingMessage: !!props.message
+			});
+		}
 	}
 
 	onCloseAppBar = () => {
@@ -32,11 +40,16 @@ class App extends Component {
 	}
 
 	render() {
-		const { loggedUser } = this.props;
-		const { isFilterOpen } = this.state;
+		const { loggedUser, message } = this.props;
+		const { isFilterOpen, isShowingMessage } = this.state;
 
 		return (
 			<div className={`app${isFilterOpen ? ' app--menu-open' : ''}`}>
+				{ isShowingMessage ? <Snackbar
+					open
+					message={message.text}
+					autoHideDuration={4000}
+				/> : null}
 				<AppBar
 					titleStyle={{ textAlign: 'center' }}
 					title="Spotifood"
@@ -69,11 +82,16 @@ class App extends Component {
 }
 
 App.defaultProps = {
-	loggedUser: null
+	loggedUser: null,
+	message: null
 };
 
 App.propTypes = {
 	fetchLoggedUser: PropTypes.func.isRequired,
+	message: PropTypes.shape({
+		text: PropTypes.string.isRequired,
+		generatedAt: PropTypes.number.isRequired
+	}),
 	loggedUser: PropTypes.shape({
 		access_token: PropTypes.string.isRequired
 	})

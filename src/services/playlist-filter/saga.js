@@ -10,7 +10,7 @@ function* fetchFilters() {
 		const filters = yield call(() => FilterService.fetchFilters());
 		yield put(Actions.setPossibleFilters(filters));
 	} catch (e) {
-		yield () => console.info(e);
+		console.info(e);
 	}
 }
 
@@ -19,7 +19,7 @@ function* onFilterChange() {
 	try {
 		yield put(PlaylistActions.filterPlaylists());
 	} catch (e) {
-		yield () => console.info(e);
+		console.info(e);
 	}
 }
 
