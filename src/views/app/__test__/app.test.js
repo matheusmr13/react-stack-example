@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import App from 'views/app';
-import Login from 'views/login';
+import Landing from 'views/landing';
 
 describe('App component', () => {
 	const fetchLoggedUser = jest.fn();
@@ -11,7 +11,7 @@ describe('App component', () => {
 	/>);
 	it('should render login properly', () => {
 		expect(fetchLoggedUser).toHaveBeenCalled();
-		expect(app.find(Login)).toHaveLength(1);
+		expect(app.find(Landing)).toHaveLength(1);
 		expect(app).toMatchSnapshot();
 	});
 	it('should open drawer', () => {
@@ -27,6 +27,6 @@ describe('App component', () => {
 			loggedUser: { access_token: 'token' },
 			fetchLoggedUser
 		});
-		expect(app.find(Login)).toHaveLength(0);
+		expect(app.find(Landing)).toHaveLength(0);
 	});
 });

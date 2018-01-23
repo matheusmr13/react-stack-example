@@ -42,7 +42,19 @@ ShallowWrapper {
           }
           onLeftIconButtonClick={[Function]}
           showMenuIconButton={false}
-          title="Spotifood"
+          title={
+                    <div
+                              className="app__header"
+                    >
+                              <img
+                                        alt="Spotifood"
+                                        src="spotify-green-logo.png"
+                              />
+                              <span>
+                                        Spotifood
+                              </span>
+                    </div>
+          }
           titleStyle={
                     Object {
                               "textAlign": "center",
@@ -78,7 +90,17 @@ ShallowWrapper {
 </IconButton>,
           "onLeftIconButtonClick": [Function],
           "showMenuIconButton": false,
-          "title": "Spotifood",
+          "title": <div
+            className="app__header"
+>
+            <img
+                        alt="Spotifood"
+                        src="spotify-green-logo.png"
+            />
+            <span>
+                        Spotifood
+            </span>
+</div>,
           "titleStyle": Object {
             "textAlign": "center",
           },
@@ -127,7 +149,19 @@ ShallowWrapper {
             }
             onLeftIconButtonClick={[Function]}
             showMenuIconButton={false}
-            title="Spotifood"
+            title={
+                        <div
+                                    className="app__header"
+                        >
+                                    <img
+                                                alt="Spotifood"
+                                                src="spotify-green-logo.png"
+                                    />
+                                    <span>
+                                                Spotifood
+                                    </span>
+                        </div>
+            }
             titleStyle={
                         Object {
                                     "textAlign": "center",
@@ -163,7 +197,17 @@ ShallowWrapper {
 </IconButton>,
             "onLeftIconButtonClick": [Function],
             "showMenuIconButton": false,
-            "title": "Spotifood",
+            "title": <div
+              className="app__header"
+>
+              <img
+                            alt="Spotifood"
+                            src="spotify-green-logo.png"
+              />
+              <span>
+                            Spotifood
+              </span>
+</div>,
             "titleStyle": Object {
               "textAlign": "center",
             },
