@@ -10,7 +10,7 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-	fetchInitialPlaylists: () => dispatch(Actions.filterPlaylists({})),
+	fetchInitialPlaylists: () => dispatch(Actions.filterPlaylists()),
 	onLogout: () => dispatch(AppModule.onLogout())
 });
 

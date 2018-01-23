@@ -15,9 +15,9 @@ function* fetchFilters() {
 }
 
 
-function* onFilterChange({ payload: filters }) {
+function* onFilterChange() {
 	try {
-		yield put(PlaylistActions.filterPlaylists(filters));
+		yield put(PlaylistActions.filterPlaylists());
 	} catch (e) {
 		yield () => console.info(e);
 	}

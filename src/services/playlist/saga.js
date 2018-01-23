@@ -1,11 +1,12 @@
-import { all, call, put, takeLatest } from 'redux-saga/effects';
+import { all, call, put, takeLatest, select } from 'redux-saga/effects';
 
 import PlaylistService from './service';
 import { Actions } from './module';
 
-function* filterPlaylists({ payload: filter }) {
+function* filterPlaylists() {
 	try {
-		const playlits = yield call(() => PlaylistService.filterPlaylists(filter));
+		const { filter: { selectedFilters } } = yield select();
+		const playlits = yield call(() => PlaylistService.filterPlaylists(selectedFilters));
 		yield put(Actions.setPlaylistList(playlits));
 	} catch (e) {
 		yield () => console.info(e);

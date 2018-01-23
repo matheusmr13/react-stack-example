@@ -7,7 +7,7 @@ const initialState = {
 
 export const Actions = createActions({
 	SET_PLAYLIST_LIST: playlists => playlists,
-	FILTER_PLAYLISTS: filter => filter
+	FILTER_PLAYLISTS: () => {}
 });
 
 const reducer = handleActions({
