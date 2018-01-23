@@ -19,6 +19,10 @@ class SpotifyService extends BaseService {
 	static fetchLoggedUserInfos() {
 		return this.fetch('/me');
 	}
+
+	static getLoginUrl() {
+		return `${process.env.REACT_APP_SPOTIFY_AUTH_URL}?client_id=${process.env.REACT_APP_SPOTIFY_CLIENT_ID}&response_type=token&redirect_uri=${window.location.href}`;
+	}
 };
 
 export default SpotifyService;

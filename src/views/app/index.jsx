@@ -6,8 +6,9 @@ import FilterContainer from 'services/playlist-filter/container';
 import { AppBar, Drawer, Snackbar, IconButton } from 'material-ui';
 import CloseIcon from 'material-ui/svg-icons/navigation/close';
 import FilterListIcon from 'material-ui/svg-icons/content/filter-list';
-import Login from 'views/login';
+import Landing from 'views/landing';
 
+import LogoSpotify from 'images/spotify-green-logo.png';
 import './app.css';
 
 class App extends Component {
@@ -52,7 +53,12 @@ class App extends Component {
 				/> : null}
 				<AppBar
 					titleStyle={{ textAlign: 'center' }}
-					title="Spotifood"
+					title={
+						<div className="app__header">
+							<img src={LogoSpotify} alt="Spotifood" />
+							<span>Spotifood</span>
+						</div>
+					}
 					showMenuIconButton={!!loggedUser}
 					iconElementLeft={<IconButton style={{ position: 'absolute' }}><FilterListIcon /></IconButton>}
 					onLeftIconButtonClick={this.onOpenAppBar}
@@ -74,7 +80,7 @@ class App extends Component {
 								loggedUser={loggedUser}
 							/>
 						</React.Fragment>
-					) : <Login />
+					) : <Landing />
 				}
 			</div>
 		);

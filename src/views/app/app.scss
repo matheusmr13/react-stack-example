@@ -1,4 +1,17 @@
 .app {
+
+	&__header {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: #68d962;
+
+		img {
+			height: 40px;
+			margin-right: 16px;
+		}
+	}
+
 	&--menu-open {
 		padding-left: 256px;
 		@media screen and (max-width: 568px) {
