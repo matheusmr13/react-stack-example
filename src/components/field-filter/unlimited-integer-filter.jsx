@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import FilterPropType from 'services/playlist-filter/proptype';
 
+import './unlimited-integer-filter.css';
+
 class UnlimitedIntegerFilter extends Component {
 	state = {
 		count: 0
@@ -27,17 +29,25 @@ class UnlimitedIntegerFilter extends Component {
 		const { count } = this.state;
 		const { spec } = this.props;
 		return (
-			<div>
-				<div>
+			<div className="ui-filter">
+				<div className="ui-filter__name">
 					{spec.name}
 				</div>
-				<div>
-					{ count ?
-						<button onClick={this.onDownClick}>-</button> :
-						null
-					}
-					<span>{count}</span>
-					<button onClick={this.onUpClick}>+</button>
+				<div className="ui-filter__input">
+					<button
+						onClick={this.onDownClick}
+						className="ui-filter__button"
+						disabled={!count}
+					>
+						-
+					</button>
+					<span className="ui-filter__counter">{count}</span>
+					<button
+						onClick={this.onUpClick}
+						className="ui-filter__button"
+					>
+						+
+					</button>
 				</div>
 			</div>
 		);

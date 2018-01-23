@@ -20,6 +20,11 @@ const muiTheme = getMuiTheme({
 	appBar: {
 		color: '#282828',
 		titleFontWeight: 'bold'
+	},
+	snackbar: {
+		textColor: '#000',
+		backgroundColor: '#fff',
+		actionColor: '#1db954'
 	}
 });
 

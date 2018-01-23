@@ -4,8 +4,10 @@ import FilterPropType from 'services/playlist-filter/proptype';
 
 import Slider from 'material-ui/Slider';
 
+import './limited-integer-filter.css';
+
 const LimitedIntegerFilter = ({ spec: { validation, name }, onChange }) => (
-	<div>
+	<div className="li-filter">
 		<div>{name}</div>
 		<Slider
 			defaultValue={(validation.min + validation.max) / 2}

@@ -4,6 +4,8 @@ import FieldFilter from 'components/field-filter';
 import PropTypes from 'prop-types';
 import FilterPropType from 'services/playlist-filter/proptype';
 
+import './entity-filter.css';
+
 class EntityFilter extends Component {
 	state = {
 		filters: {}
@@ -27,7 +29,7 @@ class EntityFilter extends Component {
 	render() {
 		const { filters } = this.props;
 		return (
-			<div>
+			<div className="entity-filter">
 				{
 					filters.map(filter => (
 						<FieldFilter

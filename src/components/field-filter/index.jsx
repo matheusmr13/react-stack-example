@@ -7,6 +7,8 @@ import DatetimeFilter from './datetime-filter';
 import UnlimitedIntegerFilter from './unlimited-integer-filter';
 import LimitedIntegerFilter from './limited-integer-filter';
 
+import './field-filter.css';
+
 class FieldFilter extends Component {
 	state = {}
 
@@ -58,7 +60,11 @@ class FieldFilter extends Component {
 			return null;
 		}
 
-		return <ComponentToRender spec={spec} onChange={this.onChange} />;
+		return (
+			<div className="field-filter">
+				<ComponentToRender spec={spec} onChange={this.onChange} />
+			</div>
+		);
 	}
 }
 
