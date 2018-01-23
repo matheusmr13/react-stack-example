@@ -16,7 +16,13 @@ function* filterPlaylists() {
 
 		yield put(Actions.onScheduleRefresh());
 	} catch (error) {
-		yield put(AppActions.showMessage({ text: error.message, generatedAt: new Date().getTime() }));
+		if (error.status === 401) {
+			yield put(AppActions.setLoggedUser(null));
+		} else if (error.status === 400) {
+			yield put(AppActions.showMessage({ text: error.message, generatedAt: new Date().getTime() }));
+		} else {
+			yield put(AppActions.showMessage({ text: 'An error occurred, please contact support!', generatedAt: new Date().getTime() }));
+		}
 	}
 }
 
