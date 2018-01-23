@@ -22,10 +22,7 @@ const UserInfo = ({ user, onLogout }) => {
 				<div className="user-info__followers">{`${followers.total} followers`}</div>
 				<button
 					className="user-info__logout"
-					onClick={(e) => {
-						e.stopPropagation();
-						onLogout();
-					}}
+					onClick={onLogout}
 				>
 					Logout
 				</button>
