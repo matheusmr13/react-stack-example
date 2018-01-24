@@ -3,11 +3,10 @@ import PropTypes from 'prop-types';
 import PlaylistPropType from 'services/playlist/proptype';
 
 import UserInfo from 'components/user-info';
-
 import TextField from 'material-ui/TextField';
+import { PlaylistsShimmer, PlaylistNameShimmer } from './shimmer';
 
 import PlaylistCard from './card';
-
 import './playlist.css';
 
 const getPlaylistList = (playlists) => {
@@ -70,15 +69,14 @@ class Playlists extends Component {
 		const { loadingPlaylists, playlists, loggedUser } = this.props;
 		const { nameFilter, filteredPlaylists } = this.state;
 
-		if (loadingPlaylists) {
-			return 'Loading';
-		}
-
 		return (
 			<div className="playlists">
 				<div className="playlists__content">
 					<div className="playlists__header">
-						<div className="playlists__message">{playlists.message}</div>
+						{ !loadingPlaylists ?
+							<div className="playlists__message">{playlists.message}</div> :
+							<PlaylistNameShimmer />
+						}
 						<UserInfo user={loggedUser} onLogout={this.props.onLogout} />
 					</div>
 					<div className="playlists__filter">
@@ -90,7 +88,10 @@ class Playlists extends Component {
 						/>
 					</div>
 					<div className="playlists__list-container">
-						{getPlaylistList(filteredPlaylists)}
+						{ !loadingPlaylists ?
+							getPlaylistList(filteredPlaylists) :
+							<PlaylistsShimmer />
+						}
 					</div>
 				</div>
 			</div>

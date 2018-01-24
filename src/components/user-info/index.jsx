@@ -1,10 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import UserInfoShimmer from './shimmer';
 import './user-info.css';
 
 const UserInfo = ({ user, onLogout }) => {
-	if (!user || !user.info) return '';
+	if (!user || !user.info) {
+		return <UserInfoShimmer />;
+	}
 
 	const {
 		info: {

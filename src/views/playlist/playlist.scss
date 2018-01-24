@@ -1,5 +1,6 @@
 .playlists {
 	background: linear-gradient(0deg,#1db954,#000);
+	min-height: calc(100vh - 64px);
 
 	@media screen and (max-width: 568px) {
 		text-align: center;
@@ -29,6 +30,9 @@
 
 		@media screen and (max-width: 568px) {
 			margin-top: 32px;
+			width: 300px;
+			margin-left: auto;
+			margin-right: auto;
 		}
 	}
 
