@@ -12,7 +12,7 @@ import './playlist.css';
 const getPlaylistList = (playlists) => {
 	if (!playlists || !playlists.length) {
 		return (
-			<div className="playlists__empty">No items to show.</div>
+			<div className="playlists__empty">No playlist to show.</div>
 		);
 	}
 

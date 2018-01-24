@@ -24,13 +24,17 @@ class KeyboardSimulator extends Component {
 		this.updateWriting(TIMING_PER_STATUS.WRITING);
 	}
 
+	componentWillUnmount() {
+		clearInterval(this.intervalToUpdate);
+	}
+
 	updateWriting(timingToNextAction) {
-		const { character, word, isWriting, isIdleing } = this.state;
+		const { character, word, isWriting } = this.state;
 		const { values } = this.props;
 
 		const newState = { ...this.state };
 
-		setTimeout(() => {
+		this.intervalToUpdate = setTimeout(() => {
 			const shouldIdle = character === values[word].length;
 
 			let timing;
