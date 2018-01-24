@@ -2,11 +2,17 @@ import React from 'react';
 import ContentLoader from 'react-content-loader';
 import PlaylistCardShimmer from './card/shimmer';
 
-export const PlaylistsShimmer = () => Array(4).fill(0).map((e, i) => (
-	<div className="playlist-card" key={i}>
-		<PlaylistCardShimmer />
-	</div>
-));
+export const PlaylistsShimmer = () => (
+	<React.Fragment>
+		{
+			Array(4).fill(0).map((e, i) => (
+				<div className="playlist-card" key={i}>
+					<PlaylistCardShimmer />
+				</div>
+			))
+		}
+	</React.Fragment>
+);
 
 export const PlaylistNameShimmer = () => (
 	<div style={{ minWidth: '260px' }}>
