@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import FilterPropType from 'services/playlist-filter/proptype';
 
 import EntityFilter from 'components/entity-filter';
+import EntityFilterShimmer from 'components/entity-filter/shimmer';
 
 class Filter extends Component {
 	componentDidMount() {
@@ -12,7 +13,7 @@ class Filter extends Component {
 	render() {
 		const { loadingFilters, selectedFilters, possibleFilters } = this.props;
 		if (loadingFilters) {
-			return 'Loading';
+			return <EntityFilterShimmer />;
 		}
 
 		return (
