@@ -1,168 +1,35 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ListFilter component should render properly 1`] = `
-ShallowWrapper {
-  "length": 1,
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <ListFilter
-    onChange={[Function]}
-    spec={
-        Object {
-            "id": "myId",
-            "name": "List field",
-            "values": Array [],
-          }
-    }
-/>,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "class",
-    "props": Object {
-      "autoWidth": false,
-      "children": Array [
-        <MenuItem
-          anchorOrigin={
-                    Object {
-                              "horizontal": "right",
-                              "vertical": "top",
-                            }
-          }
-          checked={false}
-          desktop={false}
-          disabled={false}
-          focusState="none"
-          insetChildren={false}
-          primaryText=""
-          targetOrigin={
-                    Object {
-                              "horizontal": "left",
-                              "vertical": "top",
-                            }
-          }
-          value={null}
-/>,
-        Array [],
-      ],
-      "disabled": false,
-      "floatingLabelText": "List field",
-      "fullWidth": true,
-      "multiple": false,
-      "onChange": [Function],
-      "value": null,
-    },
-    "ref": null,
-    "rendered": Array [
+<SelectField
+  autoWidth={false}
+  disabled={false}
+  floatingLabelText="List field"
+  fullWidth={true}
+  multiple={false}
+  onChange={[Function]}
+  value={null}
+>
+  <MenuItem
+    anchorOrigin={
       Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "anchorOrigin": Object {
-            "horizontal": "right",
-            "vertical": "top",
-          },
-          "checked": false,
-          "desktop": false,
-          "disabled": false,
-          "focusState": "none",
-          "insetChildren": false,
-          "primaryText": "",
-          "targetOrigin": Object {
-            "horizontal": "left",
-            "vertical": "top",
-          },
-          "value": null,
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-    ],
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "autoWidth": false,
-        "children": Array [
-          <MenuItem
-            anchorOrigin={
-                        Object {
-                                    "horizontal": "right",
-                                    "vertical": "top",
-                                  }
-            }
-            checked={false}
-            desktop={false}
-            disabled={false}
-            focusState="none"
-            insetChildren={false}
-            primaryText=""
-            targetOrigin={
-                        Object {
-                                    "horizontal": "left",
-                                    "vertical": "top",
-                                  }
-            }
-            value={null}
-/>,
-          Array [],
-        ],
-        "disabled": false,
-        "floatingLabelText": "List field",
-        "fullWidth": true,
-        "multiple": false,
-        "onChange": [Function],
-        "value": null,
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "anchorOrigin": Object {
-              "horizontal": "right",
-              "vertical": "top",
-            },
-            "checked": false,
-            "desktop": false,
-            "disabled": false,
-            "focusState": "none",
-            "insetChildren": false,
-            "primaryText": "",
-            "targetOrigin": Object {
-              "horizontal": "left",
-              "vertical": "top",
-            },
-            "value": null,
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-      ],
-      "type": [Function],
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-      },
-    },
-  },
-}
+        "horizontal": "right",
+        "vertical": "top",
+      }
+    }
+    checked={false}
+    desktop={false}
+    disabled={false}
+    focusState="none"
+    insetChildren={false}
+    primaryText=""
+    targetOrigin={
+      Object {
+        "horizontal": "left",
+        "vertical": "top",
+      }
+    }
+    value={null}
+  />
+</SelectField>
 `;

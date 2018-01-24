@@ -46,7 +46,7 @@ class PlaylistCard extends Component {
 			</a>
 		);
 	}
-};
+}
 
 PlaylistCard.propTypes = {
 	playlist: PropTypes.shape(PlaylistPropType).isRequired

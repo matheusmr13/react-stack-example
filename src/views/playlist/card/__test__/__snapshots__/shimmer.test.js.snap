@@ -1,163 +1,31 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`PlaylistCardShimmer component should render properly 1`] = `
-ShallowWrapper {
-  "length": 1,
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <CardShimmer />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "function",
-    "props": Object {
-      "children": Array [
-        <rect
-          height="298"
-          rx="5"
-          ry="5"
-          width="298"
-          x="1"
-          y="1"
-/>,
-        <rect
-          height="30"
-          rx="5"
-          ry="5"
-          width="200"
-          x="50"
-          y="310"
-/>,
-      ],
-      "className": "",
-      "height": 337,
-      "preserveAspectRatio": "xMidYMid meet",
-      "primaryColor": "#282828",
-      "secondaryColor": "#404040",
-      "speed": 2,
-      "type": "facebook",
-      "width": 300,
-    },
-    "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "height": "298",
-          "rx": "5",
-          "ry": "5",
-          "width": "298",
-          "x": "1",
-          "y": "1",
-        },
-        "ref": null,
-        "rendered": null,
-        "type": "rect",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "height": "30",
-          "rx": "5",
-          "ry": "5",
-          "width": "200",
-          "x": "50",
-          "y": "310",
-        },
-        "ref": null,
-        "rendered": null,
-        "type": "rect",
-      },
-    ],
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "function",
-      "props": Object {
-        "children": Array [
-          <rect
-            height="298"
-            rx="5"
-            ry="5"
-            width="298"
-            x="1"
-            y="1"
-/>,
-          <rect
-            height="30"
-            rx="5"
-            ry="5"
-            width="200"
-            x="50"
-            y="310"
-/>,
-        ],
-        "className": "",
-        "height": 337,
-        "preserveAspectRatio": "xMidYMid meet",
-        "primaryColor": "#282828",
-        "secondaryColor": "#404040",
-        "speed": 2,
-        "type": "facebook",
-        "width": 300,
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "height": "298",
-            "rx": "5",
-            "ry": "5",
-            "width": "298",
-            "x": "1",
-            "y": "1",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": "rect",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "height": "30",
-            "rx": "5",
-            "ry": "5",
-            "width": "200",
-            "x": "50",
-            "y": "310",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": "rect",
-        },
-      ],
-      "type": [Function],
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-      },
-    },
-  },
-}
+<ContentLoader
+  className=""
+  height={337}
+  preserveAspectRatio="xMidYMid meet"
+  primaryColor="#282828"
+  secondaryColor="#404040"
+  speed={2}
+  type="facebook"
+  width={300}
+>
+  <rect
+    height="298"
+    rx="5"
+    ry="5"
+    width="298"
+    x="1"
+    y="1"
+  />
+  <rect
+    height="30"
+    rx="5"
+    ry="5"
+    width="200"
+    x="50"
+    y="310"
+  />
+</ContentLoader>
 `;

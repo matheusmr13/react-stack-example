@@ -1,419 +1,60 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`PlaylistsShimmer component should render list shimmer properly 1`] = `
-ShallowWrapper {
-  "length": 1,
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Unknown />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "function",
-    "props": Object {
-      "children": Array [
-        <div
-          className="playlist-card"
->
-          <CardShimmer />
-</div>,
-        <div
-          className="playlist-card"
->
-          <CardShimmer />
-</div>,
-        <div
-          className="playlist-card"
->
-          <CardShimmer />
-</div>,
-        <div
-          className="playlist-card"
->
-          <CardShimmer />
-</div>,
-      ],
-    },
-    "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": "0",
-        "nodeType": "host",
-        "props": Object {
-          "children": <CardShimmer />,
-          "className": "playlist-card",
-        },
-        "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {},
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        "type": "div",
-      },
-      Object {
-        "instance": null,
-        "key": "1",
-        "nodeType": "host",
-        "props": Object {
-          "children": <CardShimmer />,
-          "className": "playlist-card",
-        },
-        "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {},
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        "type": "div",
-      },
-      Object {
-        "instance": null,
-        "key": "2",
-        "nodeType": "host",
-        "props": Object {
-          "children": <CardShimmer />,
-          "className": "playlist-card",
-        },
-        "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {},
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        "type": "div",
-      },
-      Object {
-        "instance": null,
-        "key": "3",
-        "nodeType": "host",
-        "props": Object {
-          "children": <CardShimmer />,
-          "className": "playlist-card",
-        },
-        "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {},
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        "type": "div",
-      },
-    ],
-    "type": Symbol(react.fragment),
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "function",
-      "props": Object {
-        "children": Array [
-          <div
-            className="playlist-card"
->
-            <CardShimmer />
-</div>,
-          <div
-            className="playlist-card"
->
-            <CardShimmer />
-</div>,
-          <div
-            className="playlist-card"
->
-            <CardShimmer />
-</div>,
-          <div
-            className="playlist-card"
->
-            <CardShimmer />
-</div>,
-        ],
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": "0",
-          "nodeType": "host",
-          "props": Object {
-            "children": <CardShimmer />,
-            "className": "playlist-card",
-          },
-          "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "function",
-            "props": Object {},
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          "type": "div",
-        },
-        Object {
-          "instance": null,
-          "key": "1",
-          "nodeType": "host",
-          "props": Object {
-            "children": <CardShimmer />,
-            "className": "playlist-card",
-          },
-          "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "function",
-            "props": Object {},
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          "type": "div",
-        },
-        Object {
-          "instance": null,
-          "key": "2",
-          "nodeType": "host",
-          "props": Object {
-            "children": <CardShimmer />,
-            "className": "playlist-card",
-          },
-          "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "function",
-            "props": Object {},
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          "type": "div",
-        },
-        Object {
-          "instance": null,
-          "key": "3",
-          "nodeType": "host",
-          "props": Object {
-            "children": <CardShimmer />,
-            "className": "playlist-card",
-          },
-          "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "function",
-            "props": Object {},
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          "type": "div",
-        },
-      ],
-      "type": Symbol(react.fragment),
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-      },
-    },
-  },
-}
+<React.Fragment>
+  <div
+    className="playlist-card"
+    key="0"
+  >
+    <CardShimmer />
+  </div>
+  <div
+    className="playlist-card"
+    key="1"
+  >
+    <CardShimmer />
+  </div>
+  <div
+    className="playlist-card"
+    key="2"
+  >
+    <CardShimmer />
+  </div>
+  <div
+    className="playlist-card"
+    key="3"
+  >
+    <CardShimmer />
+  </div>
+</React.Fragment>
 `;
 
 exports[`PlaylistsShimmer component should render name shimmer properly 1`] = `
-ShallowWrapper {
-  "length": 1,
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Unknown />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "host",
-    "props": Object {
-      "children": <ContentLoader
-        className=""
-        height={32}
-        preserveAspectRatio="xMidYMid meet"
-        primaryColor="#282828"
-        secondaryColor="#404040"
-        speed={2}
-        type="facebook"
-        width={300}
->
-        <rect
-                height="30"
-                rx="5"
-                ry="5"
-                width="298"
-                x="1"
-                y="1"
-        />
-</ContentLoader>,
-      "style": Object {
-        "minWidth": "260px",
-      },
-    },
-    "ref": null,
-    "rendered": Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "function",
-      "props": Object {
-        "children": <rect
-          height="30"
-          rx="5"
-          ry="5"
-          width="298"
-          x="1"
-          y="1"
-/>,
-        "className": "",
-        "height": 32,
-        "preserveAspectRatio": "xMidYMid meet",
-        "primaryColor": "#282828",
-        "secondaryColor": "#404040",
-        "speed": 2,
-        "type": "facebook",
-        "width": 300,
-      },
-      "ref": null,
-      "rendered": Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "height": "30",
-          "rx": "5",
-          "ry": "5",
-          "width": "298",
-          "x": "1",
-          "y": "1",
-        },
-        "ref": null,
-        "rendered": null,
-        "type": "rect",
-      },
-      "type": [Function],
-    },
-    "type": "div",
-  },
-  Symbol(enzyme.__nodes__): Array [
+<div
+  style={
     Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": <ContentLoader
-          className=""
-          height={32}
-          preserveAspectRatio="xMidYMid meet"
-          primaryColor="#282828"
-          secondaryColor="#404040"
-          speed={2}
-          type="facebook"
-          width={300}
+      "minWidth": "260px",
+    }
+  }
 >
-          <rect
-                    height="30"
-                    rx="5"
-                    ry="5"
-                    width="298"
-                    x="1"
-                    y="1"
-          />
-</ContentLoader>,
-        "style": Object {
-          "minWidth": "260px",
-        },
-      },
-      "ref": null,
-      "rendered": Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {
-          "children": <rect
-            height="30"
-            rx="5"
-            ry="5"
-            width="298"
-            x="1"
-            y="1"
-/>,
-          "className": "",
-          "height": 32,
-          "preserveAspectRatio": "xMidYMid meet",
-          "primaryColor": "#282828",
-          "secondaryColor": "#404040",
-          "speed": 2,
-          "type": "facebook",
-          "width": 300,
-        },
-        "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "height": "30",
-            "rx": "5",
-            "ry": "5",
-            "width": "298",
-            "x": "1",
-            "y": "1",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": "rect",
-        },
-        "type": [Function],
-      },
-      "type": "div",
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-      },
-    },
-  },
-}
+  <ContentLoader
+    className=""
+    height={32}
+    preserveAspectRatio="xMidYMid meet"
+    primaryColor="#282828"
+    secondaryColor="#404040"
+    speed={2}
+    type="facebook"
+    width={300}
+  >
+    <rect
+      height="30"
+      rx="5"
+      ry="5"
+      width="298"
+      x="1"
+      y="1"
+    />
+  </ContentLoader>
+</div>
 `;

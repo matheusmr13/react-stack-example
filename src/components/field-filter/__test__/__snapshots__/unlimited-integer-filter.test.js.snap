@@ -1,273 +1,35 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`UnlimitedIntegerFilter component should render initial state properly 1`] = `
-ShallowWrapper {
-  "length": 1,
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <UnlimitedIntegerFilter
-    onChange={[Function]}
-    spec={
-        Object {
-            "id": "myId",
-            "name": "Unimited integer field",
-          }
-    }
-/>,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "host",
-    "props": Object {
-      "children": Array [
-        <div
-          className="ui-filter__name"
+<div
+  className="ui-filter"
 >
-          Unimited integer field
-</div>,
-        <div
-          className="ui-filter__input"
->
-          <button
-                    className="ui-filter__button"
-                    disabled={true}
-                    onClick={[Function]}
-          >
-                    -
-          </button>
-          <span
-                    className="ui-filter__counter"
-          />
-          <button
-                    className="ui-filter__button"
-                    onClick={[Function]}
-          >
-                    +
-          </button>
-</div>,
-      ],
-      "className": "ui-filter",
-    },
-    "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "Unimited integer field",
-          "className": "ui-filter__name",
-        },
-        "ref": null,
-        "rendered": "Unimited integer field",
-        "type": "div",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            <button
-              className="ui-filter__button"
-              disabled={true}
-              onClick={[Function]}
->
-              -
-</button>,
-            <span
-              className="ui-filter__counter"
-/>,
-            <button
-              className="ui-filter__button"
-              onClick={[Function]}
->
-              +
-</button>,
-          ],
-          "className": "ui-filter__input",
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "-",
-              "className": "ui-filter__button",
-              "disabled": true,
-              "onClick": [Function],
-            },
-            "ref": null,
-            "rendered": "-",
-            "type": "button",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": 0,
-              "className": "ui-filter__counter",
-            },
-            "ref": null,
-            "rendered": 0,
-            "type": "span",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "+",
-              "className": "ui-filter__button",
-              "onClick": [Function],
-            },
-            "ref": null,
-            "rendered": "+",
-            "type": "button",
-          },
-        ],
-        "type": "div",
-      },
-    ],
-    "type": "div",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": Array [
-          <div
-            className="ui-filter__name"
->
-            Unimited integer field
-</div>,
-          <div
-            className="ui-filter__input"
->
-            <button
-                        className="ui-filter__button"
-                        disabled={true}
-                        onClick={[Function]}
-            >
-                        -
-            </button>
-            <span
-                        className="ui-filter__counter"
-            />
-            <button
-                        className="ui-filter__button"
-                        onClick={[Function]}
-            >
-                        +
-            </button>
-</div>,
-        ],
-        "className": "ui-filter",
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "Unimited integer field",
-            "className": "ui-filter__name",
-          },
-          "ref": null,
-          "rendered": "Unimited integer field",
-          "type": "div",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              <button
-                className="ui-filter__button"
-                disabled={true}
-                onClick={[Function]}
->
-                -
-</button>,
-              <span
-                className="ui-filter__counter"
-/>,
-              <button
-                className="ui-filter__button"
-                onClick={[Function]}
->
-                +
-</button>,
-            ],
-            "className": "ui-filter__input",
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "-",
-                "className": "ui-filter__button",
-                "disabled": true,
-                "onClick": [Function],
-              },
-              "ref": null,
-              "rendered": "-",
-              "type": "button",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": 0,
-                "className": "ui-filter__counter",
-              },
-              "ref": null,
-              "rendered": 0,
-              "type": "span",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "+",
-                "className": "ui-filter__button",
-                "onClick": [Function],
-              },
-              "ref": null,
-              "rendered": "+",
-              "type": "button",
-            },
-          ],
-          "type": "div",
-        },
-      ],
-      "type": "div",
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-      },
-    },
-  },
-}
+  <div
+    className="ui-filter__name"
+  >
+    Unimited integer field
+  </div>
+  <div
+    className="ui-filter__input"
+  >
+    <button
+      className="ui-filter__button"
+      disabled={true}
+      onClick={[Function]}
+    >
+      -
+    </button>
+    <span
+      className="ui-filter__counter"
+    >
+      0
+    </span>
+    <button
+      className="ui-filter__button"
+      onClick={[Function]}
+    >
+      +
+    </button>
+  </div>
+</div>
 `;

@@ -1,157 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`LimitedIntegerFilter component should render properly 1`] = `
-ShallowWrapper {
-  "length": 1,
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <LimitedIntegerFilter
+<div
+  className="li-filter"
+>
+  <div>
+    Limited integer field
+  </div>
+  <Slider
+    axis="x"
+    defaultValue={5}
+    disableFocusRipple={false}
+    disabled={false}
+    max={10}
+    min={0}
     onChange={[Function]}
-    spec={
-        Object {
-            "id": "myId",
-            "name": "Limited integer field",
-            "validation": Object {
-              "max": 10,
-              "min": 0,
-            },
-          }
-    }
-/>,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "host",
-    "props": Object {
-      "children": Array [
-        <div>
-          Limited integer field
-</div>,
-        <Slider
-          axis="x"
-          defaultValue={5}
-          disableFocusRipple={false}
-          disabled={false}
-          max={10}
-          min={0}
-          onChange={[Function]}
-          required={true}
-          step={1}
-          style={Object {}}
-/>,
-      ],
-      "className": "li-filter",
-    },
-    "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "Limited integer field",
-        },
-        "ref": null,
-        "rendered": "Limited integer field",
-        "type": "div",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "axis": "x",
-          "defaultValue": 5,
-          "disableFocusRipple": false,
-          "disabled": false,
-          "max": 10,
-          "min": 0,
-          "onChange": [Function],
-          "required": true,
-          "step": 1,
-          "style": Object {},
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-    ],
-    "type": "div",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": Array [
-          <div>
-            Limited integer field
-</div>,
-          <Slider
-            axis="x"
-            defaultValue={5}
-            disableFocusRipple={false}
-            disabled={false}
-            max={10}
-            min={0}
-            onChange={[Function]}
-            required={true}
-            step={1}
-            style={Object {}}
-/>,
-        ],
-        "className": "li-filter",
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "Limited integer field",
-          },
-          "ref": null,
-          "rendered": "Limited integer field",
-          "type": "div",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "axis": "x",
-            "defaultValue": 5,
-            "disableFocusRipple": false,
-            "disabled": false,
-            "max": 10,
-            "min": 0,
-            "onChange": [Function],
-            "required": true,
-            "step": 1,
-            "style": Object {},
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-      ],
-      "type": "div",
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-      },
-    },
-  },
-}
+    required={true}
+    step={1}
+    style={Object {}}
+  />
+</div>
 `;

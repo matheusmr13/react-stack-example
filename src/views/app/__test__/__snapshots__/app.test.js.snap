@@ -1,241 +1,48 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`App component should render login properly 1`] = `
-ShallowWrapper {
-  "length": 1,
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <App
-    fetchLoggedUser={[Function]}
-    loggedUser={null}
-    message={null}
-/>,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "host",
-    "props": Object {
-      "children": Array [
-        null,
-        <AppBar
-          iconElementLeft={
-                    <IconButton
-                              disableTouchRipple={false}
-                              disabled={false}
-                              iconStyle={Object {}}
-                              style={
-                                        Object {
-                                                  "position": "absolute",
-                                                }
-                              }
-                              tooltipPosition="bottom-center"
-                              touch={false}
-                    >
-                              <ContentFilterList />
-                    </IconButton>
+<div
+  className="app"
+>
+  <AppBar
+    iconElementLeft={
+      <IconButton
+        disableTouchRipple={false}
+        disabled={false}
+        iconStyle={Object {}}
+        style={
+          Object {
+            "position": "absolute",
           }
-          onLeftIconButtonClick={[Function]}
-          showMenuIconButton={false}
-          title={
-                    <div
-                              className="app__header"
-                    >
-                              <img
-                                        alt="Spotifood"
-                                        src="spotify-green-logo.png"
-                              />
-                              <span>
-                                        Spotifood
-                              </span>
-                    </div>
-          }
-          titleStyle={
-                    Object {
-                              "textAlign": "center",
-                            }
-          }
-          zDepth={1}
-/>,
-        <Login />,
-      ],
-      "className": "app",
-    },
-    "ref": null,
-    "rendered": Array [
-      null,
+        }
+        tooltipPosition="bottom-center"
+        touch={false}
+      >
+        <ContentFilterList />
+      </IconButton>
+    }
+    onLeftIconButtonClick={[Function]}
+    showMenuIconButton={false}
+    title={
+      <div
+        className="app__header"
+      >
+        <img
+          alt="Spotifood"
+          src="spotify-green-logo.png"
+        />
+        <span>
+          Spotifood
+        </span>
+      </div>
+    }
+    titleStyle={
       Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "iconElementLeft": <IconButton
-            disableTouchRipple={false}
-            disabled={false}
-            iconStyle={Object {}}
-            style={
-                        Object {
-                                    "position": "absolute",
-                                  }
-            }
-            tooltipPosition="bottom-center"
-            touch={false}
->
-            <ContentFilterList />
-</IconButton>,
-          "onLeftIconButtonClick": [Function],
-          "showMenuIconButton": false,
-          "title": <div
-            className="app__header"
->
-            <img
-                        alt="Spotifood"
-                        src="spotify-green-logo.png"
-            />
-            <span>
-                        Spotifood
-            </span>
-</div>,
-          "titleStyle": Object {
-            "textAlign": "center",
-          },
-          "zDepth": 1,
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {},
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-    ],
-    "type": "div",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": Array [
-          null,
-          <AppBar
-            iconElementLeft={
-                        <IconButton
-                                    disableTouchRipple={false}
-                                    disabled={false}
-                                    iconStyle={Object {}}
-                                    style={
-                                                Object {
-                                                            "position": "absolute",
-                                                          }
-                                    }
-                                    tooltipPosition="bottom-center"
-                                    touch={false}
-                        >
-                                    <ContentFilterList />
-                        </IconButton>
-            }
-            onLeftIconButtonClick={[Function]}
-            showMenuIconButton={false}
-            title={
-                        <div
-                                    className="app__header"
-                        >
-                                    <img
-                                                alt="Spotifood"
-                                                src="spotify-green-logo.png"
-                                    />
-                                    <span>
-                                                Spotifood
-                                    </span>
-                        </div>
-            }
-            titleStyle={
-                        Object {
-                                    "textAlign": "center",
-                                  }
-            }
-            zDepth={1}
-/>,
-          <Login />,
-        ],
-        "className": "app",
-      },
-      "ref": null,
-      "rendered": Array [
-        null,
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "iconElementLeft": <IconButton
-              disableTouchRipple={false}
-              disabled={false}
-              iconStyle={Object {}}
-              style={
-                            Object {
-                                          "position": "absolute",
-                                        }
-              }
-              tooltipPosition="bottom-center"
-              touch={false}
->
-              <ContentFilterList />
-</IconButton>,
-            "onLeftIconButtonClick": [Function],
-            "showMenuIconButton": false,
-            "title": <div
-              className="app__header"
->
-              <img
-                            alt="Spotifood"
-                            src="spotify-green-logo.png"
-              />
-              <span>
-                            Spotifood
-              </span>
-</div>,
-            "titleStyle": Object {
-              "textAlign": "center",
-            },
-            "zDepth": 1,
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {},
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-      ],
-      "type": "div",
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-      },
-    },
-  },
-}
+        "textAlign": "center",
+      }
+    }
+    zDepth={1}
+  />
+  <Login />
+</div>
 `;
