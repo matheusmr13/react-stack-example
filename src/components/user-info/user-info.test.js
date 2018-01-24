@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, shallow } from 'enzyme';
+import { shallow } from 'enzyme';
 import UserInfo from './index';
 
 const user = {
@@ -20,11 +20,11 @@ const user = {
 
 describe('UserInfo component', () => {
 	it('should render properly without user', () => {
-		const entityFilter = render(<UserInfo onLogout={() => {}} />);
+		const entityFilter = shallow(<UserInfo onLogout={() => {}} />);
 		expect(entityFilter).toMatchSnapshot();
 	});
 	it('should render properly with user', () => {
-		const entityFilter = render(<UserInfo user={user} onLogout={() => {}} />);
+		const entityFilter = shallow(<UserInfo user={user} onLogout={() => {}} />);
 		expect(entityFilter).toMatchSnapshot();
 	});
 	it('should logout user if button clicked', () => {

@@ -1,5 +1,5 @@
 import React from 'react';
-import { render } from 'enzyme';
+import { shallow } from 'enzyme';
 import PlaylistCard from 'views/playlist/card';
 
 const playlist = {
@@ -21,7 +21,7 @@ const playlist = {
 
 describe('PlaylistCard component', () => {
 	it('should render properly', () => {
-		const playlistCard = render(<PlaylistCard playlist={playlist} />);
+		const playlistCard = shallow(<PlaylistCard playlist={playlist} />);
 		expect(playlistCard).toMatchSnapshot();
 	});
 });
