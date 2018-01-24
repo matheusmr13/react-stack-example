@@ -1,0 +1,28 @@
+severity: error
+
+options:
+  merge-default-rules: true
+files:
+  include: 'src/**/*.scss'
+
+rules:
+  # Formatting
+  property-sort-order: 0
+  clean-import-paths: 0
+  nesting-depth:
+    - 1
+    - max-depth: 4
+  indentation:
+    - 1
+    - size: tab
+
+  # Name Formats
+  class-name-format: 
+    - 1
+    - convention: hyphenatedbem
+
+  # Style Guide
+  quotes:
+    - 1
+    - style: double
+

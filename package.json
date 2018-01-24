@@ -36,7 +36,7 @@
     "build": "npm run build-css && cross-env NODE_PATH=./src react-scripts build",
     "test": "cross-env NODE_PATH=./src react-scripts test --env=jsdom",
     "test:ci": "cross-env CI=true npm-run-all build-css test",
-    "jslint": "./node_modules/eslint/bin/eslint.js .",
+    "jslint": "./node_modules/eslint/bin/eslint.js . -c .eslintrc --ignore-path .eslintignore --ext .jsx,.js",
     "jslint:fix": "./node_modules/eslint/bin/eslint.js . --fix",
     "sasslint": "sass-lint -c .sass-lint.yml 'src/**/*.scss' -v -q --max-warnings 0",
     "lint": "npm run sasslint && npm run jslint",

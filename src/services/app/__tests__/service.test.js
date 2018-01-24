@@ -66,6 +66,5 @@ describe('App service test', () => {
 		expect(user).toHaveProperty('expireDate');
 		delete user.expireDate;
 		expect(user).toEqual(userJson);
-
 	});
 });

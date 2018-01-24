@@ -10,18 +10,19 @@ const UserInfo = ({ user, onLogout }) => {
 	}
 
 	const {
-		info: {
-			images,
-			display_name,
-			external_urls,
-			followers
-		}
+		info
 	} = user;
+
+	const {
+		images,
+		external_urls,
+		followers
+	} = info;
 
 	return (
 		<div className="user-info" >
 			<div className="user-info__data">
-				<div className="user-info__name">{display_name}</div>
+				<div className="user-info__name">{info.display_name}</div>
 				<div className="user-info__followers">{`${followers.total} followers`}</div>
 				<button
 					className="user-info__logout"
@@ -35,7 +36,7 @@ const UserInfo = ({ user, onLogout }) => {
 				href={external_urls.spotify}
 				target="_blank"
 			>
-				<img src={images[0].url} alt={display_name} />
+				<img src={images[0].url} alt={info.display_name} />
 			</a>
 		</div>
 	);

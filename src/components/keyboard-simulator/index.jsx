@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
-
+import PropTypes from 'prop-types';
 
 import './keyboard-simulator.css';
-
-// if (values) {
 
 const TIMING_PER_STATUS = {
 	WRITING: 100,
@@ -29,12 +27,12 @@ class KeyboardSimulator extends Component {
 	}
 
 	updateWriting(timingToNextAction) {
-		const { character, word, isWriting } = this.state;
-		const { values } = this.props;
-
-		const newState = { ...this.state };
-
 		this.intervalToUpdate = setTimeout(() => {
+			const { character, word, isWriting } = this.state;
+			const { values } = this.props;
+
+			const newState = { ...this.state };
+
 			const shouldIdle = character === values[word].length;
 
 			let timing;
@@ -74,7 +72,7 @@ class KeyboardSimulator extends Component {
 	}
 
 	render() {
-		const { isWriting, isIdleing, currentText } = this.state;
+		const { isIdleing, currentText } = this.state;
 		const { text } = this.props;
 
 		return (
@@ -85,5 +83,10 @@ class KeyboardSimulator extends Component {
 		);
 	}
 }
- 
+
+KeyboardSimulator.propTypes = {
+	text: PropTypes.string.isRequired,
+	values: PropTypes.arrayOf(PropTypes.string).isRequired
+};
+
 export default KeyboardSimulator;
