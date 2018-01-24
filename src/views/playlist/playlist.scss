@@ -52,10 +52,12 @@
 
 	&__list-container {
 		text-align: center;
-		display: inline-block;
 	}
 
-	&__list {
+	&__empty {
+		color: gray;
+		font-size: 24px;
+		text-align: center;
 	}
 
 }

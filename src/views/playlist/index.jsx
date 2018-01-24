@@ -10,6 +10,28 @@ import PlaylistCard from './card';
 
 import './playlist.css';
 
+const getPlaylistList = (playlists) => {
+	if (!playlists || !playlists.length) {
+		return (
+			<div className="playlists__empty">No items to show.</div>
+		);
+	}
+
+	return (
+		<div className="playlists__list">
+			{
+				playlists
+					.map(playlist => (
+						<PlaylistCard
+							key={playlist.id}
+							playlist={playlist}
+						/>
+					))
+			}
+		</div>
+	);
+};
+
 class Playlists extends Component {
 	state = {
 		nameFilter: '',
@@ -51,6 +73,7 @@ class Playlists extends Component {
 		if (loadingPlaylists) {
 			return 'Loading';
 		}
+
 		return (
 			<div className="playlists">
 				<div className="playlists__content">
@@ -67,17 +90,7 @@ class Playlists extends Component {
 						/>
 					</div>
 					<div className="playlists__list-container">
-						<div className="playlists__list">
-							{
-								filteredPlaylists
-									.map(playlist => (
-										<PlaylistCard
-											key={playlist.id}
-											playlist={playlist}
-										/>
-									))
-							}
-						</div>
+						{getPlaylistList(filteredPlaylists)}
 					</div>
 				</div>
 			</div>
