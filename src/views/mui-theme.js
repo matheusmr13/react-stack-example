@@ -1,33 +1,39 @@
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 
+const primaryColor = '#1db954';
+const textColor = '#000';
+const darkGray = '#282828';
+const gray = 'gray';
+const black = '#fff';
+
 const muiTheme = getMuiTheme({
 	palette: {
-		primary1Color: '#1db954',
-		primary2Color: '#1db954',
-		primary3Color: '#1db954',
-		accent1Color: '#1db954',
-		accent2Color: '#1db954',
-		accent3Color: '#1db954',
-		textColor: '#000',
-		alternateTextColor: '#fff',
-		canvasColor: '#fff',
-		borderColor: '#282828',
-		disabledColor: 'gray',
-		pickerHeaderColor: '#1db954',
-		clockCircleColor: '#1db954',
-		shadowColor: '#000'
+		primary1Color: primaryColor,
+		primary2Color: primaryColor,
+		primary3Color: primaryColor,
+		accent1Color: primaryColor,
+		accent2Color: primaryColor,
+		accent3Color: primaryColor,
+		textColor,
+		alternateTextColor: black,
+		canvasColor: black,
+		borderColor: darkGray,
+		disabledColor: gray,
+		pickerHeaderColor: primaryColor,
+		clockCircleColor: primaryColor,
+		shadowColor: textColor
 	},
 	appBar: {
-		color: '#282828',
+		color: darkGray,
 		titleFontWeight: 'bold'
 	},
 	snackbar: {
-		textColor: '#000',
-		backgroundColor: '#fff',
-		actionColor: '#1db954'
+		textColor,
+		backgroundColor: black,
+		actionColor: primaryColor
 	},
 	textField: {
-		borderColor: 'gray'
+		borderColor: gray
 	}
 });
 

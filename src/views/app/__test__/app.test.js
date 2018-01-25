@@ -2,13 +2,22 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import App from 'views/app';
 import Landing from 'views/landing';
+import Snackbar from 'material-ui/Snackbar';
 
 describe('App component', () => {
 	const fetchLoggedUser = jest.fn();
-	const app = shallow(<App
-		loggedUser={null}
-		fetchLoggedUser={fetchLoggedUser}
-	/>);
+	let app;
+	beforeEach(() => {
+		app = shallow(<App
+			loggedUser={null}
+			fetchLoggedUser={fetchLoggedUser}
+			message={{
+				text: 'foo',
+				generatedAt: new Date().getTime()
+			}}
+		/>, { lifecycleExperimental: true });
+	});
+
 	it('should render login properly', () => {
 		expect(fetchLoggedUser).toHaveBeenCalled();
 		expect(app.find(Landing)).toHaveLength(1);
@@ -28,5 +37,14 @@ describe('App component', () => {
 			fetchLoggedUser
 		});
 		expect(app.find(Landing)).toHaveLength(0);
+	});
+	it('should render message component after changing text', () => {
+		app.setProps({
+			message: {
+				text: 'My message',
+				generatedAt: new Date().getTime() + 10
+			}
+		});
+		expect(app.find(Snackbar)).toHaveLength(1);
 	});
 });

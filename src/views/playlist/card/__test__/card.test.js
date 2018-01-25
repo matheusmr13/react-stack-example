@@ -20,8 +20,13 @@ const playlist = {
 };
 
 describe('PlaylistCard component', () => {
-	it('should render properly', () => {
+	it('should render properly before image load', () => {
 		const playlistCard = shallow(<PlaylistCard playlist={playlist} />);
+		expect(playlistCard).toMatchSnapshot();
+	});
+	it('should render properly after image load', () => {
+		const playlistCard = shallow(<PlaylistCard playlist={playlist} />);
+		playlistCard.instance().onImageLoad();
 		expect(playlistCard).toMatchSnapshot();
 	});
 });

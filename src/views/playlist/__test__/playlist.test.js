@@ -57,8 +57,12 @@ describe('Playlist component', () => {
 		expect(fetchInitialPlaylists).toHaveBeenCalled();
 		expect(playlistList).toMatchSnapshot();
 	});
-	it('should filter playlists by name', () => {
+	it('should filter playlists by name matching one playlist', () => {
 		playlistList.instance().onFilterByName({}, 'my');
 		expect(playlistList.instance().state.filteredPlaylists).toHaveLength(1);
+	});
+	it('should filter playlists by name matching no playlist', () => {
+		playlistList.instance().onFilterByName({}, 'myCrazyNamePlaylist');
+		expect(playlistList.instance().state.filteredPlaylists).toHaveLength(0);
 	});
 });

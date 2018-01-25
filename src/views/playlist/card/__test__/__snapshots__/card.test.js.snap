@@ -1,6 +1,59 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`PlaylistCard component should render properly 1`] = `
+exports[`PlaylistCard component should render properly after image load 1`] = `
+<a
+  className="playlist-card"
+  href="mylink"
+  target="_blank"
+>
+  <CardShimmer />
+  <div
+    style={
+      Object {
+        "display": "none",
+      }
+    }
+  >
+    <div
+      className="playlist-card__image"
+    >
+      <img
+        alt="my playlist"
+        onLoad={[Function]}
+        src="myotherlink"
+      />
+      <div
+        className="playlist-card__hover"
+      >
+        <div
+          className="circle"
+        >
+          <svg
+            className="icon-play"
+            viewBox="0 0 85 100"
+          >
+            <path
+              d="M81 44.6c5 3 5 7.8 0 10.8L9 98.7c-5 3-9 .7-9-5V6.3c0-5.7 4-8 9-5l72 43.3z"
+              fill="#fff"
+            >
+              <title>
+                PLAY
+              </title>
+            </path>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div
+      className="playlist-card__name"
+    >
+      my playlist
+    </div>
+  </div>
+</a>
+`;
+
+exports[`PlaylistCard component should render properly before image load 1`] = `
 <a
   className="playlist-card"
   href="mylink"
