@@ -2,7 +2,7 @@ import React from 'react';
 import ContentLoader from 'react-content-loader';
 
 const UserInfoShimmer = () => (
-	<div style={{ minWidth: '260px' }}>
+	<div style={{ width: '260px' }}>
 		<ContentLoader
 			height={70}
 			width={260}

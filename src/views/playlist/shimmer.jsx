@@ -15,7 +15,7 @@ export const PlaylistsShimmer = () => (
 );
 
 export const PlaylistNameShimmer = () => (
-	<div style={{ minWidth: '260px' }}>
+	<div style={{ width: '260px' }}>
 		<ContentLoader
 			height={32}
 			width={300}
