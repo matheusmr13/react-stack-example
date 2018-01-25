@@ -33,7 +33,7 @@ exports[`PlaylistsShimmer component should render name shimmer properly 1`] = `
 <div
   style={
     Object {
-      "minWidth": "260px",
+      "width": "260px",
     }
   }
 >

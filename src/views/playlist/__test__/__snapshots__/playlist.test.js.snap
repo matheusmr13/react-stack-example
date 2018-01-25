@@ -5,20 +5,27 @@ exports[`Playlist component should render list properly 1`] = `
   className="playlists"
 >
   <div
+    className="playlists__background"
+  />
+  <div
     className="playlists__content"
   >
     <div
       className="playlists__header"
     >
       <div
-        className="playlists__message"
+        className="playlists__header-content"
       >
-        myMessage
+        <div
+          className="playlists__message"
+        >
+          myMessage
+        </div>
+        <UserInfo
+          onLogout={[Function]}
+          user={null}
+        />
       </div>
-      <UserInfo
-        onLogout={[Function]}
-        user={null}
-      />
     </div>
     <div
       className="playlists__filter"
@@ -99,16 +106,23 @@ exports[`Playlist component should render loading properly 1`] = `
   className="playlists"
 >
   <div
+    className="playlists__background"
+  />
+  <div
     className="playlists__content"
   >
     <div
       className="playlists__header"
     >
-      <Component />
-      <UserInfo
-        onLogout={[Function]}
-        user={null}
-      />
+      <div
+        className="playlists__header-content"
+      >
+        <Component />
+        <UserInfo
+          onLogout={[Function]}
+          user={null}
+        />
+      </div>
     </div>
     <div
       className="playlists__filter"

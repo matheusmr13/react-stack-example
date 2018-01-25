@@ -1,9 +1,9 @@
 import Store from 'services/config/redux';
-import BaseService from 'services/config/base-service';
+import Service from 'services/config/service';
 
-class SpotifyService extends BaseService {
+class SpotifyService {
 	static fetch(url, options) {
-		return BaseService.get(`${process.env.REACT_APP_SPOTIFY_URL}${url}`, Object.assign({}, options, {
+		return Service.get(`${process.env.REACT_APP_SPOTIFY_URL}${url}`, Object.assign({}, options, {
 			headers: {
 				Authorization: `Bearer ${Store.getState().app.loggedUser.access_token}`
 			}

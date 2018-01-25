@@ -2,7 +2,7 @@ const paramsToUrl = filters => Object.keys(filters)
 	.map(k => `${encodeURIComponent(k)}=${encodeURIComponent(filters[k])}`)
 	.join('&');
 
-class BaseService {
+class Service {
 	static get(url, options) {
 		const { qp, ...fetchOptions } = options;
 		let urlToGet = url;
@@ -10,9 +10,17 @@ class BaseService {
 			urlToGet += `?${paramsToUrl(qp)}`;
 		}
 
-		return fetch(urlToGet, fetchOptions)
-			.then(resp => resp.json());
+		return new Promise((resolve, reject) => {
+			fetch(urlToGet, fetchOptions)
+				.then(resp => resp.json())
+				.then((data) => {
+					if (data.error) {
+						reject(data.error);
+					}
+					resolve(data);
+				});
+		});
 	}
 }
 
-export default BaseService;
+export default Service;

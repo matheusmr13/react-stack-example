@@ -1,10 +1,13 @@
 import { all, call, put, takeLatest, select } from 'redux-saga/effects';
 import { delay } from 'redux-saga';
 
+import { ErrorWrapper } from 'services/config/saga';
+
 import { Actions as AppActions } from 'services/app/module';
 import moment from 'moment';
 import PlaylistService from './service';
 import { Actions } from './module';
+
 
 function* filterPlaylists() {
 	try {
@@ -16,12 +19,8 @@ function* filterPlaylists() {
 
 		yield put(Actions.onScheduleRefresh());
 	} catch (error) {
-		if (error.status === 401) {
-			yield put(AppActions.setLoggedUser(null));
-		} else if (error.status === 400) {
+		if (error.status === 400) {
 			yield put(AppActions.showMessage({ text: error.message, generatedAt: new Date().getTime() }));
-		} else {
-			yield put(AppActions.showMessage({ text: 'An error occurred, please contact support!', generatedAt: new Date().getTime() }));
 		}
 	}
 }
@@ -37,13 +36,12 @@ function* onScheduleRefresh() {
 }
 
 function* watchPlaylistList() {
-	yield takeLatest(Actions.filterPlaylists, filterPlaylists);
+	yield takeLatest(Actions.filterPlaylists, ErrorWrapper(filterPlaylists));
 }
 
 function* watchOnScheduleRefresh() {
-	yield takeLatest(Actions.onScheduleRefresh, onScheduleRefresh);
+	yield takeLatest(Actions.onScheduleRefresh, ErrorWrapper(onScheduleRefresh));
 }
-
 
 export default function* playlistSagas() {
 	yield all([

@@ -1,34 +1,27 @@
 import { all, call, put, takeLatest } from 'redux-saga/effects';
 
+import { ErrorWrapper } from 'services/config/saga';
 import { Actions as PlaylistActions } from 'services/playlist/module';
 
 import FilterService from './service';
 import { Actions } from './module';
 
 function* fetchFilters() {
-	try {
-		const filters = yield call(() => FilterService.fetchFilters());
-		yield put(Actions.setPossibleFilters(filters));
-	} catch (e) {
-		console.info(e);
-	}
+	const filters = yield call(() => FilterService.fetchFilters());
+	yield put(Actions.setPossibleFilters(filters));
 }
 
 
 function* onFilterChange() {
-	try {
-		yield put(PlaylistActions.filterPlaylists());
-	} catch (e) {
-		console.info(e);
-	}
+	yield put(PlaylistActions.filterPlaylists());
 }
 
 function* watchFetchFilters() {
-	yield takeLatest(Actions.fetchFilters, fetchFilters);
+	yield takeLatest(Actions.fetchFilters, ErrorWrapper(fetchFilters));
 }
 
 function* watchOnFilterChange() {
-	yield takeLatest(Actions.onFilterChange, onFilterChange);
+	yield takeLatest(Actions.onFilterChange, ErrorWrapper(onFilterChange));
 }
 
 export default function* filterSagas() {

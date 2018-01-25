@@ -32,7 +32,8 @@ describe('AppSaga', () => {
 		let setLoggedUser = await sagaTester.waitFor(Actions.setLoggedUser.toString());
 		expect(setLoggedUser.payload).toEqual(user);
 
-		setLoggedUser = await sagaTester.waitFor(Actions.setLoggedUser.toString());
+		await sagaTester.waitFor(Actions.setLoggedUser.toString());
+		setLoggedUser = sagaTester.getLatestCalledAction();
 
 		expect(setLoggedUser.payload).toEqual({
 			...user,

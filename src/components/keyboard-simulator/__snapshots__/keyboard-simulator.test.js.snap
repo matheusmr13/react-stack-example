@@ -7,6 +7,7 @@ exports[`KeyboardSimulator component should render properly 1`] = `
   <span
     className="keyboard-simulator__text"
   >
+    Initial text
      
     <span
       className="keyboard-simulator__inputing"
