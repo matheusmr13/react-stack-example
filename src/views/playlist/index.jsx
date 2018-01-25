@@ -71,13 +71,16 @@ class Playlists extends Component {
 
 		return (
 			<div className="playlists">
+				<div className="playlists__background" />
 				<div className="playlists__content">
 					<div className="playlists__header">
-						{ !loadingPlaylists ?
-							<div className="playlists__message">{playlists.message}</div> :
-							<PlaylistNameShimmer />
-						}
-						<UserInfo user={loggedUser} onLogout={this.props.onLogout} />
+						<div className="playlists__header-content">
+							{ !loadingPlaylists ?
+								<div className="playlists__message">{playlists.message}</div> :
+								<PlaylistNameShimmer />
+							}
+							<UserInfo user={loggedUser} onLogout={this.props.onLogout} />
+						</div>
 					</div>
 					<div className="playlists__filter">
 						<TextField

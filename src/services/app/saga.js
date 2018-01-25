@@ -11,9 +11,11 @@ function* fetchLoggedUser() {
 		yield put(Actions.setLoggedUser(loggedUser));
 
 		const me = yield call(() => SpotifyService.fetchLoggedUserInfos());
-		loggedUser.info = me;
 
-		yield put(Actions.setLoggedUser(loggedUser));
+		yield put(Actions.setLoggedUser({
+			...loggedUser,
+			info: me
+		}));
 	} catch (e) {
 		console.info(e.data);
 	}

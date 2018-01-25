@@ -25,6 +25,9 @@ const muiTheme = getMuiTheme({
 		textColor: '#000',
 		backgroundColor: '#fff',
 		actionColor: '#1db954'
+	},
+	textField: {
+		borderColor: 'gray'
 	}
 });
 
