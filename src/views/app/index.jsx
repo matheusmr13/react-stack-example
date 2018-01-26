@@ -28,6 +28,12 @@ class App extends Component {
 		}
 	}
 
+	onCloseMessage = () => {
+		this.setState({
+			isShowingMessage: false
+		});
+	}
+
 	onCloseAppBar = () => {
 		this.setState({
 			isFilterOpen: false
@@ -49,6 +55,7 @@ class App extends Component {
 				{ isShowingMessage ? <Snackbar
 					open
 					message={message.text}
+					onRequestClose={this.onCloseMessage}
 					autoHideDuration={4000}
 				/> : null}
 				<AppBar

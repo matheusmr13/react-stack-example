@@ -10,12 +10,14 @@ function* fetchLoggedUser() {
 	const loggedUser = yield call(() => AppService.checkLoggedUser());
 	yield put(Actions.setLoggedUser(loggedUser));
 
-	const me = yield call(() => SpotifyService.fetchLoggedUserInfos());
+	if (loggedUser) {
+		const me = yield call(() => SpotifyService.fetchLoggedUserInfos());
 
-	yield put(Actions.setLoggedUser({
-		...loggedUser,
-		info: me
-	}));
+		yield put(Actions.setLoggedUser({
+			...loggedUser,
+			info: me
+		}));
+	}
 }
 
 function* onLogout() {
