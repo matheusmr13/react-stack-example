@@ -100,4 +100,14 @@ describe('PlaylistSaga', () => {
 			generatedAt: 123
 		});
 	});
+	it('should show auth error if thrown', async () => {
+		PlaylistService.filterPlaylists = jest.fn(() => Promise.reject({
+			status: 401
+		}));
+		moment.prototype.toDate = jest.fn(() => ({ getTime: () => 123 }));
+
+		sagaTester.dispatch(Actions.filterPlaylists());
+		const setLoggedUser = await sagaTester.waitFor(AppActions.setLoggedUser.toString());
+		expect(setLoggedUser.payload).toEqual(null);
+	});
 });
