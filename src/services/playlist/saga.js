@@ -20,17 +20,26 @@ function* filterPlaylists() {
 		yield put(Actions.onScheduleRefresh());
 	} catch (error) {
 		if (error.status === 400) {
-			yield put(AppActions.showMessage({ text: error.message, generatedAt: new Date().getTime() }));
+			yield put(AppActions.showMessage({
+				text: error.message,
+				generatedAt: moment().toDate().getTime()
+			}));
+		} else {
+			throw error;
 		}
 	}
 }
 
 function* onScheduleRefresh() {
-	yield delay(process.env.REACT_APP_REFRESH_TIME_PLAYLISTS_SECONDS * 1000);
+	const time = parseInt(process.env.REACT_APP_REFRESH_TIME_PLAYLISTS_SECONDS, 10);
+	if (time) {
+		yield delay(time * 1000);
+	}
 	const { filter: { lastUpdated } } = yield select();
-	if (!lastUpdated || moment().diff(lastUpdated, 'seconds') >= 5) {
+	const seconds = moment().diff(lastUpdated, 'seconds');
+	if (!lastUpdated || seconds >= 5) {
 		yield put(Actions.filterPlaylists());
-	} else {
+	} else if (typeof time !== 'undefined') {
 		yield put(Actions.onScheduleRefresh());
 	}
 }

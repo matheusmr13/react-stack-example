@@ -53,7 +53,7 @@ exports[`Landing component should render properly 1`] = `
         </div>
         <a
           className="landing__login"
-          href="https://accounts.spotify.com/authorize?client_id=a94d7c3f7ae64cd4a78bd9b7b02c08d9&response_type=token&redirect_uri=http://localhost/"
+          href="spotify?client_id=123&response_type=token&redirect_uri=http://localhost/"
         >
           Enter with Spotify
         </a>

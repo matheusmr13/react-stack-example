@@ -90,12 +90,15 @@
 	}
 
 	&__empty {
-		color: rgb(40, 40, 40);
+		color: #fff;
 		font-size: 24px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		height: 100%;
+		@media screen and (max-width: 834px) {
+			margin-top: 24px;
+		}
 	}
 
 	&__background {

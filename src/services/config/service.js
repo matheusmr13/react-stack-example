@@ -3,7 +3,7 @@ const paramsToUrl = filters => Object.keys(filters)
 	.join('&');
 
 class Service {
-	static get(url, options) {
+	static get(url, options = {}) {
 		const { qp, ...fetchOptions } = options;
 		let urlToGet = url;
 		if (qp) {
