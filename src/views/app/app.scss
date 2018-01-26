@@ -1,10 +1,11 @@
-.app {
+@import "views/scss/theme.scss";
 
+.app {
 	&__header {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		color: #68d962;
+		color: $spotify-green;
 
 		img {
 			height: 40px;

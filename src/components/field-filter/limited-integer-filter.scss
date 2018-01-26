@@ -1,5 +1,7 @@
 .li-filter {
-	& > div:last-child > div {
-		margin-bottom: 0 !important;
+	& > div {
+		&:last-child > div {
+			margin-bottom: 0 !important; // sass-lint:disable-line no-important
+		}
 	}
 }

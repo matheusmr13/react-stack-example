@@ -1,15 +1,17 @@
+@import "views/scss/theme.scss";
+
 .keyboard-simulator {
 	min-height: 55px;
 
 	&__text {
 		font-size: 24px;
 		text-transform: uppercase;
-		color: #fff;
+		color: $white;
 		font-weight: bold;
 	}
 
 	&__inputing {
-		color: #1db954;
+		color: $spotify-green;
 	}
 
 	&__cursor {
@@ -17,7 +19,7 @@
 		margin-bottom: -3px;
 		width: 10px;
 		height: 25px;
-		background-color: #1db954;
+		background-color: $spotify-green;
 		display: inline-block;
 
 		&--idle {
@@ -28,6 +30,6 @@
 
 @keyframes blink {
 	50% {
-		opacity: 0.0;
+		opacity: 0;
 	}
 }

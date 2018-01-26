@@ -4,8 +4,6 @@ import FieldFilter from 'components/field-filter';
 import PropTypes from 'prop-types';
 import FilterPropType from 'services/playlist-filter/proptype';
 
-import './entity-filter.css';
-
 class EntityFilter extends Component {
 	state = {
 		filters: {}

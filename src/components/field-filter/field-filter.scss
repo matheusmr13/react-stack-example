@@ -1,5 +1,7 @@
+@import "views/scss/theme.scss";
+
 .field-filter {
-	background-color: #f7f7f7;
+	background-color: $filter-background;
 	padding: 8px;
 	margin-bottom: 8px;
 }

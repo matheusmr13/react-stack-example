@@ -1,3 +1,5 @@
+@import "views/scss/theme.scss";
+
 .ui-filter {
 	&__name {
 		margin-bottom: 8px;
@@ -8,7 +10,7 @@
 		align-items: center;
 		justify-content: center;
 	}
-	
+
 	&__button {
 		outline: none;
 		display: flex;
@@ -19,13 +21,13 @@
 		height: 50px;
 		width: 50px;
 		font-size: 40px;
-		background-color: #1db954;
+		background-color: $spotify-green;
 		font-weight: bold;
-		color: #000;
+		color: $black;
 		cursor: pointer;
 
 		&:disabled {
-			background-color: gray;
+			background-color: $disabled;
 		}
 	}
 
@@ -33,5 +35,4 @@
 		font-size: 24px;
 		margin: 0 16px;
 	}
-
 }
