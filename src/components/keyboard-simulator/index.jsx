@@ -32,23 +32,20 @@ class KeyboardSimulator extends Component {
 			const { values } = this.props;
 
 			const newState = { ...this.state };
+			newState.isIdleing = false;
 
 			const shouldIdle = character === values[word].length;
 
 			let timing;
 			if (shouldIdle) {
 				timing = TIMING_PER_STATUS.IDLE;
+				newState.isIdleing = true;
 			} else if (isWriting) {
 				timing = TIMING_PER_STATUS.WRITING;
 			} else {
 				timing = TIMING_PER_STATUS.ERASING;
 			}
 
-			if (shouldIdle) {
-				newState.isIdleing = true;
-			} else {
-				newState.isIdleing = false;
-			}
 			newState.currentText = values[word].substring(0, character);
 
 			if (isWriting) {
