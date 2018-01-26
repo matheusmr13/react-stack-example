@@ -1,5 +1,7 @@
 # iFood Frontend Test
 
+[![Build Status](https://travis-ci.org/matheusmr13/ifood-frontend-test.svg?branch=master)](https://travis-ci.org/matheusmr13/ifood-frontend-test)
+
 Create a web application called Spotifood used to display the preferred playlists from iFood's customers. The web application has only one page:
 * A page that lists the featured playlists at Spotify according to some criteria.
 
