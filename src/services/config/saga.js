@@ -16,16 +16,14 @@ export default function* rootSaga() {
 	]);
 }
 
-export const ErrorWrapper = (func) => {
-	return function* wrapper(payload) {
-		try {
-			yield func(payload);
-		} catch (error) {
-			if (error.status === 401) {
-				yield put(AppActions.setLoggedUser(null));
-			} else {
-				yield put(AppActions.showMessage({ text: 'An error occurred, please contact support!', generatedAt: moment().toDate().getTime() }));
-			}
+export const ErrorWrapper = func => function* wrapper(payload) {
+	try {
+		yield func(payload);
+	} catch (error) {
+		if (error.status === 401) {
+			yield put(AppActions.setLoggedUser(null));
+		} else {
+			yield put(AppActions.showMessage({ text: 'An error occurred, please contact support!', generatedAt: moment().toDate().getTime() }));
 		}
-	};
+	}
 };
