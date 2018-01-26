@@ -54,7 +54,9 @@
       "!**/node_modules/**",
       "!**/.vscode/**",
       "!**/build/**",
-      "!src/index.js"
+      "!src/index.js",
+      "!src/views/main.jsx",
+      "!src/views/mui-theme.js"
     ]
   }
 }
