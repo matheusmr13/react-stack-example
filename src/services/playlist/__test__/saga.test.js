@@ -10,6 +10,8 @@ jest.mock('services/spotify/service', () => ({
 	fetchFeaturedPlaylists: () => Promise.resolve({ message: 'my featured', playlists: { items: Array(5).fill({}) } })
 }));
 
+jest.unmock('moment');
+
 describe('PlaylistSaga', () => {
 	let sagaTester = null;
 

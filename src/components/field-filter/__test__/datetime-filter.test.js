@@ -30,6 +30,6 @@ describe('DatetimeFilter component', () => {
 		datetimeFilter.instance().onChange('time', hourMoment.toDate());
 
 		expect(lastChangedDate).not.toBeUndefined();
-		expect(lastChangedDate).toBe('2018-11-15T10:40:00-02:00');
+		expect(lastChangedDate).toBe('2018-11-15T10:40:00Z');
 	});
 });
