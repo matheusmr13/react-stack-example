@@ -45,5 +45,16 @@
     "lint": "npm run sasslint && npm run jslint",
     "build-css": "node-sass-chokidar src/ -o src/ --include-path ./src",
     "watch-css": "npm run build-css && node-sass-chokidar src/ --include-path ./src -o src/ --watch --source-map-root src/ --recursive"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "**/*.{js,jsx}",
+      "!src/registerServiceWorker.js",
+      "!**/coverage/**",
+      "!**/node_modules/**",
+      "!**/.vscode/**",
+      "!**/build/**",
+      "!src/index.js"
+    ]
   }
 }
