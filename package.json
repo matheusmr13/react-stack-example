@@ -29,7 +29,7 @@
     "sass-lint": "^1.12.1"
   },
   "scripts": {
-    "ci": "npm run build-css && npm run lint && npm run test:ci && npm run build",
+    "ci": "npm run build-css && npm run lint && npm run test:ci && npm run build && npm run coveralls",
     "coveralls": "cat ./coverage/lcov.info | coveralls",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
