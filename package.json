@@ -1,7 +1,7 @@
 {
   "name": "spotifood",
   "version": "0.1.0",
-  "homepage": "https://matheusmr13.github.io/ifood-frontend-test/",
+  "homepage": "https://matheusmr13.github.io/react-stack-example/",
   "dependencies": {
     "material-ui": "^0.20.0",
     "moment": "^2.20.1",

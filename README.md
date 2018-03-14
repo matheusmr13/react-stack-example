@@ -1,7 +1,7 @@
 # iFood Frontend Test
 
-[![Build Status](https://travis-ci.org/matheusmr13/ifood-frontend-test.svg?branch=master)](https://travis-ci.org/matheusmr13/ifood-frontend-test)
-[![Coverage Status](https://coveralls.io/repos/github/matheusmr13/ifood-frontend-test/badge.svg?branch=master)](https://coveralls.io/github/matheusmr13/ifood-frontend-test?branch=master)
+[![Build Status](https://travis-ci.org/matheusmr13/react-stack-example.svg?branch=master)](https://travis-ci.org/matheusmr13/react-stack-example)
+[![Coverage Status](https://coveralls.io/repos/github/matheusmr13/react-stack-example/badge.svg?branch=master)](https://coveralls.io/github/matheusmr13/react-stack-example?branch=master)
 
 Create a web application called Spotifood used to display the preferred playlists from iFood's customers. The web application has only one page:
 * A page that lists the featured playlists at Spotify according to some criteria.
